@@ -1,0 +1,1171 @@
+1. JOB STARTED
+2. IN DIRECTORY: /home/klarochelle_uri_edu/DaST
+3. PYTHON PATH:
+/home/klarochelle_uri_edu/DaST/dast-env/bin/python
+4. CHECKING GPU
+Fri Apr 24 02:39:14 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A16                     On  |   00000000:C8:00.0 Off |                    0 |
+|  0%   32C    P8             14W /   62W |       0MiB /  15356MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+5. STARTING PYTHON
+CUDA available: True
+GPU: NVIDIA A16
+Namespace(workers=1, batchSize=500, dataset='mnist', niter=100, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Accuracy of the network on netD: 99.75 %
+Attack success rate: 0.40 %
+[0/100][0/1000] D: 2.3575 D_prob: 0.0005 G: 0.5561 D(G(z)): 2.3575 / 0.5561 loss_imitate: 0.0953 loss_diversity: 2.3038
+[0/100][40/1000] D: 0.6380 D_prob: 0.0316 G: 1.2017 D(G(z)): 0.6380 / 1.2017 loss_imitate: 0.5617 loss_diversity: 3.1999
+[0/100][80/1000] D: 0.3566 D_prob: 0.0642 G: 1.8404 D(G(z)): 0.3566 / 1.8404 loss_imitate: 0.7004 loss_diversity: 5.7004
+[0/100][120/1000] D: 0.3545 D_prob: 0.0638 G: 2.0339 D(G(z)): 0.3545 / 2.0339 loss_imitate: 0.7016 loss_diversity: 6.6616
+[0/100][160/1000] D: 1.0499 D_prob: 0.0192 G: 1.1229 D(G(z)): 1.0499 / 1.1229 loss_imitate: 0.3649 loss_diversity: 3.7896
+[0/100][200/1000] D: 0.9528 D_prob: 0.0340 G: 1.3512 D(G(z)): 0.9528 / 1.3512 loss_imitate: 0.3882 loss_diversity: 4.8147
+[0/100][240/1000] D: 0.9478 D_prob: 0.0353 G: 1.3967 D(G(z)): 0.9478 / 1.3967 loss_imitate: 0.3903 loss_diversity: 5.0321
+[0/100][280/1000] D: 0.9061 D_prob: 0.0346 G: 1.4782 D(G(z)): 0.9061 / 1.4782 loss_imitate: 0.4043 loss_diversity: 5.3694
+[0/100][320/1000] D: 1.0213 D_prob: 0.0330 G: 1.4284 D(G(z)): 1.0213 / 1.4284 loss_imitate: 0.3619 loss_diversity: 5.3324
+[0/100][360/1000] D: 1.0401 D_prob: 0.0324 G: 1.3220 D(G(z)): 1.0401 / 1.3220 loss_imitate: 0.3579 loss_diversity: 4.8206
+[0/100][400/1000] D: 0.8205 D_prob: 0.0476 G: 1.4808 D(G(z)): 0.8205 / 1.4808 loss_imitate: 0.4419 loss_diversity: 5.1941
+[0/100][440/1000] D: 0.8588 D_prob: 0.0479 G: 1.4200 D(G(z)): 0.8588 / 1.4200 loss_imitate: 0.4264 loss_diversity: 4.9680
+[0/100][480/1000] D: 1.5842 D_prob: 0.0144 G: 0.8357 D(G(z)): 1.5842 / 0.8357 loss_imitate: 0.2117 loss_diversity: 3.1199
+[0/100][520/1000] D: 1.2580 D_prob: 0.0179 G: 1.1331 D(G(z)): 1.2580 / 1.1331 loss_imitate: 0.2846 loss_diversity: 4.2423
+[0/100][560/1000] D: 1.3495 D_prob: 0.0106 G: 0.9618 D(G(z)): 1.3495 / 0.9618 loss_imitate: 0.2683 loss_diversity: 3.4672
+[0/100][600/1000] D: 1.2681 D_prob: 0.0190 G: 1.0862 D(G(z)): 1.2681 / 1.0862 loss_imitate: 0.2827 loss_diversity: 4.0175
+[0/100][640/1000] D: 1.3463 D_prob: 0.0222 G: 1.0715 D(G(z)): 1.3463 / 1.0715 loss_imitate: 0.2621 loss_diversity: 4.0466
+[0/100][680/1000] D: 1.2778 D_prob: 0.0219 G: 1.1330 D(G(z)): 1.2778 / 1.1330 loss_imitate: 0.2796 loss_diversity: 4.2674
+[0/100][720/1000] D: 1.4184 D_prob: 0.0159 G: 1.0355 D(G(z)): 1.4184 / 1.0355 loss_imitate: 0.2448 loss_diversity: 3.9535
+[0/100][760/1000] D: 1.9018 D_prob: 0.0068 G: 0.7117 D(G(z)): 1.9018 / 0.7117 loss_imitate: 0.1519 loss_diversity: 2.7990
+[0/100][800/1000] D: 1.2698 D_prob: 0.0331 G: 1.0561 D(G(z)): 1.2698 / 1.0561 loss_imitate: 0.2862 loss_diversity: 3.8493
+[0/100][840/1000] D: 0.7174 D_prob: 0.0403 G: 1.5776 D(G(z)): 0.7174 / 1.5776 loss_imitate: 0.4906 loss_diversity: 5.4349
+[0/100][880/1000] D: 1.2202 D_prob: 0.0254 G: 1.1299 D(G(z)): 1.2202 / 1.1299 loss_imitate: 0.3058 loss_diversity: 4.1208
+[0/100][920/1000] D: 1.3508 D_prob: 0.0162 G: 1.0340 D(G(z)): 1.3508 / 1.0340 loss_imitate: 0.2609 loss_diversity: 3.8654
+[0/100][960/1000] D: 1.1081 D_prob: 0.0185 G: 1.1998 D(G(z)): 1.1081 / 1.1998 loss_imitate: 0.3309 loss_diversity: 4.3445
+Attack success rate: 0.55 %
+This is the best model
+Accuracy of the network on netD: 10.25 %
+This is the best model
+[1/100][0/1000] D: 1.3559 D_prob: 0.0081 G: 0.9297 D(G(z)): 1.3559 / 0.9297 loss_imitate: 0.2691 loss_diversity: 3.3030
+[1/100][40/1000] D: 1.5698 D_prob: 0.0094 G: 0.9374 D(G(z)): 1.5698 / 0.9374 loss_imitate: 0.2098 loss_diversity: 3.6380
+[1/100][80/1000] D: 1.5391 D_prob: 0.0084 G: 1.0870 D(G(z)): 1.5391 / 1.0870 loss_imitate: 0.2153 loss_diversity: 4.3584
+[1/100][120/1000] D: 1.5214 D_prob: 0.0115 G: 1.2107 D(G(z)): 1.5214 / 1.2107 loss_imitate: 0.2200 loss_diversity: 4.9535
+[1/100][160/1000] D: 1.5950 D_prob: 0.0090 G: 1.1747 D(G(z)): 1.5950 / 1.1747 loss_imitate: 0.2039 loss_diversity: 4.8536
+[1/100][200/1000] D: 1.5580 D_prob: 0.0088 G: 1.1817 D(G(z)): 1.5580 / 1.1817 loss_imitate: 0.2109 loss_diversity: 4.8541
+[1/100][240/1000] D: 1.5687 D_prob: 0.0085 G: 1.1801 D(G(z)): 1.5687 / 1.1801 loss_imitate: 0.2120 loss_diversity: 4.8405
+[1/100][280/1000] D: 2.0874 D_prob: 0.0027 G: 0.6077 D(G(z)): 2.0874 / 0.6077 loss_imitate: 0.1264 loss_diversity: 2.4066
+[1/100][320/1000] D: 1.6245 D_prob: 0.0051 G: 0.6594 D(G(z)): 1.6245 / 0.6594 loss_imitate: 0.2035 loss_diversity: 2.2797
+[1/100][360/1000] D: 1.7422 D_prob: 0.0060 G: 0.5768 D(G(z)): 1.7422 / 0.5768 loss_imitate: 0.1793 loss_diversity: 1.9873
+[1/100][400/1000] D: 1.4449 D_prob: 0.0085 G: 0.6802 D(G(z)): 1.4449 / 0.6802 loss_imitate: 0.2455 loss_diversity: 2.1736
+[1/100][440/1000] D: 1.5814 D_prob: 0.0101 G: 0.5950 D(G(z)): 1.5814 / 0.5950 loss_imitate: 0.2142 loss_diversity: 1.9038
+[1/100][480/1000] D: 1.5031 D_prob: 0.0116 G: 0.6241 D(G(z)): 1.5031 / 0.6241 loss_imitate: 0.2296 loss_diversity: 1.9727
+[1/100][520/1000] D: 1.4232 D_prob: 0.0125 G: 0.6822 D(G(z)): 1.4232 / 0.6822 loss_imitate: 0.2640 loss_diversity: 2.0910
+[1/100][560/1000] D: 1.4023 D_prob: 0.0165 G: 0.7458 D(G(z)): 1.4023 / 0.7458 loss_imitate: 0.2539 loss_diversity: 2.4595
+[1/100][600/1000] D: 1.4555 D_prob: 0.0126 G: 0.6117 D(G(z)): 1.4555 / 0.6117 loss_imitate: 0.2413 loss_diversity: 1.8523
+[1/100][640/1000] D: 1.4260 D_prob: 0.0141 G: 0.5875 D(G(z)): 1.4260 / 0.5875 loss_imitate: 0.2449 loss_diversity: 1.7133
+[1/100][680/1000] D: 1.6741 D_prob: 0.0127 G: 0.5242 D(G(z)): 1.6741 / 0.5242 loss_imitate: 0.1949 loss_diversity: 1.6464
+[1/100][720/1000] D: 1.6739 D_prob: 0.0169 G: 0.4877 D(G(z)): 1.6739 / 0.4877 loss_imitate: 0.1939 loss_diversity: 1.4690
+[1/100][760/1000] D: 1.6652 D_prob: 0.0162 G: 0.5229 D(G(z)): 1.6652 / 0.5229 loss_imitate: 0.1975 loss_diversity: 1.6267
+[1/100][800/1000] D: 1.4358 D_prob: 0.0170 G: 0.5139 D(G(z)): 1.4358 / 0.5139 loss_imitate: 0.2481 loss_diversity: 1.3288
+[1/100][840/1000] D: 1.6037 D_prob: 0.0183 G: 0.5029 D(G(z)): 1.6037 / 0.5029 loss_imitate: 0.2104 loss_diversity: 1.4621
+[1/100][880/1000] D: 1.3745 D_prob: 0.0168 G: 0.5515 D(G(z)): 1.3745 / 0.5515 loss_imitate: 0.2628 loss_diversity: 1.4436
+[1/100][920/1000] D: 1.3807 D_prob: 0.0128 G: 0.4973 D(G(z)): 1.3807 / 0.4973 loss_imitate: 0.2585 loss_diversity: 1.1939
+[1/100][960/1000] D: 1.3662 D_prob: 0.0179 G: 0.5146 D(G(z)): 1.3662 / 0.5146 loss_imitate: 0.2699 loss_diversity: 1.2231
+Attack success rate: 2.25 %
+This is the best model
+Accuracy of the network on netD: 23.20 %
+This is the best model
+[2/100][0/1000] D: 1.3154 D_prob: 0.0191 G: 0.5045 D(G(z)): 1.3154 / 0.5045 loss_imitate: 0.2754 loss_diversity: 1.1455
+[2/100][40/1000] D: 1.3011 D_prob: 0.0169 G: 0.4913 D(G(z)): 1.3011 / 0.4913 loss_imitate: 0.2796 loss_diversity: 1.0587
+[2/100][80/1000] D: 1.3353 D_prob: 0.0219 G: 0.5435 D(G(z)): 1.3353 / 0.5435 loss_imitate: 0.2863 loss_diversity: 1.2858
+[2/100][120/1000] D: 1.4343 D_prob: 0.0171 G: 0.5303 D(G(z)): 1.4343 / 0.5303 loss_imitate: 0.2596 loss_diversity: 1.3535
+[2/100][160/1000] D: 1.0932 D_prob: 0.0213 G: 0.5395 D(G(z)): 1.0932 / 0.5395 loss_imitate: 0.3463 loss_diversity: 0.9657
+[2/100][200/1000] D: 1.1893 D_prob: 0.0249 G: 0.4848 D(G(z)): 1.1893 / 0.4848 loss_imitate: 0.3249 loss_diversity: 0.7997
+[2/100][240/1000] D: 1.2420 D_prob: 0.0211 G: 0.4852 D(G(z)): 1.2420 / 0.4852 loss_imitate: 0.2976 loss_diversity: 0.9383
+[2/100][280/1000] D: 1.0357 D_prob: 0.0226 G: 0.5791 D(G(z)): 1.0357 / 0.5791 loss_imitate: 0.3671 loss_diversity: 1.0600
+[2/100][320/1000] D: 1.1010 D_prob: 0.0246 G: 0.5315 D(G(z)): 1.1010 / 0.5315 loss_imitate: 0.3477 loss_diversity: 0.9190
+[2/100][360/1000] D: 1.0728 D_prob: 0.0243 G: 0.5536 D(G(z)): 1.0728 / 0.5536 loss_imitate: 0.3765 loss_diversity: 0.8855
+[2/100][400/1000] D: 1.2706 D_prob: 0.0243 G: 0.5473 D(G(z)): 1.2706 / 0.5473 loss_imitate: 0.3257 loss_diversity: 1.1080
+[2/100][440/1000] D: 1.3259 D_prob: 0.0266 G: 0.4964 D(G(z)): 1.3259 / 0.4964 loss_imitate: 0.2832 loss_diversity: 1.0661
+[2/100][480/1000] D: 1.2945 D_prob: 0.0245 G: 0.5011 D(G(z)): 1.2945 / 0.5011 loss_imitate: 0.2955 loss_diversity: 1.0281
+[2/100][520/1000] D: 0.9263 D_prob: 0.0205 G: 0.6430 D(G(z)): 0.9263 / 0.6430 loss_imitate: 0.4293 loss_diversity: 1.0683
+[2/100][560/1000] D: 1.1389 D_prob: 0.0275 G: 0.5432 D(G(z)): 1.1389 / 0.5432 loss_imitate: 0.3482 loss_diversity: 0.9753
+[2/100][600/1000] D: 1.3056 D_prob: 0.0329 G: 0.5280 D(G(z)): 1.3056 / 0.5280 loss_imitate: 0.3170 loss_diversity: 1.0551
+[2/100][640/1000] D: 1.1527 D_prob: 0.0173 G: 0.5234 D(G(z)): 1.1527 / 0.5234 loss_imitate: 0.3345 loss_diversity: 0.9446
+[2/100][680/1000] D: 1.0529 D_prob: 0.0246 G: 0.5063 D(G(z)): 1.0529 / 0.5063 loss_imitate: 0.3552 loss_diversity: 0.7555
+[2/100][720/1000] D: 1.3297 D_prob: 0.0266 G: 0.4257 D(G(z)): 1.3297 / 0.4257 loss_imitate: 0.2914 loss_diversity: 0.6716
+[2/100][760/1000] D: 1.0128 D_prob: 0.0255 G: 0.5211 D(G(z)): 1.0128 / 0.5211 loss_imitate: 0.3700 loss_diversity: 0.7556
+[2/100][800/1000] D: 0.9850 D_prob: 0.0281 G: 0.5503 D(G(z)): 0.9850 / 0.5503 loss_imitate: 0.3761 loss_diversity: 0.8706
+[2/100][840/1000] D: 1.0878 D_prob: 0.0265 G: 0.5264 D(G(z)): 1.0878 / 0.5264 loss_imitate: 0.3418 loss_diversity: 0.9231
+[2/100][880/1000] D: 1.2526 D_prob: 0.0298 G: 0.5426 D(G(z)): 1.2526 / 0.5426 loss_imitate: 0.3332 loss_diversity: 1.0469
+[2/100][920/1000] D: 0.8190 D_prob: 0.0313 G: 0.5696 D(G(z)): 0.8190 / 0.5696 loss_imitate: 0.4503 loss_diversity: 0.5965
+[2/100][960/1000] D: 1.0043 D_prob: 0.0347 G: 0.4954 D(G(z)): 1.0043 / 0.4954 loss_imitate: 0.3712 loss_diversity: 0.6207
+Attack success rate: 2.60 %
+This is the best model
+Accuracy of the network on netD: 24.20 %
+This is the best model
+[3/100][0/1000] D: 1.0440 D_prob: 0.0389 G: 0.4889 D(G(z)): 1.0440 / 0.4889 loss_imitate: 0.3806 loss_diversity: 0.5412
+[3/100][40/1000] D: 1.2424 D_prob: 0.0322 G: 0.4681 D(G(z)): 1.2424 / 0.4681 loss_imitate: 0.3075 loss_diversity: 0.8029
+[3/100][80/1000] D: 1.0710 D_prob: 0.0305 G: 0.5003 D(G(z)): 1.0710 / 0.5003 loss_imitate: 0.3473 loss_diversity: 0.7646
+[3/100][120/1000] D: 0.9815 D_prob: 0.0331 G: 0.5064 D(G(z)): 0.9815 / 0.5064 loss_imitate: 0.3872 loss_diversity: 0.5964
+[3/100][160/1000] D: 0.9090 D_prob: 0.0309 G: 0.5220 D(G(z)): 0.9090 / 0.5220 loss_imitate: 0.4208 loss_diversity: 0.5061
+[3/100][200/1000] D: 0.7787 D_prob: 0.0357 G: 0.5716 D(G(z)): 0.7787 / 0.5716 loss_imitate: 0.4712 loss_diversity: 0.5021
+[3/100][240/1000] D: 0.8141 D_prob: 0.0391 G: 0.5650 D(G(z)): 0.8141 / 0.5650 loss_imitate: 0.4607 loss_diversity: 0.5216
+[3/100][280/1000] D: 1.0497 D_prob: 0.0377 G: 0.4632 D(G(z)): 1.0497 / 0.4632 loss_imitate: 0.3703 loss_diversity: 0.4645
+[3/100][320/1000] D: 1.0457 D_prob: 0.0360 G: 0.4700 D(G(z)): 1.0457 / 0.4700 loss_imitate: 0.3636 loss_diversity: 0.5320
+[3/100][360/1000] D: 0.8998 D_prob: 0.0291 G: 0.5369 D(G(z)): 0.8998 / 0.5369 loss_imitate: 0.4140 loss_diversity: 0.6142
+[3/100][400/1000] D: 0.9485 D_prob: 0.0322 G: 0.5292 D(G(z)): 0.9485 / 0.5292 loss_imitate: 0.4098 loss_diversity: 0.5971
+[3/100][440/1000] D: 1.0649 D_prob: 0.0350 G: 0.4780 D(G(z)): 1.0649 / 0.4780 loss_imitate: 0.3538 loss_diversity: 0.6210
+[3/100][480/1000] D: 0.8832 D_prob: 0.0320 G: 0.5914 D(G(z)): 0.8832 / 0.5914 loss_imitate: 0.4325 loss_diversity: 0.7946
+[3/100][520/1000] D: 0.9947 D_prob: 0.0300 G: 0.5399 D(G(z)): 0.9947 / 0.5399 loss_imitate: 0.3871 loss_diversity: 0.7641
+[3/100][560/1000] D: 1.0725 D_prob: 0.0279 G: 0.5149 D(G(z)): 1.0725 / 0.5149 loss_imitate: 0.3648 loss_diversity: 0.7505
+[3/100][600/1000] D: 0.9525 D_prob: 0.0273 G: 0.5488 D(G(z)): 0.9525 / 0.5488 loss_imitate: 0.3950 loss_diversity: 0.7690
+[3/100][640/1000] D: 1.0615 D_prob: 0.0280 G: 0.5493 D(G(z)): 1.0615 / 0.5493 loss_imitate: 0.3617 loss_diversity: 0.9379
+[3/100][680/1000] D: 1.0211 D_prob: 0.0266 G: 0.5223 D(G(z)): 1.0211 / 0.5223 loss_imitate: 0.3649 loss_diversity: 0.7870
+[3/100][720/1000] D: 1.0406 D_prob: 0.0304 G: 0.5439 D(G(z)): 1.0406 / 0.5439 loss_imitate: 0.3921 loss_diversity: 0.7590
+[3/100][760/1000] D: 1.1650 D_prob: 0.0276 G: 0.4650 D(G(z)): 1.1650 / 0.4650 loss_imitate: 0.3234 loss_diversity: 0.7078
+[3/100][800/1000] D: 0.9239 D_prob: 0.0280 G: 0.5330 D(G(z)): 0.9239 / 0.5330 loss_imitate: 0.4057 loss_diversity: 0.6368
+[3/100][840/1000] D: 0.8600 D_prob: 0.0308 G: 0.6496 D(G(z)): 0.8600 / 0.6496 loss_imitate: 0.4556 loss_diversity: 0.9700
+[3/100][880/1000] D: 1.2473 D_prob: 0.0248 G: 0.4462 D(G(z)): 1.2473 / 0.4462 loss_imitate: 0.2953 loss_diversity: 0.7542
+[3/100][920/1000] D: 0.7233 D_prob: 0.0348 G: 0.6132 D(G(z)): 0.7233 / 0.6132 loss_imitate: 0.4949 loss_diversity: 0.5914
+[3/100][960/1000] D: 0.8137 D_prob: 0.0344 G: 0.6348 D(G(z)): 0.8137 / 0.6348 loss_imitate: 0.4552 loss_diversity: 0.8981
+Attack success rate: 3.20 %
+This is the best model
+Accuracy of the network on netD: 27.65 %
+This is the best model
+[4/100][0/1000] D: 1.2812 D_prob: 0.0264 G: 0.5682 D(G(z)): 1.2812 / 0.5682 loss_imitate: 0.3213 loss_diversity: 1.2348
+[4/100][40/1000] D: 1.0093 D_prob: 0.0277 G: 0.5350 D(G(z)): 1.0093 / 0.5350 loss_imitate: 0.3781 loss_diversity: 0.7845
+[4/100][80/1000] D: 1.1396 D_prob: 0.0238 G: 0.5260 D(G(z)): 1.1396 / 0.5260 loss_imitate: 0.3321 loss_diversity: 0.9692
+[4/100][120/1000] D: 0.8742 D_prob: 0.0313 G: 0.5777 D(G(z)): 0.8742 / 0.5777 loss_imitate: 0.4263 loss_diversity: 0.7569
+[4/100][160/1000] D: 1.3476 D_prob: 0.0266 G: 0.4822 D(G(z)): 1.3476 / 0.4822 loss_imitate: 0.2752 loss_diversity: 1.0353
+[4/100][200/1000] D: 1.0176 D_prob: 0.0255 G: 0.5658 D(G(z)): 1.0176 / 0.5658 loss_imitate: 0.3697 loss_diversity: 0.9806
+[4/100][240/1000] D: 0.9095 D_prob: 0.0215 G: 0.5829 D(G(z)): 0.9095 / 0.5829 loss_imitate: 0.4125 loss_diversity: 0.8522
+[4/100][280/1000] D: 1.1766 D_prob: 0.0239 G: 0.5383 D(G(z)): 1.1766 / 0.5383 loss_imitate: 0.3271 loss_diversity: 1.0559
+[4/100][320/1000] D: 1.1086 D_prob: 0.0282 G: 0.5905 D(G(z)): 1.1086 / 0.5905 loss_imitate: 0.3823 loss_diversity: 1.0409
+[4/100][360/1000] D: 0.8334 D_prob: 0.0307 G: 0.6164 D(G(z)): 0.8334 / 0.6164 loss_imitate: 0.4449 loss_diversity: 0.8573
+[4/100][400/1000] D: 1.0257 D_prob: 0.0197 G: 0.5367 D(G(z)): 1.0257 / 0.5367 loss_imitate: 0.3730 loss_diversity: 0.8184
+[4/100][440/1000] D: 0.9845 D_prob: 0.0251 G: 0.5559 D(G(z)): 0.9845 / 0.5559 loss_imitate: 0.3865 loss_diversity: 0.8472
+[4/100][480/1000] D: 0.9432 D_prob: 0.0289 G: 0.6071 D(G(z)): 0.9432 / 0.6071 loss_imitate: 0.4101 loss_diversity: 0.9853
+[4/100][520/1000] D: 1.1198 D_prob: 0.0222 G: 0.5569 D(G(z)): 1.1198 / 0.5569 loss_imitate: 0.3393 loss_diversity: 1.0879
+[4/100][560/1000] D: 1.0680 D_prob: 0.0231 G: 0.5551 D(G(z)): 1.0680 / 0.5551 loss_imitate: 0.3536 loss_diversity: 1.0075
+[4/100][600/1000] D: 0.9166 D_prob: 0.0192 G: 0.5985 D(G(z)): 0.9166 / 0.5985 loss_imitate: 0.4196 loss_diversity: 0.8947
+[4/100][640/1000] D: 1.1278 D_prob: 0.0230 G: 0.5046 D(G(z)): 1.1278 / 0.5046 loss_imitate: 0.3345 loss_diversity: 0.8504
+[4/100][680/1000] D: 0.8835 D_prob: 0.0274 G: 0.6125 D(G(z)): 0.8835 / 0.6125 loss_imitate: 0.4286 loss_diversity: 0.9194
+[4/100][720/1000] D: 1.0038 D_prob: 0.0242 G: 0.5487 D(G(z)): 1.0038 / 0.5487 loss_imitate: 0.3804 loss_diversity: 0.8413
+[4/100][760/1000] D: 0.8737 D_prob: 0.0230 G: 0.5735 D(G(z)): 0.8737 / 0.5735 loss_imitate: 0.4282 loss_diversity: 0.7265
+[4/100][800/1000] D: 1.3108 D_prob: 0.0274 G: 0.4300 D(G(z)): 1.3108 / 0.4300 loss_imitate: 0.2820 loss_diversity: 0.7398
+[4/100][840/1000] D: 1.1354 D_prob: 0.0236 G: 0.5191 D(G(z)): 1.1354 / 0.5191 loss_imitate: 0.3384 loss_diversity: 0.9035
+[4/100][880/1000] D: 1.1746 D_prob: 0.0222 G: 0.4596 D(G(z)): 1.1746 / 0.4596 loss_imitate: 0.3227 loss_diversity: 0.6844
+[4/100][920/1000] D: 1.0840 D_prob: 0.0261 G: 0.5412 D(G(z)): 1.0840 / 0.5412 loss_imitate: 0.3603 loss_diversity: 0.9045
+[4/100][960/1000] D: 1.2358 D_prob: 0.0223 G: 0.4532 D(G(z)): 1.2358 / 0.4532 loss_imitate: 0.2978 loss_diversity: 0.7773
+Attack success rate: 3.75 %
+This is the best model
+Accuracy of the network on netD: 25.00 %
+[5/100][0/1000] D: 1.1284 D_prob: 0.0228 G: 0.5102 D(G(z)): 1.1284 / 0.5102 loss_imitate: 0.3414 loss_diversity: 0.8438
+[5/100][40/1000] D: 1.2722 D_prob: 0.0220 G: 0.4510 D(G(z)): 1.2722 / 0.4510 loss_imitate: 0.2977 loss_diversity: 0.7667
+[5/100][80/1000] D: 1.0895 D_prob: 0.0253 G: 0.5072 D(G(z)): 1.0895 / 0.5072 loss_imitate: 0.3508 loss_diversity: 0.7822
+[5/100][120/1000] D: 0.8879 D_prob: 0.0298 G: 0.5317 D(G(z)): 0.8879 / 0.5317 loss_imitate: 0.4232 loss_diversity: 0.5422
+[5/100][160/1000] D: 0.9607 D_prob: 0.0277 G: 0.5475 D(G(z)): 0.9607 / 0.5475 loss_imitate: 0.4104 loss_diversity: 0.6856
+[5/100][200/1000] D: 0.8705 D_prob: 0.0234 G: 0.5725 D(G(z)): 0.8705 / 0.5725 loss_imitate: 0.4313 loss_diversity: 0.7058
+[5/100][240/1000] D: 0.8941 D_prob: 0.0247 G: 0.5658 D(G(z)): 0.8941 / 0.5658 loss_imitate: 0.4215 loss_diversity: 0.7212
+[5/100][280/1000] D: 0.9331 D_prob: 0.0281 G: 0.5357 D(G(z)): 0.9331 / 0.5357 loss_imitate: 0.4135 loss_diversity: 0.6112
+[5/100][320/1000] D: 1.1232 D_prob: 0.0245 G: 0.5163 D(G(z)): 1.1232 / 0.5163 loss_imitate: 0.3490 loss_diversity: 0.8364
+[5/100][360/1000] D: 0.7356 D_prob: 0.0245 G: 0.6316 D(G(z)): 0.7356 / 0.6316 loss_imitate: 0.5036 loss_diversity: 0.6400
+[5/100][400/1000] D: 0.8445 D_prob: 0.0232 G: 0.5565 D(G(z)): 0.8445 / 0.5565 loss_imitate: 0.4397 loss_diversity: 0.5838
+[5/100][440/1000] D: 0.8367 D_prob: 0.0303 G: 0.5555 D(G(z)): 0.8367 / 0.5555 loss_imitate: 0.4464 loss_diversity: 0.5454
+[5/100][480/1000] D: 1.0770 D_prob: 0.0234 G: 0.5139 D(G(z)): 1.0770 / 0.5139 loss_imitate: 0.3500 loss_diversity: 0.8195
+[5/100][520/1000] D: 0.9006 D_prob: 0.0277 G: 0.5326 D(G(z)): 0.9006 / 0.5326 loss_imitate: 0.4218 loss_diversity: 0.5536
+[5/100][560/1000] D: 0.7609 D_prob: 0.0275 G: 0.5897 D(G(z)): 0.7609 / 0.5897 loss_imitate: 0.4811 loss_diversity: 0.5431
+[5/100][600/1000] D: 0.5573 D_prob: 0.0295 G: 0.6878 D(G(z)): 0.5573 / 0.6878 loss_imitate: 0.5806 loss_diversity: 0.5360
+[5/100][640/1000] D: 0.9133 D_prob: 0.0277 G: 0.5578 D(G(z)): 0.9133 / 0.5578 loss_imitate: 0.4243 loss_diversity: 0.6677
+[5/100][680/1000] D: 0.7684 D_prob: 0.0244 G: 0.6152 D(G(z)): 0.7684 / 0.6152 loss_imitate: 0.4792 loss_diversity: 0.6799
+[5/100][720/1000] D: 1.0273 D_prob: 0.0278 G: 0.5614 D(G(z)): 1.0273 / 0.5614 loss_imitate: 0.3894 loss_diversity: 0.8598
+[5/100][760/1000] D: 1.3643 D_prob: 0.0194 G: 0.4749 D(G(z)): 1.3643 / 0.4749 loss_imitate: 0.2688 loss_diversity: 1.0304
+[5/100][800/1000] D: 0.9796 D_prob: 0.0179 G: 0.5434 D(G(z)): 0.9796 / 0.5434 loss_imitate: 0.3875 loss_diversity: 0.7797
+[5/100][840/1000] D: 0.9252 D_prob: 0.0220 G: 0.5495 D(G(z)): 0.9252 / 0.5495 loss_imitate: 0.4335 loss_diversity: 0.5798
+[5/100][880/1000] D: 0.7878 D_prob: 0.0254 G: 0.6070 D(G(z)): 0.7878 / 0.6070 loss_imitate: 0.4813 loss_diversity: 0.6285
+[5/100][920/1000] D: 0.8162 D_prob: 0.0308 G: 0.5921 D(G(z)): 0.8162 / 0.5921 loss_imitate: 0.4728 loss_diversity: 0.5963
+[5/100][960/1000] D: 0.9420 D_prob: 0.0317 G: 0.5279 D(G(z)): 0.9420 / 0.5279 loss_imitate: 0.4104 loss_diversity: 0.5875
+Attack success rate: 4.75 %
+This is the best model
+Accuracy of the network on netD: 36.60 %
+This is the best model
+[6/100][0/1000] D: 0.7758 D_prob: 0.0330 G: 0.5755 D(G(z)): 0.7758 / 0.5755 loss_imitate: 0.4707 loss_diversity: 0.5244
+[6/100][40/1000] D: 0.7585 D_prob: 0.0320 G: 0.6176 D(G(z)): 0.7585 / 0.6176 loss_imitate: 0.5059 loss_diversity: 0.5586
+[6/100][80/1000] D: 0.8093 D_prob: 0.0288 G: 0.5730 D(G(z)): 0.8093 / 0.5730 loss_imitate: 0.4539 loss_diversity: 0.5957
+[6/100][120/1000] D: 0.7450 D_prob: 0.0280 G: 0.5906 D(G(z)): 0.7450 / 0.5906 loss_imitate: 0.4904 loss_diversity: 0.5007
+[6/100][160/1000] D: 0.5291 D_prob: 0.0299 G: 0.6772 D(G(z)): 0.5291 / 0.6772 loss_imitate: 0.6022 loss_diversity: 0.3750
+[6/100][200/1000] D: 0.7101 D_prob: 0.0272 G: 0.6036 D(G(z)): 0.7101 / 0.6036 loss_imitate: 0.5021 loss_diversity: 0.5072
+[6/100][240/1000] D: 0.9086 D_prob: 0.0262 G: 0.5422 D(G(z)): 0.9086 / 0.5422 loss_imitate: 0.4127 loss_diversity: 0.6471
+[6/100][280/1000] D: 0.7523 D_prob: 0.0290 G: 0.6056 D(G(z)): 0.7523 / 0.6056 loss_imitate: 0.5063 loss_diversity: 0.4964
+[6/100][320/1000] D: 0.7268 D_prob: 0.0306 G: 0.6637 D(G(z)): 0.7268 / 0.6637 loss_imitate: 0.5033 loss_diversity: 0.8022
+[6/100][360/1000] D: 1.0074 D_prob: 0.0301 G: 0.5221 D(G(z)): 1.0074 / 0.5221 loss_imitate: 0.3869 loss_diversity: 0.6764
+[6/100][400/1000] D: 0.6423 D_prob: 0.0293 G: 0.6403 D(G(z)): 0.6423 / 0.6403 loss_imitate: 0.5370 loss_diversity: 0.5167
+[6/100][440/1000] D: 0.8792 D_prob: 0.0292 G: 0.5573 D(G(z)): 0.8792 / 0.5573 loss_imitate: 0.4369 loss_diversity: 0.6024
+[6/100][480/1000] D: 1.0357 D_prob: 0.0255 G: 0.4866 D(G(z)): 1.0357 / 0.4866 loss_imitate: 0.3722 loss_diversity: 0.5719
+[6/100][520/1000] D: 0.8020 D_prob: 0.0260 G: 0.5880 D(G(z)): 0.8020 / 0.5880 loss_imitate: 0.4596 loss_diversity: 0.6420
+[6/100][560/1000] D: 0.8395 D_prob: 0.0242 G: 0.5725 D(G(z)): 0.8395 / 0.5725 loss_imitate: 0.4523 loss_diversity: 0.6010
+[6/100][600/1000] D: 0.9455 D_prob: 0.0308 G: 0.5161 D(G(z)): 0.9455 / 0.5161 loss_imitate: 0.3982 loss_diversity: 0.5894
+[6/100][640/1000] D: 0.8585 D_prob: 0.0313 G: 0.5448 D(G(z)): 0.8585 / 0.5448 loss_imitate: 0.4369 loss_diversity: 0.5390
+[6/100][680/1000] D: 0.8040 D_prob: 0.0286 G: 0.5655 D(G(z)): 0.8040 / 0.5655 loss_imitate: 0.4629 loss_diversity: 0.5130
+[6/100][720/1000] D: 1.0388 D_prob: 0.0264 G: 0.5087 D(G(z)): 1.0388 / 0.5087 loss_imitate: 0.3688 loss_diversity: 0.6997
+[6/100][760/1000] D: 0.8110 D_prob: 0.0316 G: 0.6229 D(G(z)): 0.8110 / 0.6229 loss_imitate: 0.4660 loss_diversity: 0.7845
+[6/100][800/1000] D: 0.7990 D_prob: 0.0268 G: 0.5937 D(G(z)): 0.7990 / 0.5937 loss_imitate: 0.4571 loss_diversity: 0.6830
+[6/100][840/1000] D: 1.0394 D_prob: 0.0261 G: 0.4969 D(G(z)): 1.0394 / 0.4969 loss_imitate: 0.3654 loss_diversity: 0.6573
+[6/100][880/1000] D: 0.8971 D_prob: 0.0267 G: 0.5403 D(G(z)): 0.8971 / 0.5403 loss_imitate: 0.4224 loss_diversity: 0.5892
+[6/100][920/1000] D: 0.8501 D_prob: 0.0255 G: 0.5563 D(G(z)): 0.8501 / 0.5563 loss_imitate: 0.4349 loss_diversity: 0.6066
+[6/100][960/1000] D: 0.8138 D_prob: 0.0291 G: 0.6157 D(G(z)): 0.8138 / 0.6157 loss_imitate: 0.4593 loss_diversity: 0.7821
+Attack success rate: 4.65 %
+Accuracy of the network on netD: 31.05 %
+[7/100][0/1000] D: 0.9658 D_prob: 0.0261 G: 0.5390 D(G(z)): 0.9658 / 0.5390 loss_imitate: 0.3974 loss_diversity: 0.7079
+[7/100][40/1000] D: 0.7066 D_prob: 0.0241 G: 0.6104 D(G(z)): 0.7066 / 0.6104 loss_imitate: 0.4974 loss_diversity: 0.5650
+[7/100][80/1000] D: 0.7881 D_prob: 0.0261 G: 0.5919 D(G(z)): 0.7881 / 0.5919 loss_imitate: 0.4643 loss_diversity: 0.6381
+[7/100][120/1000] D: 0.8487 D_prob: 0.0283 G: 0.6065 D(G(z)): 0.8487 / 0.6065 loss_imitate: 0.4681 loss_diversity: 0.6920
+[7/100][160/1000] D: 0.8524 D_prob: 0.0222 G: 0.5793 D(G(z)): 0.8524 / 0.5793 loss_imitate: 0.4489 loss_diversity: 0.6519
+[7/100][200/1000] D: 0.6651 D_prob: 0.0287 G: 0.6465 D(G(z)): 0.6651 / 0.6465 loss_imitate: 0.5380 loss_diversity: 0.5427
+[7/100][240/1000] D: 0.9827 D_prob: 0.0247 G: 0.5248 D(G(z)): 0.9827 / 0.5248 loss_imitate: 0.3878 loss_diversity: 0.6853
+[7/100][280/1000] D: 0.8806 D_prob: 0.0268 G: 0.5779 D(G(z)): 0.8806 / 0.5779 loss_imitate: 0.4305 loss_diversity: 0.7370
+[7/100][320/1000] D: 0.7323 D_prob: 0.0296 G: 0.6057 D(G(z)): 0.7323 / 0.6057 loss_imitate: 0.5014 loss_diversity: 0.5213
+[7/100][360/1000] D: 0.9961 D_prob: 0.0268 G: 0.5267 D(G(z)): 0.9961 / 0.5267 loss_imitate: 0.3945 loss_diversity: 0.6607
+[7/100][400/1000] D: 0.9167 D_prob: 0.0224 G: 0.5419 D(G(z)): 0.9167 / 0.5419 loss_imitate: 0.4066 loss_diversity: 0.6767
+[7/100][440/1000] D: 0.9122 D_prob: 0.0174 G: 0.5637 D(G(z)): 0.9122 / 0.5637 loss_imitate: 0.4173 loss_diversity: 0.7318
+[7/100][480/1000] D: 0.8704 D_prob: 0.0215 G: 0.6033 D(G(z)): 0.8704 / 0.6033 loss_imitate: 0.4365 loss_diversity: 0.8341
+[7/100][520/1000] D: 1.1439 D_prob: 0.0162 G: 0.5397 D(G(z)): 1.1439 / 0.5397 loss_imitate: 0.3319 loss_diversity: 1.0389
+[7/100][560/1000] D: 1.3301 D_prob: 0.0181 G: 0.4651 D(G(z)): 1.3301 / 0.4651 loss_imitate: 0.2768 loss_diversity: 0.9417
+[7/100][600/1000] D: 1.0440 D_prob: 0.0196 G: 0.5285 D(G(z)): 1.0440 / 0.5285 loss_imitate: 0.3631 loss_diversity: 0.8268
+[7/100][640/1000] D: 1.0721 D_prob: 0.0204 G: 0.5112 D(G(z)): 1.0721 / 0.5112 loss_imitate: 0.3527 loss_diversity: 0.7925
+[7/100][680/1000] D: 0.9907 D_prob: 0.0206 G: 0.5362 D(G(z)): 0.9907 / 0.5362 loss_imitate: 0.3815 loss_diversity: 0.7731
+[7/100][720/1000] D: 0.7842 D_prob: 0.0235 G: 0.6161 D(G(z)): 0.7842 / 0.6161 loss_imitate: 0.4763 loss_diversity: 0.6990
+[7/100][760/1000] D: 0.8828 D_prob: 0.0244 G: 0.5569 D(G(z)): 0.8828 / 0.5569 loss_imitate: 0.4188 loss_diversity: 0.6904
+[7/100][800/1000] D: 0.9052 D_prob: 0.0242 G: 0.5223 D(G(z)): 0.9052 / 0.5223 loss_imitate: 0.4189 loss_diversity: 0.5166
+[7/100][840/1000] D: 1.0865 D_prob: 0.0221 G: 0.4953 D(G(z)): 1.0865 / 0.4953 loss_imitate: 0.3608 loss_diversity: 0.6727
+[7/100][880/1000] D: 0.8777 D_prob: 0.0269 G: 0.5618 D(G(z)): 0.8777 / 0.5618 loss_imitate: 0.4596 loss_diversity: 0.5113
+[7/100][920/1000] D: 0.7568 D_prob: 0.0287 G: 0.5728 D(G(z)): 0.7568 / 0.5728 loss_imitate: 0.4826 loss_diversity: 0.4509
+[7/100][960/1000] D: 0.7869 D_prob: 0.0272 G: 0.5604 D(G(z)): 0.7869 / 0.5604 loss_imitate: 0.4710 loss_diversity: 0.4473
+Attack success rate: 6.50 %
+This is the best model
+Accuracy of the network on netD: 37.90 %
+This is the best model
+[8/100][0/1000] D: 0.6852 D_prob: 0.0281 G: 0.6135 D(G(z)): 0.6852 / 0.6135 loss_imitate: 0.5251 loss_diversity: 0.4418
+[8/100][40/1000] D: 0.7560 D_prob: 0.0273 G: 0.6121 D(G(z)): 0.7560 / 0.6121 loss_imitate: 0.4795 loss_diversity: 0.6628
+[8/100][80/1000] D: 0.6857 D_prob: 0.0295 G: 0.6242 D(G(z)): 0.6857 / 0.6242 loss_imitate: 0.5162 loss_diversity: 0.5401
+[8/100][120/1000] D: 0.5715 D_prob: 0.0290 G: 0.6597 D(G(z)): 0.5715 / 0.6597 loss_imitate: 0.5763 loss_diversity: 0.4171
+[8/100][160/1000] D: 0.6132 D_prob: 0.0290 G: 0.6790 D(G(z)): 0.6132 / 0.6790 loss_imitate: 0.5671 loss_diversity: 0.5594
+[8/100][200/1000] D: 0.6096 D_prob: 0.0261 G: 0.7013 D(G(z)): 0.6096 / 0.7013 loss_imitate: 0.5808 loss_diversity: 0.6027
+[8/100][240/1000] D: 0.6628 D_prob: 0.0255 G: 0.6408 D(G(z)): 0.6628 / 0.6408 loss_imitate: 0.5388 loss_diversity: 0.5096
+[8/100][280/1000] D: 0.5792 D_prob: 0.0282 G: 0.6757 D(G(z)): 0.5792 / 0.6757 loss_imitate: 0.5642 loss_diversity: 0.5577
+[8/100][320/1000] D: 0.8671 D_prob: 0.0264 G: 0.5625 D(G(z)): 0.8671 / 0.5625 loss_imitate: 0.4647 loss_diversity: 0.4889
+[8/100][360/1000] D: 0.8179 D_prob: 0.0256 G: 0.5733 D(G(z)): 0.8179 / 0.5733 loss_imitate: 0.4589 loss_diversity: 0.5720
+[8/100][400/1000] D: 0.9595 D_prob: 0.0229 G: 0.5530 D(G(z)): 0.9595 / 0.5530 loss_imitate: 0.4029 loss_diversity: 0.7506
+[8/100][440/1000] D: 1.0947 D_prob: 0.0206 G: 0.4922 D(G(z)): 1.0947 / 0.4922 loss_imitate: 0.3515 loss_diversity: 0.7034
+[8/100][480/1000] D: 0.9027 D_prob: 0.0213 G: 0.5775 D(G(z)): 0.9027 / 0.5775 loss_imitate: 0.4342 loss_diversity: 0.7168
+[8/100][520/1000] D: 0.7023 D_prob: 0.0254 G: 0.6323 D(G(z)): 0.7023 / 0.6323 loss_imitate: 0.5101 loss_diversity: 0.6108
+[8/100][560/1000] D: 0.7774 D_prob: 0.0268 G: 0.5743 D(G(z)): 0.7774 / 0.5743 loss_imitate: 0.4682 loss_diversity: 0.5305
+[8/100][600/1000] D: 0.6348 D_prob: 0.0239 G: 0.6427 D(G(z)): 0.6348 / 0.6427 loss_imitate: 0.5371 loss_diversity: 0.5281
+[8/100][640/1000] D: 0.7339 D_prob: 0.0268 G: 0.5741 D(G(z)): 0.7339 / 0.5741 loss_imitate: 0.4895 loss_diversity: 0.4227
+[8/100][680/1000] D: 0.7187 D_prob: 0.0236 G: 0.6097 D(G(z)): 0.7187 / 0.6097 loss_imitate: 0.4967 loss_diversity: 0.5648
+[8/100][720/1000] D: 0.7466 D_prob: 0.0251 G: 0.5997 D(G(z)): 0.7466 / 0.5997 loss_imitate: 0.4843 loss_diversity: 0.5767
+[8/100][760/1000] D: 0.6335 D_prob: 0.0234 G: 0.6658 D(G(z)): 0.6335 / 0.6658 loss_imitate: 0.5410 loss_diversity: 0.6241
+[8/100][800/1000] D: 1.1469 D_prob: 0.0233 G: 0.4782 D(G(z)): 1.1469 / 0.4782 loss_imitate: 0.3338 loss_diversity: 0.7218
+[8/100][840/1000] D: 0.9214 D_prob: 0.0229 G: 0.5481 D(G(z)): 0.9214 / 0.5481 loss_imitate: 0.4082 loss_diversity: 0.6994
+[8/100][880/1000] D: 0.9547 D_prob: 0.0238 G: 0.5466 D(G(z)): 0.9547 / 0.5466 loss_imitate: 0.3982 loss_diversity: 0.7418
+[8/100][920/1000] D: 0.8240 D_prob: 0.0214 G: 0.5884 D(G(z)): 0.8240 / 0.5884 loss_imitate: 0.4520 loss_diversity: 0.6820
+[8/100][960/1000] D: 0.8443 D_prob: 0.0191 G: 0.5709 D(G(z)): 0.8443 / 0.5709 loss_imitate: 0.4499 loss_diversity: 0.6051
+Attack success rate: 6.25 %
+Accuracy of the network on netD: 41.20 %
+This is the best model
+[9/100][0/1000] D: 1.0324 D_prob: 0.0234 G: 0.4802 D(G(z)): 1.0324 / 0.4802 loss_imitate: 0.3695 loss_diversity: 0.5538
+[9/100][40/1000] D: 0.7247 D_prob: 0.0252 G: 0.5878 D(G(z)): 0.7247 / 0.5878 loss_imitate: 0.4966 loss_diversity: 0.4562
+[9/100][80/1000] D: 0.8161 D_prob: 0.0216 G: 0.5698 D(G(z)): 0.8161 / 0.5698 loss_imitate: 0.4787 loss_diversity: 0.4555
+[9/100][120/1000] D: 0.9904 D_prob: 0.0237 G: 0.5343 D(G(z)): 0.9904 / 0.5343 loss_imitate: 0.3915 loss_diversity: 0.7140
+[9/100][160/1000] D: 0.8366 D_prob: 0.0241 G: 0.5662 D(G(z)): 0.8366 / 0.5662 loss_imitate: 0.4437 loss_diversity: 0.6127
+[9/100][200/1000] D: 0.9334 D_prob: 0.0196 G: 0.5655 D(G(z)): 0.9334 / 0.5655 loss_imitate: 0.4157 loss_diversity: 0.7492
+[9/100][240/1000] D: 0.9199 D_prob: 0.0232 G: 0.5358 D(G(z)): 0.9199 / 0.5358 loss_imitate: 0.4172 loss_diversity: 0.5926
+[9/100][280/1000] D: 0.6656 D_prob: 0.0230 G: 0.6621 D(G(z)): 0.6656 / 0.6621 loss_imitate: 0.5346 loss_diversity: 0.6377
+[9/100][320/1000] D: 0.8238 D_prob: 0.0241 G: 0.5858 D(G(z)): 0.8238 / 0.5858 loss_imitate: 0.4588 loss_diversity: 0.6350
+[9/100][360/1000] D: 0.8506 D_prob: 0.0230 G: 0.5596 D(G(z)): 0.8506 / 0.5596 loss_imitate: 0.4479 loss_diversity: 0.5582
+[9/100][400/1000] D: 0.7717 D_prob: 0.0203 G: 0.5964 D(G(z)): 0.7717 / 0.5964 loss_imitate: 0.4727 loss_diversity: 0.6187
+[9/100][440/1000] D: 0.8967 D_prob: 0.0214 G: 0.5768 D(G(z)): 0.8967 / 0.5768 loss_imitate: 0.4178 loss_diversity: 0.7949
+[9/100][480/1000] D: 0.9359 D_prob: 0.0186 G: 0.5141 D(G(z)): 0.9359 / 0.5141 loss_imitate: 0.4044 loss_diversity: 0.5481
+[9/100][520/1000] D: 0.7576 D_prob: 0.0194 G: 0.6226 D(G(z)): 0.7576 / 0.6226 loss_imitate: 0.4772 loss_diversity: 0.7270
+[9/100][560/1000] D: 0.5903 D_prob: 0.0239 G: 0.6559 D(G(z)): 0.5903 / 0.6559 loss_imitate: 0.5764 loss_diversity: 0.3973
+[9/100][600/1000] D: 0.5813 D_prob: 0.0245 G: 0.6647 D(G(z)): 0.5813 / 0.6647 loss_imitate: 0.5700 loss_diversity: 0.4732
+[9/100][640/1000] D: 0.7336 D_prob: 0.0227 G: 0.6066 D(G(z)): 0.7336 / 0.6066 loss_imitate: 0.5057 loss_diversity: 0.5044
+[9/100][680/1000] D: 0.7584 D_prob: 0.0262 G: 0.5649 D(G(z)): 0.7584 / 0.5649 loss_imitate: 0.4773 loss_diversity: 0.4382
+[9/100][720/1000] D: 0.7149 D_prob: 0.0264 G: 0.5912 D(G(z)): 0.7149 / 0.5912 loss_imitate: 0.5115 loss_diversity: 0.3988
+[9/100][760/1000] D: 0.6589 D_prob: 0.0260 G: 0.6157 D(G(z)): 0.6589 / 0.6157 loss_imitate: 0.5483 loss_diversity: 0.3373
+[9/100][800/1000] D: 0.8730 D_prob: 0.0261 G: 0.5609 D(G(z)): 0.8730 / 0.5609 loss_imitate: 0.4406 loss_diversity: 0.6016
+[9/100][840/1000] D: 0.7478 D_prob: 0.0231 G: 0.5660 D(G(z)): 0.7478 / 0.5660 loss_imitate: 0.4843 loss_diversity: 0.4086
+[9/100][880/1000] D: 0.7661 D_prob: 0.0237 G: 0.5720 D(G(z)): 0.7661 / 0.5720 loss_imitate: 0.4731 loss_diversity: 0.4944
+[9/100][920/1000] D: 0.7837 D_prob: 0.0302 G: 0.5383 D(G(z)): 0.7837 / 0.5383 loss_imitate: 0.4789 loss_diversity: 0.2972
+[9/100][960/1000] D: 0.5355 D_prob: 0.0286 G: 0.6714 D(G(z)): 0.5355 / 0.6714 loss_imitate: 0.6158 loss_diversity: 0.2781
+Attack success rate: 9.00 %
+This is the best model
+Accuracy of the network on netD: 44.00 %
+This is the best model
+[10/100][0/1000] D: 0.6994 D_prob: 0.0288 G: 0.5948 D(G(z)): 0.6994 / 0.5948 loss_imitate: 0.5188 loss_diversity: 0.3802
+[10/100][40/1000] D: 0.7826 D_prob: 0.0242 G: 0.5714 D(G(z)): 0.7826 / 0.5714 loss_imitate: 0.4685 loss_diversity: 0.5146
+[10/100][80/1000] D: 0.6969 D_prob: 0.0233 G: 0.6106 D(G(z)): 0.6969 / 0.6106 loss_imitate: 0.5024 loss_diversity: 0.5412
+[10/100][120/1000] D: 0.6656 D_prob: 0.0258 G: 0.6332 D(G(z)): 0.6656 / 0.6332 loss_imitate: 0.5230 loss_diversity: 0.5509
+[10/100][160/1000] D: 0.8794 D_prob: 0.0215 G: 0.5515 D(G(z)): 0.8794 / 0.5515 loss_imitate: 0.4353 loss_diversity: 0.5812
+[10/100][200/1000] D: 0.7944 D_prob: 0.0224 G: 0.5802 D(G(z)): 0.7944 / 0.5802 loss_imitate: 0.4666 loss_diversity: 0.5681
+[10/100][240/1000] D: 0.7800 D_prob: 0.0208 G: 0.5961 D(G(z)): 0.7800 / 0.5961 loss_imitate: 0.4700 loss_diversity: 0.6307
+[10/100][280/1000] D: 0.5933 D_prob: 0.0237 G: 0.6473 D(G(z)): 0.5933 / 0.6473 loss_imitate: 0.5620 loss_diversity: 0.4265
+[10/100][320/1000] D: 0.6183 D_prob: 0.0257 G: 0.6409 D(G(z)): 0.6183 / 0.6409 loss_imitate: 0.5510 loss_diversity: 0.4494
+[10/100][360/1000] D: 0.9743 D_prob: 0.0245 G: 0.5072 D(G(z)): 0.9743 / 0.5072 loss_imitate: 0.4003 loss_diversity: 0.5345
+[10/100][400/1000] D: 0.7680 D_prob: 0.0255 G: 0.5864 D(G(z)): 0.7680 / 0.5864 loss_imitate: 0.4862 loss_diversity: 0.5011
+[10/100][440/1000] D: 0.5928 D_prob: 0.0236 G: 0.6510 D(G(z)): 0.5928 / 0.6510 loss_imitate: 0.5742 loss_diversity: 0.3840
+[10/100][480/1000] D: 0.7195 D_prob: 0.0249 G: 0.6092 D(G(z)): 0.7195 / 0.6092 loss_imitate: 0.5072 loss_diversity: 0.5101
+[10/100][520/1000] D: 0.7298 D_prob: 0.0240 G: 0.5758 D(G(z)): 0.7298 / 0.5758 loss_imitate: 0.4949 loss_diversity: 0.4045
+[10/100][560/1000] D: 0.8305 D_prob: 0.0238 G: 0.5661 D(G(z)): 0.8305 / 0.5661 loss_imitate: 0.4439 loss_diversity: 0.6109
+[10/100][600/1000] D: 0.8626 D_prob: 0.0212 G: 0.5551 D(G(z)): 0.8626 / 0.5551 loss_imitate: 0.4497 loss_diversity: 0.5270
+[10/100][640/1000] D: 0.6058 D_prob: 0.0227 G: 0.6400 D(G(z)): 0.6058 / 0.6400 loss_imitate: 0.5574 loss_diversity: 0.4132
+[10/100][680/1000] D: 0.6512 D_prob: 0.0239 G: 0.6087 D(G(z)): 0.6512 / 0.6087 loss_imitate: 0.5257 loss_diversity: 0.4147
+[10/100][720/1000] D: 0.7050 D_prob: 0.0274 G: 0.5943 D(G(z)): 0.7050 / 0.5943 loss_imitate: 0.5106 loss_diversity: 0.4184
+[10/100][760/1000] D: 0.5830 D_prob: 0.0245 G: 0.6878 D(G(z)): 0.5830 / 0.6878 loss_imitate: 0.5963 loss_diversity: 0.4576
+[10/100][800/1000] D: 0.7507 D_prob: 0.0251 G: 0.5923 D(G(z)): 0.7507 / 0.5923 loss_imitate: 0.4861 loss_diversity: 0.5311
+[10/100][840/1000] D: 0.6341 D_prob: 0.0267 G: 0.6327 D(G(z)): 0.6341 / 0.6327 loss_imitate: 0.5476 loss_diversity: 0.4254
+[10/100][880/1000] D: 0.5978 D_prob: 0.0216 G: 0.6517 D(G(z)): 0.5978 / 0.6517 loss_imitate: 0.5626 loss_diversity: 0.4455
+[10/100][920/1000] D: 0.9635 D_prob: 0.0218 G: 0.5205 D(G(z)): 0.9635 / 0.5205 loss_imitate: 0.3987 loss_diversity: 0.6090
+[10/100][960/1000] D: 0.6102 D_prob: 0.0204 G: 0.6404 D(G(z)): 0.6102 / 0.6404 loss_imitate: 0.5538 loss_diversity: 0.4331
+Attack success rate: 5.90 %
+Accuracy of the network on netD: 50.75 %
+This is the best model
+[11/100][0/1000] D: 0.6887 D_prob: 0.0258 G: 0.6230 D(G(z)): 0.6887 / 0.6230 loss_imitate: 0.5304 loss_diversity: 0.4631
+[11/100][40/1000] D: 0.8690 D_prob: 0.0268 G: 0.5378 D(G(z)): 0.8690 / 0.5378 loss_imitate: 0.4415 loss_diversity: 0.4814
+[11/100][80/1000] D: 0.7264 D_prob: 0.0236 G: 0.6164 D(G(z)): 0.7264 / 0.6164 loss_imitate: 0.4952 loss_diversity: 0.6058
+[11/100][120/1000] D: 0.9752 D_prob: 0.0233 G: 0.4957 D(G(z)): 0.9752 / 0.4957 loss_imitate: 0.3936 loss_diversity: 0.5102
+[11/100][160/1000] D: 0.8221 D_prob: 0.0277 G: 0.5444 D(G(z)): 0.8221 / 0.5444 loss_imitate: 0.4568 loss_diversity: 0.4381
+[11/100][200/1000] D: 0.6795 D_prob: 0.0230 G: 0.6212 D(G(z)): 0.6795 / 0.6212 loss_imitate: 0.5193 loss_diversity: 0.5093
+[11/100][240/1000] D: 0.7883 D_prob: 0.0215 G: 0.5739 D(G(z)): 0.7883 / 0.5739 loss_imitate: 0.4764 loss_diversity: 0.4873
+[11/100][280/1000] D: 0.6716 D_prob: 0.0264 G: 0.5903 D(G(z)): 0.6716 / 0.5903 loss_imitate: 0.5202 loss_diversity: 0.3505
+[11/100][320/1000] D: 0.5912 D_prob: 0.0237 G: 0.6618 D(G(z)): 0.5912 / 0.6618 loss_imitate: 0.5825 loss_diversity: 0.3966
+[11/100][360/1000] D: 0.5888 D_prob: 0.0271 G: 0.6747 D(G(z)): 0.5888 / 0.6747 loss_imitate: 0.5713 loss_diversity: 0.5170
+[11/100][400/1000] D: 0.7754 D_prob: 0.0211 G: 0.5884 D(G(z)): 0.7754 / 0.5884 loss_imitate: 0.4732 loss_diversity: 0.5763
+[11/100][440/1000] D: 0.5705 D_prob: 0.0231 G: 0.6644 D(G(z)): 0.5705 / 0.6644 loss_imitate: 0.5839 loss_diversity: 0.4022
+[11/100][480/1000] D: 0.7133 D_prob: 0.0211 G: 0.6370 D(G(z)): 0.7133 / 0.6370 loss_imitate: 0.5263 loss_diversity: 0.5539
+[11/100][520/1000] D: 0.7104 D_prob: 0.0282 G: 0.5898 D(G(z)): 0.7104 / 0.5898 loss_imitate: 0.5068 loss_diversity: 0.4153
+[11/100][560/1000] D: 0.4702 D_prob: 0.0238 G: 0.7278 D(G(z)): 0.4702 / 0.7278 loss_imitate: 0.6524 loss_diversity: 0.3767
+[11/100][600/1000] D: 0.7060 D_prob: 0.0251 G: 0.6200 D(G(z)): 0.7060 / 0.6200 loss_imitate: 0.5084 loss_diversity: 0.5581
+[11/100][640/1000] D: 0.5659 D_prob: 0.0200 G: 0.7039 D(G(z)): 0.5659 / 0.7039 loss_imitate: 0.5973 loss_diversity: 0.5329
+[11/100][680/1000] D: 0.6967 D_prob: 0.0213 G: 0.6339 D(G(z)): 0.6967 / 0.6339 loss_imitate: 0.5448 loss_diversity: 0.4456
+[11/100][720/1000] D: 0.9013 D_prob: 0.0238 G: 0.5345 D(G(z)): 0.9013 / 0.5345 loss_imitate: 0.4342 loss_diversity: 0.5018
+[11/100][760/1000] D: 0.6504 D_prob: 0.0244 G: 0.6410 D(G(z)): 0.6504 / 0.6410 loss_imitate: 0.5371 loss_diversity: 0.5195
+[11/100][800/1000] D: 0.6458 D_prob: 0.0249 G: 0.6280 D(G(z)): 0.6458 / 0.6280 loss_imitate: 0.5394 loss_diversity: 0.4429
+[11/100][840/1000] D: 0.6432 D_prob: 0.0246 G: 0.6249 D(G(z)): 0.6432 / 0.6249 loss_imitate: 0.5417 loss_diversity: 0.4162
+[11/100][880/1000] D: 0.6305 D_prob: 0.0281 G: 0.6383 D(G(z)): 0.6305 / 0.6383 loss_imitate: 0.5399 loss_diversity: 0.4921
+[11/100][920/1000] D: 0.9947 D_prob: 0.0232 G: 0.5613 D(G(z)): 0.9947 / 0.5613 loss_imitate: 0.4076 loss_diversity: 0.7687
+[11/100][960/1000] D: 0.7067 D_prob: 0.0189 G: 0.6261 D(G(z)): 0.7067 / 0.6261 loss_imitate: 0.4993 loss_diversity: 0.6341
+Attack success rate: 6.60 %
+Accuracy of the network on netD: 59.45 %
+This is the best model
+[12/100][0/1000] D: 0.7711 D_prob: 0.0219 G: 0.5578 D(G(z)): 0.7711 / 0.5578 loss_imitate: 0.4706 loss_diversity: 0.4359
+[12/100][40/1000] D: 0.6094 D_prob: 0.0241 G: 0.6355 D(G(z)): 0.6094 / 0.6355 loss_imitate: 0.5577 loss_diversity: 0.3890
+[12/100][80/1000] D: 0.8020 D_prob: 0.0240 G: 0.5450 D(G(z)): 0.8020 / 0.5450 loss_imitate: 0.4696 loss_diversity: 0.3769
+[12/100][120/1000] D: 0.7182 D_prob: 0.0192 G: 0.6096 D(G(z)): 0.7182 / 0.6096 loss_imitate: 0.5090 loss_diversity: 0.5033
+[12/100][160/1000] D: 0.6506 D_prob: 0.0222 G: 0.6375 D(G(z)): 0.6506 / 0.6375 loss_imitate: 0.5328 loss_diversity: 0.5236
+[12/100][200/1000] D: 1.0325 D_prob: 0.0194 G: 0.6169 D(G(z)): 1.0325 / 0.6169 loss_imitate: 0.4599 loss_diversity: 0.7853
+[12/100][240/1000] D: 0.7492 D_prob: 0.0223 G: 0.6176 D(G(z)): 0.7492 / 0.6176 loss_imitate: 0.5270 loss_diversity: 0.4527
+[12/100][280/1000] D: 0.6160 D_prob: 0.0219 G: 0.6581 D(G(z)): 0.6160 / 0.6581 loss_imitate: 0.5748 loss_diversity: 0.4162
+[12/100][320/1000] D: 0.4538 D_prob: 0.0247 G: 0.7194 D(G(z)): 0.4538 / 0.7194 loss_imitate: 0.6586 loss_diversity: 0.3037
+[12/100][360/1000] D: 0.5233 D_prob: 0.0305 G: 0.6423 D(G(z)): 0.5233 / 0.6423 loss_imitate: 0.6019 loss_diversity: 0.2019
+[12/100][400/1000] D: 0.4748 D_prob: 0.0257 G: 0.6979 D(G(z)): 0.4748 / 0.6979 loss_imitate: 0.6498 loss_diversity: 0.2404
+[12/100][440/1000] D: 0.4615 D_prob: 0.0249 G: 0.7158 D(G(z)): 0.4615 / 0.7158 loss_imitate: 0.6462 loss_diversity: 0.3479
+[12/100][480/1000] D: 0.5277 D_prob: 0.0236 G: 0.7255 D(G(z)): 0.5277 / 0.7255 loss_imitate: 0.5991 loss_diversity: 0.6320
+[12/100][520/1000] D: 0.6166 D_prob: 0.0219 G: 0.6376 D(G(z)): 0.6166 / 0.6376 loss_imitate: 0.5566 loss_diversity: 0.4050
+[12/100][560/1000] D: 0.3384 D_prob: 0.0226 G: 0.7621 D(G(z)): 0.3384 / 0.7621 loss_imitate: 0.7266 loss_diversity: 0.1779
+[12/100][600/1000] D: 0.3197 D_prob: 0.0230 G: 0.7684 D(G(z)): 0.3197 / 0.7684 loss_imitate: 0.7420 loss_diversity: 0.1321
+[12/100][640/1000] D: 0.5316 D_prob: 0.0231 G: 0.6743 D(G(z)): 0.5316 / 0.6743 loss_imitate: 0.6018 loss_diversity: 0.3624
+[12/100][680/1000] D: 0.5390 D_prob: 0.0238 G: 0.6838 D(G(z)): 0.5390 / 0.6838 loss_imitate: 0.6293 loss_diversity: 0.2721
+[12/100][720/1000] D: 0.4755 D_prob: 0.0225 G: 0.7069 D(G(z)): 0.4755 / 0.7069 loss_imitate: 0.6306 loss_diversity: 0.3816
+[12/100][760/1000] D: 0.5643 D_prob: 0.0191 G: 0.6546 D(G(z)): 0.5643 / 0.6546 loss_imitate: 0.5803 loss_diversity: 0.3716
+[12/100][800/1000] D: 0.4758 D_prob: 0.0232 G: 0.6930 D(G(z)): 0.4758 / 0.6930 loss_imitate: 0.6364 loss_diversity: 0.2829
+[12/100][840/1000] D: 0.4720 D_prob: 0.0249 G: 0.7134 D(G(z)): 0.4720 / 0.7134 loss_imitate: 0.6544 loss_diversity: 0.2948
+[12/100][880/1000] D: 0.4613 D_prob: 0.0251 G: 0.7060 D(G(z)): 0.4613 / 0.7060 loss_imitate: 0.6388 loss_diversity: 0.3361
+[12/100][920/1000] D: 0.5791 D_prob: 0.0298 G: 0.6452 D(G(z)): 0.5791 / 0.6452 loss_imitate: 0.5807 loss_diversity: 0.3223
+[12/100][960/1000] D: 0.7631 D_prob: 0.0270 G: 0.5831 D(G(z)): 0.7631 / 0.5831 loss_imitate: 0.4936 loss_diversity: 0.4473
+Attack success rate: 5.85 %
+Accuracy of the network on netD: 55.00 %
+[13/100][0/1000] D: 0.4049 D_prob: 0.0272 G: 0.7415 D(G(z)): 0.4049 / 0.7415 loss_imitate: 0.6874 loss_diversity: 0.2705
+[13/100][40/1000] D: 0.3142 D_prob: 0.0305 G: 0.7952 D(G(z)): 0.3142 / 0.7952 loss_imitate: 0.7394 loss_diversity: 0.2793
+[13/100][80/1000] D: 0.3214 D_prob: 0.0218 G: 0.8067 D(G(z)): 0.3214 / 0.8067 loss_imitate: 0.7363 loss_diversity: 0.3519
+[13/100][120/1000] D: 0.4538 D_prob: 0.0248 G: 0.7092 D(G(z)): 0.4538 / 0.7092 loss_imitate: 0.6490 loss_diversity: 0.3008
+[13/100][160/1000] D: 0.7172 D_prob: 0.0216 G: 0.6110 D(G(z)): 0.7172 / 0.6110 loss_imitate: 0.5133 loss_diversity: 0.4886
+[13/100][200/1000] D: 0.4716 D_prob: 0.0244 G: 0.7042 D(G(z)): 0.4716 / 0.7042 loss_imitate: 0.6374 loss_diversity: 0.3344
+[13/100][240/1000] D: 0.6895 D_prob: 0.0222 G: 0.6396 D(G(z)): 0.6895 / 0.6396 loss_imitate: 0.5139 loss_diversity: 0.6286
+[13/100][280/1000] D: 0.4599 D_prob: 0.0227 G: 0.7233 D(G(z)): 0.4599 / 0.7233 loss_imitate: 0.6401 loss_diversity: 0.4157
+[13/100][320/1000] D: 0.5494 D_prob: 0.0244 G: 0.6750 D(G(z)): 0.5494 / 0.6750 loss_imitate: 0.5919 loss_diversity: 0.4150
+[13/100][360/1000] D: 0.5450 D_prob: 0.0228 G: 0.6753 D(G(z)): 0.5450 / 0.6753 loss_imitate: 0.6105 loss_diversity: 0.3241
+[13/100][400/1000] D: 0.6299 D_prob: 0.0199 G: 0.6295 D(G(z)): 0.6299 / 0.6295 loss_imitate: 0.5440 loss_diversity: 0.4275
+[13/100][440/1000] D: 0.7865 D_prob: 0.0159 G: 0.5765 D(G(z)): 0.7865 / 0.5765 loss_imitate: 0.4713 loss_diversity: 0.5259
+[13/100][480/1000] D: 0.6522 D_prob: 0.0227 G: 0.6408 D(G(z)): 0.6522 / 0.6408 loss_imitate: 0.5281 loss_diversity: 0.5636
+[13/100][520/1000] D: 0.6598 D_prob: 0.0228 G: 0.6230 D(G(z)): 0.6598 / 0.6230 loss_imitate: 0.5345 loss_diversity: 0.4424
+[13/100][560/1000] D: 0.5448 D_prob: 0.0205 G: 0.6829 D(G(z)): 0.5448 / 0.6829 loss_imitate: 0.5997 loss_diversity: 0.4160
+[13/100][600/1000] D: 0.7732 D_prob: 0.0239 G: 0.5719 D(G(z)): 0.7732 / 0.5719 loss_imitate: 0.4714 loss_diversity: 0.5026
+[13/100][640/1000] D: 0.6054 D_prob: 0.0216 G: 0.6369 D(G(z)): 0.6054 / 0.6369 loss_imitate: 0.5604 loss_diversity: 0.3826
+[13/100][680/1000] D: 0.8797 D_prob: 0.0217 G: 0.5479 D(G(z)): 0.8797 / 0.5479 loss_imitate: 0.4330 loss_diversity: 0.5745
+[13/100][720/1000] D: 0.5986 D_prob: 0.0192 G: 0.6534 D(G(z)): 0.5986 / 0.6534 loss_imitate: 0.5645 loss_diversity: 0.4443
+[13/100][760/1000] D: 0.7648 D_prob: 0.0221 G: 0.5713 D(G(z)): 0.7648 / 0.5713 loss_imitate: 0.4754 loss_diversity: 0.4793
+[13/100][800/1000] D: 0.5879 D_prob: 0.0222 G: 0.6550 D(G(z)): 0.5879 / 0.6550 loss_imitate: 0.5697 loss_diversity: 0.4266
+[13/100][840/1000] D: 0.7212 D_prob: 0.0223 G: 0.5896 D(G(z)): 0.7212 / 0.5896 loss_imitate: 0.4928 loss_diversity: 0.4841
+[13/100][880/1000] D: 0.7081 D_prob: 0.0221 G: 0.5988 D(G(z)): 0.7081 / 0.5988 loss_imitate: 0.5063 loss_diversity: 0.4620
+[13/100][920/1000] D: 0.7573 D_prob: 0.0193 G: 0.5990 D(G(z)): 0.7573 / 0.5990 loss_imitate: 0.4809 loss_diversity: 0.5906
+[13/100][960/1000] D: 0.7570 D_prob: 0.0214 G: 0.5990 D(G(z)): 0.7570 / 0.5990 loss_imitate: 0.4859 loss_diversity: 0.5655
+Attack success rate: 8.15 %
+Accuracy of the network on netD: 62.35 %
+This is the best model
+[14/100][0/1000] D: 0.7765 D_prob: 0.0239 G: 0.5901 D(G(z)): 0.7765 / 0.5901 loss_imitate: 0.4760 loss_diversity: 0.5710
+[14/100][40/1000] D: 0.7023 D_prob: 0.0211 G: 0.6480 D(G(z)): 0.7023 / 0.6480 loss_imitate: 0.5435 loss_diversity: 0.5223
+[14/100][80/1000] D: 0.5989 D_prob: 0.0223 G: 0.6384 D(G(z)): 0.5989 / 0.6384 loss_imitate: 0.5637 loss_diversity: 0.3732
+[14/100][120/1000] D: 0.8420 D_prob: 0.0188 G: 0.5515 D(G(z)): 0.8420 / 0.5515 loss_imitate: 0.4587 loss_diversity: 0.4639
+[14/100][160/1000] D: 0.7223 D_prob: 0.0223 G: 0.5945 D(G(z)): 0.7223 / 0.5945 loss_imitate: 0.5130 loss_diversity: 0.4077
+[14/100][200/1000] D: 0.8198 D_prob: 0.0251 G: 0.5507 D(G(z)): 0.8198 / 0.5507 loss_imitate: 0.4665 loss_diversity: 0.4211
+[14/100][240/1000] D: 0.7665 D_prob: 0.0215 G: 0.5601 D(G(z)): 0.7665 / 0.5601 loss_imitate: 0.4797 loss_diversity: 0.4016
+[14/100][280/1000] D: 0.6502 D_prob: 0.0261 G: 0.6353 D(G(z)): 0.6502 / 0.6353 loss_imitate: 0.5491 loss_diversity: 0.4308
+[14/100][320/1000] D: 0.5634 D_prob: 0.0235 G: 0.6488 D(G(z)): 0.5634 / 0.6488 loss_imitate: 0.5797 loss_diversity: 0.3456
+[14/100][360/1000] D: 0.9460 D_prob: 0.0214 G: 0.5124 D(G(z)): 0.9460 / 0.5124 loss_imitate: 0.3985 loss_diversity: 0.5697
+[14/100][400/1000] D: 0.6982 D_prob: 0.0209 G: 0.6276 D(G(z)): 0.6982 / 0.6276 loss_imitate: 0.5166 loss_diversity: 0.5553
+[14/100][440/1000] D: 0.7298 D_prob: 0.0200 G: 0.5930 D(G(z)): 0.7298 / 0.5930 loss_imitate: 0.5123 loss_diversity: 0.4035
+[14/100][480/1000] D: 0.6675 D_prob: 0.0217 G: 0.6208 D(G(z)): 0.6675 / 0.6208 loss_imitate: 0.5391 loss_diversity: 0.4082
+[14/100][520/1000] D: 0.5209 D_prob: 0.0220 G: 0.6754 D(G(z)): 0.5209 / 0.6754 loss_imitate: 0.6097 loss_diversity: 0.3284
+[14/100][560/1000] D: 0.8114 D_prob: 0.0237 G: 0.5826 D(G(z)): 0.8114 / 0.5826 loss_imitate: 0.4933 loss_diversity: 0.4462
+[14/100][600/1000] D: 0.4829 D_prob: 0.0211 G: 0.7335 D(G(z)): 0.4829 / 0.7335 loss_imitate: 0.6538 loss_diversity: 0.3984
+[14/100][640/1000] D: 0.8047 D_prob: 0.0226 G: 0.5494 D(G(z)): 0.8047 / 0.5494 loss_imitate: 0.4733 loss_diversity: 0.3803
+[14/100][680/1000] D: 0.6950 D_prob: 0.0223 G: 0.6115 D(G(z)): 0.6950 / 0.6115 loss_imitate: 0.5256 loss_diversity: 0.4296
+[14/100][720/1000] D: 0.5723 D_prob: 0.0179 G: 0.6872 D(G(z)): 0.5723 / 0.6872 loss_imitate: 0.5883 loss_diversity: 0.4943
+[14/100][760/1000] D: 0.5916 D_prob: 0.0208 G: 0.6962 D(G(z)): 0.5916 / 0.6962 loss_imitate: 0.6027 loss_diversity: 0.4672
+[14/100][800/1000] D: 0.5682 D_prob: 0.0246 G: 0.6609 D(G(z)): 0.5682 / 0.6609 loss_imitate: 0.5852 loss_diversity: 0.3781
+[14/100][840/1000] D: 0.3925 D_prob: 0.0248 G: 0.7572 D(G(z)): 0.3925 / 0.7572 loss_imitate: 0.6982 loss_diversity: 0.2949
+[14/100][880/1000] D: 0.4455 D_prob: 0.0245 G: 0.7285 D(G(z)): 0.4455 / 0.7285 loss_imitate: 0.6530 loss_diversity: 0.3775
+[14/100][920/1000] D: 0.6912 D_prob: 0.0262 G: 0.5837 D(G(z)): 0.6912 / 0.5837 loss_imitate: 0.5200 loss_diversity: 0.3183
+[14/100][960/1000] D: 0.5420 D_prob: 0.0277 G: 0.6704 D(G(z)): 0.5420 / 0.6704 loss_imitate: 0.6064 loss_diversity: 0.3200
+Attack success rate: 7.85 %
+Accuracy of the network on netD: 59.95 %
+[15/100][0/1000] D: 0.5942 D_prob: 0.0262 G: 0.6316 D(G(z)): 0.5942 / 0.6316 loss_imitate: 0.5601 loss_diversity: 0.3579
+[15/100][40/1000] D: 0.4558 D_prob: 0.0222 G: 0.7160 D(G(z)): 0.4558 / 0.7160 loss_imitate: 0.6443 loss_diversity: 0.3580
+[15/100][80/1000] D: 0.6863 D_prob: 0.0232 G: 0.5899 D(G(z)): 0.6863 / 0.5899 loss_imitate: 0.5168 loss_diversity: 0.3657
+[15/100][120/1000] D: 0.7246 D_prob: 0.0238 G: 0.6099 D(G(z)): 0.7246 / 0.6099 loss_imitate: 0.4982 loss_diversity: 0.5587
+[15/100][160/1000] D: 0.6037 D_prob: 0.0217 G: 0.6319 D(G(z)): 0.6037 / 0.6319 loss_imitate: 0.5541 loss_diversity: 0.3887
+[15/100][200/1000] D: 0.5246 D_prob: 0.0240 G: 0.6824 D(G(z)): 0.5246 / 0.6824 loss_imitate: 0.6043 loss_diversity: 0.3907
+[15/100][240/1000] D: 0.6443 D_prob: 0.0234 G: 0.6187 D(G(z)): 0.6443 / 0.6187 loss_imitate: 0.5377 loss_diversity: 0.4050
+[15/100][280/1000] D: 0.8102 D_prob: 0.0230 G: 0.5666 D(G(z)): 0.8102 / 0.5666 loss_imitate: 0.4696 loss_diversity: 0.4852
+[15/100][320/1000] D: 0.6235 D_prob: 0.0187 G: 0.6272 D(G(z)): 0.6235 / 0.6272 loss_imitate: 0.5515 loss_diversity: 0.3785
+[15/100][360/1000] D: 0.6661 D_prob: 0.0231 G: 0.6161 D(G(z)): 0.6661 / 0.6161 loss_imitate: 0.5310 loss_diversity: 0.4256
+[15/100][400/1000] D: 0.6705 D_prob: 0.0236 G: 0.6142 D(G(z)): 0.6705 / 0.6142 loss_imitate: 0.5341 loss_diversity: 0.4005
+[15/100][440/1000] D: 0.7575 D_prob: 0.0226 G: 0.5833 D(G(z)): 0.7575 / 0.5833 loss_imitate: 0.4863 loss_diversity: 0.4849
+[15/100][480/1000] D: 0.5822 D_prob: 0.0235 G: 0.6529 D(G(z)): 0.5822 / 0.6529 loss_imitate: 0.5724 loss_diversity: 0.4023
+[15/100][520/1000] D: 0.6682 D_prob: 0.0226 G: 0.6399 D(G(z)): 0.6682 / 0.6399 loss_imitate: 0.5393 loss_diversity: 0.5029
+[15/100][560/1000] D: 0.6448 D_prob: 0.0218 G: 0.6747 D(G(z)): 0.6448 / 0.6747 loss_imitate: 0.5502 loss_diversity: 0.6223
+[15/100][600/1000] D: 0.6107 D_prob: 0.0209 G: 0.6442 D(G(z)): 0.6107 / 0.6442 loss_imitate: 0.5535 loss_diversity: 0.4533
+[15/100][640/1000] D: 0.5665 D_prob: 0.0286 G: 0.6288 D(G(z)): 0.5665 / 0.6288 loss_imitate: 0.5813 loss_diversity: 0.2377
+[15/100][680/1000] D: 0.5376 D_prob: 0.0239 G: 0.6732 D(G(z)): 0.5376 / 0.6732 loss_imitate: 0.6127 loss_diversity: 0.3028
+[15/100][720/1000] D: 0.4482 D_prob: 0.0236 G: 0.7244 D(G(z)): 0.4482 / 0.7244 loss_imitate: 0.6527 loss_diversity: 0.3584
+[15/100][760/1000] D: 0.4378 D_prob: 0.0252 G: 0.7058 D(G(z)): 0.4378 / 0.7058 loss_imitate: 0.6570 loss_diversity: 0.2440
+[15/100][800/1000] D: 0.3166 D_prob: 0.0232 G: 0.7824 D(G(z)): 0.3166 / 0.7824 loss_imitate: 0.7387 loss_diversity: 0.2186
+[15/100][840/1000] D: 0.3118 D_prob: 0.0265 G: 0.8193 D(G(z)): 0.3118 / 0.8193 loss_imitate: 0.7550 loss_diversity: 0.3216
+[15/100][880/1000] D: 0.6476 D_prob: 0.0264 G: 0.6080 D(G(z)): 0.6476 / 0.6080 loss_imitate: 0.5401 loss_diversity: 0.3396
+[15/100][920/1000] D: 0.3996 D_prob: 0.0271 G: 0.7282 D(G(z)): 0.3996 / 0.7282 loss_imitate: 0.6797 loss_diversity: 0.2424
+[15/100][960/1000] D: 0.6178 D_prob: 0.0264 G: 0.6164 D(G(z)): 0.6178 / 0.6164 loss_imitate: 0.5578 loss_diversity: 0.2931
+Attack success rate: 9.15 %
+This is the best model
+Accuracy of the network on netD: 55.60 %
+[16/100][0/1000] D: 0.3466 D_prob: 0.0235 G: 0.7428 D(G(z)): 0.3466 / 0.7428 loss_imitate: 0.7129 loss_diversity: 0.1494
+[16/100][40/1000] D: 0.3369 D_prob: 0.0231 G: 0.7705 D(G(z)): 0.3369 / 0.7705 loss_imitate: 0.7191 loss_diversity: 0.2573
+[16/100][80/1000] D: 0.5179 D_prob: 0.0201 G: 0.6913 D(G(z)): 0.5179 / 0.6913 loss_imitate: 0.6167 loss_diversity: 0.3732
+[16/100][120/1000] D: 0.4801 D_prob: 0.0241 G: 0.6942 D(G(z)): 0.4801 / 0.6942 loss_imitate: 0.6408 loss_diversity: 0.2667
+[16/100][160/1000] D: 0.5906 D_prob: 0.0188 G: 0.6804 D(G(z)): 0.5906 / 0.6804 loss_imitate: 0.5871 loss_diversity: 0.4663
+[16/100][200/1000] D: 0.7631 D_prob: 0.0254 G: 0.5620 D(G(z)): 0.7631 / 0.5620 loss_imitate: 0.4979 loss_diversity: 0.3207
+[16/100][240/1000] D: 0.8268 D_prob: 0.0253 G: 0.5391 D(G(z)): 0.8268 / 0.5391 loss_imitate: 0.4749 loss_diversity: 0.3210
+[16/100][280/1000] D: 0.4927 D_prob: 0.0252 G: 0.7009 D(G(z)): 0.4927 / 0.7009 loss_imitate: 0.6291 loss_diversity: 0.3590
+[16/100][320/1000] D: 0.3665 D_prob: 0.0298 G: 0.7393 D(G(z)): 0.3665 / 0.7393 loss_imitate: 0.7003 loss_diversity: 0.1953
+[16/100][360/1000] D: 0.3255 D_prob: 0.0247 G: 0.7958 D(G(z)): 0.3255 / 0.7958 loss_imitate: 0.7287 loss_diversity: 0.3353
+[16/100][400/1000] D: 0.4750 D_prob: 0.0223 G: 0.7140 D(G(z)): 0.4750 / 0.7140 loss_imitate: 0.6286 loss_diversity: 0.4269
+[16/100][440/1000] D: 0.5650 D_prob: 0.0253 G: 0.6625 D(G(z)): 0.5650 / 0.6625 loss_imitate: 0.6076 loss_diversity: 0.2744
+[16/100][480/1000] D: 0.6203 D_prob: 0.0252 G: 0.6499 D(G(z)): 0.6203 / 0.6499 loss_imitate: 0.5544 loss_diversity: 0.4771
+[16/100][520/1000] D: 0.4059 D_prob: 0.0222 G: 0.7355 D(G(z)): 0.4059 / 0.7355 loss_imitate: 0.6756 loss_diversity: 0.2995
+[16/100][560/1000] D: 0.4474 D_prob: 0.0266 G: 0.6946 D(G(z)): 0.4474 / 0.6946 loss_imitate: 0.6447 loss_diversity: 0.2497
+[16/100][600/1000] D: 0.3983 D_prob: 0.0251 G: 0.7556 D(G(z)): 0.3983 / 0.7556 loss_imitate: 0.6979 loss_diversity: 0.2884
+[16/100][640/1000] D: 0.6809 D_prob: 0.0278 G: 0.5844 D(G(z)): 0.6809 / 0.5844 loss_imitate: 0.5177 loss_diversity: 0.3334
+[16/100][680/1000] D: 0.3392 D_prob: 0.0267 G: 0.7722 D(G(z)): 0.3392 / 0.7722 loss_imitate: 0.7272 loss_diversity: 0.2252
+[16/100][720/1000] D: 0.3861 D_prob: 0.0259 G: 0.7372 D(G(z)): 0.3861 / 0.7372 loss_imitate: 0.7019 loss_diversity: 0.1763
+[16/100][760/1000] D: 0.2963 D_prob: 0.0218 G: 0.8041 D(G(z)): 0.2963 / 0.8041 loss_imitate: 0.7593 loss_diversity: 0.2242
+[16/100][800/1000] D: 0.4222 D_prob: 0.0276 G: 0.7339 D(G(z)): 0.4222 / 0.7339 loss_imitate: 0.6661 loss_diversity: 0.3390
+[16/100][840/1000] D: 0.4394 D_prob: 0.0244 G: 0.7163 D(G(z)): 0.4394 / 0.7163 loss_imitate: 0.6549 loss_diversity: 0.3072
+[16/100][880/1000] D: 0.3255 D_prob: 0.0247 G: 0.7748 D(G(z)): 0.3255 / 0.7748 loss_imitate: 0.7338 loss_diversity: 0.2051
+[16/100][920/1000] D: 0.2632 D_prob: 0.0246 G: 0.8062 D(G(z)): 0.2632 / 0.8062 loss_imitate: 0.7722 loss_diversity: 0.1703
+[16/100][960/1000] D: 0.3468 D_prob: 0.0259 G: 0.7580 D(G(z)): 0.3468 / 0.7580 loss_imitate: 0.7119 loss_diversity: 0.2302
+Attack success rate: 10.95 %
+This is the best model
+Accuracy of the network on netD: 64.40 %
+This is the best model
+[17/100][0/1000] D: 0.2442 D_prob: 0.0245 G: 0.8337 D(G(z)): 0.2442 / 0.8337 loss_imitate: 0.7899 loss_diversity: 0.2192
+[17/100][40/1000] D: 0.3280 D_prob: 0.0235 G: 0.7761 D(G(z)): 0.3280 / 0.7761 loss_imitate: 0.7273 loss_diversity: 0.2442
+[17/100][80/1000] D: 0.5235 D_prob: 0.0260 G: 0.6545 D(G(z)): 0.5235 / 0.6545 loss_imitate: 0.6086 loss_diversity: 0.2295
+[17/100][120/1000] D: 0.3155 D_prob: 0.0218 G: 0.7833 D(G(z)): 0.3155 / 0.7833 loss_imitate: 0.7442 loss_diversity: 0.1957
+[17/100][160/1000] D: 0.3026 D_prob: 0.0223 G: 0.7934 D(G(z)): 0.3026 / 0.7934 loss_imitate: 0.7466 loss_diversity: 0.2339
+[17/100][200/1000] D: 0.3593 D_prob: 0.0234 G: 0.7547 D(G(z)): 0.3593 / 0.7547 loss_imitate: 0.7120 loss_diversity: 0.2135
+[17/100][240/1000] D: 0.3741 D_prob: 0.0210 G: 0.7710 D(G(z)): 0.3741 / 0.7710 loss_imitate: 0.7133 loss_diversity: 0.2885
+[17/100][280/1000] D: 0.3038 D_prob: 0.0221 G: 0.7900 D(G(z)): 0.3038 / 0.7900 loss_imitate: 0.7449 loss_diversity: 0.2256
+[17/100][320/1000] D: 0.4873 D_prob: 0.0214 G: 0.7060 D(G(z)): 0.4873 / 0.7060 loss_imitate: 0.6208 loss_diversity: 0.4257
+[17/100][360/1000] D: 0.3068 D_prob: 0.0236 G: 0.7811 D(G(z)): 0.3068 / 0.7811 loss_imitate: 0.7454 loss_diversity: 0.1787
+[17/100][400/1000] D: 0.3664 D_prob: 0.0221 G: 0.7528 D(G(z)): 0.3664 / 0.7528 loss_imitate: 0.7056 loss_diversity: 0.2361
+[17/100][440/1000] D: 0.2503 D_prob: 0.0233 G: 0.8114 D(G(z)): 0.2503 / 0.8114 loss_imitate: 0.7828 loss_diversity: 0.1430
+[17/100][480/1000] D: 0.4325 D_prob: 0.0251 G: 0.7289 D(G(z)): 0.4325 / 0.7289 loss_imitate: 0.6784 loss_diversity: 0.2522
+[17/100][520/1000] D: 0.3414 D_prob: 0.0276 G: 0.7686 D(G(z)): 0.3414 / 0.7686 loss_imitate: 0.7210 loss_diversity: 0.2383
+[17/100][560/1000] D: 0.2842 D_prob: 0.0254 G: 0.7941 D(G(z)): 0.2842 / 0.7941 loss_imitate: 0.7580 loss_diversity: 0.1806
+[17/100][600/1000] D: 0.2032 D_prob: 0.0241 G: 0.8573 D(G(z)): 0.2032 / 0.8573 loss_imitate: 0.8205 loss_diversity: 0.1841
+[17/100][640/1000] D: 0.3636 D_prob: 0.0253 G: 0.7487 D(G(z)): 0.3636 / 0.7487 loss_imitate: 0.7029 loss_diversity: 0.2290
+[17/100][680/1000] D: 0.4647 D_prob: 0.0264 G: 0.7103 D(G(z)): 0.4647 / 0.7103 loss_imitate: 0.6427 loss_diversity: 0.3377
+[17/100][720/1000] D: 0.3217 D_prob: 0.0234 G: 0.7743 D(G(z)): 0.3217 / 0.7743 loss_imitate: 0.7321 loss_diversity: 0.2109
+[17/100][760/1000] D: 0.4505 D_prob: 0.0213 G: 0.7036 D(G(z)): 0.4505 / 0.7036 loss_imitate: 0.6509 loss_diversity: 0.2635
+[17/100][800/1000] D: 0.5475 D_prob: 0.0240 G: 0.6555 D(G(z)): 0.5475 / 0.6555 loss_imitate: 0.5979 loss_diversity: 0.2881
+[17/100][840/1000] D: 0.2391 D_prob: 0.0240 G: 0.8176 D(G(z)): 0.2391 / 0.8176 loss_imitate: 0.7932 loss_diversity: 0.1220
+[17/100][880/1000] D: 0.2619 D_prob: 0.0265 G: 0.7964 D(G(z)): 0.2619 / 0.7964 loss_imitate: 0.7715 loss_diversity: 0.1245
+[17/100][920/1000] D: 0.4432 D_prob: 0.0273 G: 0.7207 D(G(z)): 0.4432 / 0.7207 loss_imitate: 0.6879 loss_diversity: 0.3389
+[17/100][960/1000] D: 0.3432 D_prob: 0.0250 G: 0.7654 D(G(z)): 0.3432 / 0.7654 loss_imitate: 0.7398 loss_diversity: 0.2641
+Attack success rate: 12.80 %
+This is the best model
+Accuracy of the network on netD: 54.70 %
+[18/100][0/1000] D: 0.2921 D_prob: 0.0275 G: 0.7652 D(G(z)): 0.2921 / 0.7652 loss_imitate: 0.7519 loss_diversity: 0.1375
+[18/100][40/1000] D: 0.5014 D_prob: 0.0242 G: 0.6449 D(G(z)): 0.5014 / 0.6449 loss_imitate: 0.6142 loss_diversity: 0.3168
+[18/100][80/1000] D: 0.3173 D_prob: 0.0260 G: 0.7599 D(G(z)): 0.3173 / 0.7599 loss_imitate: 0.7393 loss_diversity: 0.2124
+[18/100][120/1000] D: 0.3266 D_prob: 0.0249 G: 0.7557 D(G(z)): 0.3266 / 0.7557 loss_imitate: 0.7294 loss_diversity: 0.2718
+[18/100][160/1000] D: 0.3712 D_prob: 0.0250 G: 0.7462 D(G(z)): 0.3712 / 0.7462 loss_imitate: 0.7121 loss_diversity: 0.3522
+[18/100][200/1000] D: 0.5402 D_prob: 0.0270 G: 0.6618 D(G(z)): 0.5402 / 0.6618 loss_imitate: 0.6235 loss_diversity: 0.3957
+[18/100][240/1000] D: 0.5374 D_prob: 0.0310 G: 0.6339 D(G(z)): 0.5374 / 0.6339 loss_imitate: 0.6052 loss_diversity: 0.2965
+[18/100][280/1000] D: 0.3711 D_prob: 0.0285 G: 0.7283 D(G(z)): 0.3711 / 0.7283 loss_imitate: 0.7007 loss_diversity: 0.2854
+[18/100][320/1000] D: 0.3943 D_prob: 0.0306 G: 0.7196 D(G(z)): 0.3943 / 0.7196 loss_imitate: 0.6833 loss_diversity: 0.3747
+[18/100][360/1000] D: 0.3842 D_prob: 0.0316 G: 0.7105 D(G(z)): 0.3842 / 0.7105 loss_imitate: 0.6876 loss_diversity: 0.2368
+[18/100][400/1000] D: 0.2765 D_prob: 0.0331 G: 0.8021 D(G(z)): 0.2765 / 0.8021 loss_imitate: 0.7894 loss_diversity: 0.1312
+[18/100][440/1000] D: 0.3826 D_prob: 0.0329 G: 0.7275 D(G(z)): 0.3826 / 0.7275 loss_imitate: 0.7027 loss_diversity: 0.2479
+[18/100][480/1000] D: 0.3212 D_prob: 0.0262 G: 0.7649 D(G(z)): 0.3212 / 0.7649 loss_imitate: 0.7427 loss_diversity: 0.2219
+[18/100][520/1000] D: 0.4918 D_prob: 0.0255 G: 0.6636 D(G(z)): 0.4918 / 0.6636 loss_imitate: 0.6331 loss_diversity: 0.3049
+[18/100][560/1000] D: 0.3897 D_prob: 0.0286 G: 0.7107 D(G(z)): 0.3897 / 0.7107 loss_imitate: 0.6856 loss_diversity: 0.2515
+[18/100][600/1000] D: 0.4157 D_prob: 0.0274 G: 0.7008 D(G(z)): 0.4157 / 0.7008 loss_imitate: 0.6763 loss_diversity: 0.2445
+[18/100][640/1000] D: 0.5492 D_prob: 0.0249 G: 0.6292 D(G(z)): 0.5492 / 0.6292 loss_imitate: 0.5844 loss_diversity: 0.4479
+[18/100][680/1000] D: 0.4686 D_prob: 0.0280 G: 0.6714 D(G(z)): 0.4686 / 0.6714 loss_imitate: 0.6466 loss_diversity: 0.2479
+[18/100][720/1000] D: 0.6579 D_prob: 0.0284 G: 0.5704 D(G(z)): 0.6579 / 0.5704 loss_imitate: 0.5310 loss_diversity: 0.3947
+[18/100][760/1000] D: 0.8044 D_prob: 0.0236 G: 0.4989 D(G(z)): 0.8044 / 0.4989 loss_imitate: 0.4600 loss_diversity: 0.3894
+[18/100][800/1000] D: 0.4945 D_prob: 0.0242 G: 0.6520 D(G(z)): 0.4945 / 0.6520 loss_imitate: 0.6196 loss_diversity: 0.3235
+[18/100][840/1000] D: 0.4037 D_prob: 0.0255 G: 0.7109 D(G(z)): 0.4037 / 0.7109 loss_imitate: 0.6790 loss_diversity: 0.3201
+[18/100][880/1000] D: 0.7562 D_prob: 0.0263 G: 0.5385 D(G(z)): 0.7562 / 0.5385 loss_imitate: 0.4844 loss_diversity: 0.5416
+[18/100][920/1000] D: 0.4885 D_prob: 0.0267 G: 0.6735 D(G(z)): 0.4885 / 0.6735 loss_imitate: 0.6472 loss_diversity: 0.2627
+[18/100][960/1000] D: 0.5726 D_prob: 0.0229 G: 0.6214 D(G(z)): 0.5726 / 0.6214 loss_imitate: 0.5873 loss_diversity: 0.3411
+Attack success rate: 13.10 %
+This is the best model
+Accuracy of the network on netD: 55.60 %
+[19/100][0/1000] D: 0.5447 D_prob: 0.0254 G: 0.6336 D(G(z)): 0.5447 / 0.6336 loss_imitate: 0.5931 loss_diversity: 0.4048
+[19/100][40/1000] D: 0.5683 D_prob: 0.0255 G: 0.6285 D(G(z)): 0.5683 / 0.6285 loss_imitate: 0.5911 loss_diversity: 0.3747
+[19/100][80/1000] D: 0.5611 D_prob: 0.0242 G: 0.6108 D(G(z)): 0.5611 / 0.6108 loss_imitate: 0.5816 loss_diversity: 0.2920
+[19/100][120/1000] D: 0.7112 D_prob: 0.0239 G: 0.5642 D(G(z)): 0.7112 / 0.5642 loss_imitate: 0.5246 loss_diversity: 0.3968
+[19/100][160/1000] D: 0.3837 D_prob: 0.0305 G: 0.7135 D(G(z)): 0.3837 / 0.7135 loss_imitate: 0.6893 loss_diversity: 0.2419
+[19/100][200/1000] D: 0.3614 D_prob: 0.0301 G: 0.7340 D(G(z)): 0.3614 / 0.7340 loss_imitate: 0.7075 loss_diversity: 0.2653
+[19/100][240/1000] D: 0.2896 D_prob: 0.0291 G: 0.7744 D(G(z)): 0.2896 / 0.7744 loss_imitate: 0.7568 loss_diversity: 0.1764
+[19/100][280/1000] D: 0.3883 D_prob: 0.0344 G: 0.7029 D(G(z)): 0.3883 / 0.7029 loss_imitate: 0.6905 loss_diversity: 0.1239
+[19/100][320/1000] D: 0.3104 D_prob: 0.0328 G: 0.7634 D(G(z)): 0.3104 / 0.7634 loss_imitate: 0.7359 loss_diversity: 0.2745
+[19/100][360/1000] D: 0.8065 D_prob: 0.0287 G: 0.5451 D(G(z)): 0.8065 / 0.5451 loss_imitate: 0.5020 loss_diversity: 0.4312
+[19/100][400/1000] D: 0.7363 D_prob: 0.0285 G: 0.5575 D(G(z)): 0.7363 / 0.5575 loss_imitate: 0.5029 loss_diversity: 0.5466
+[19/100][440/1000] D: 0.7669 D_prob: 0.0302 G: 0.5282 D(G(z)): 0.7669 / 0.5282 loss_imitate: 0.4837 loss_diversity: 0.4452
+[19/100][480/1000] D: 0.5083 D_prob: 0.0282 G: 0.6547 D(G(z)): 0.5083 / 0.6547 loss_imitate: 0.6179 loss_diversity: 0.3688
+[19/100][520/1000] D: 0.4713 D_prob: 0.0270 G: 0.6818 D(G(z)): 0.4713 / 0.6818 loss_imitate: 0.6423 loss_diversity: 0.3960
+[19/100][560/1000] D: 0.6129 D_prob: 0.0263 G: 0.6058 D(G(z)): 0.6129 / 0.6058 loss_imitate: 0.5612 loss_diversity: 0.4462
+[19/100][600/1000] D: 0.5707 D_prob: 0.0314 G: 0.6114 D(G(z)): 0.5707 / 0.6114 loss_imitate: 0.5810 loss_diversity: 0.3042
+[19/100][640/1000] D: 0.4950 D_prob: 0.0320 G: 0.7025 D(G(z)): 0.4950 / 0.7025 loss_imitate: 0.6392 loss_diversity: 0.6333
+[19/100][680/1000] D: 0.2758 D_prob: 0.0312 G: 0.7788 D(G(z)): 0.2758 / 0.7788 loss_imitate: 0.7651 loss_diversity: 0.1375
+[19/100][720/1000] D: 0.3643 D_prob: 0.0332 G: 0.7233 D(G(z)): 0.3643 / 0.7233 loss_imitate: 0.7047 loss_diversity: 0.1865
+[19/100][760/1000] D: 0.3025 D_prob: 0.0277 G: 0.7792 D(G(z)): 0.3025 / 0.7792 loss_imitate: 0.7527 loss_diversity: 0.2656
+[19/100][800/1000] D: 0.4231 D_prob: 0.0305 G: 0.6968 D(G(z)): 0.4231 / 0.6968 loss_imitate: 0.6702 loss_diversity: 0.2656
+[19/100][840/1000] D: 0.6436 D_prob: 0.0291 G: 0.5927 D(G(z)): 0.6436 / 0.5927 loss_imitate: 0.5627 loss_diversity: 0.2996
+[19/100][880/1000] D: 0.3718 D_prob: 0.0276 G: 0.7268 D(G(z)): 0.3718 / 0.7268 loss_imitate: 0.7022 loss_diversity: 0.2464
+[19/100][920/1000] D: 0.4818 D_prob: 0.0305 G: 0.6538 D(G(z)): 0.4818 / 0.6538 loss_imitate: 0.6339 loss_diversity: 0.1992
+[19/100][960/1000] D: 0.3347 D_prob: 0.0304 G: 0.7776 D(G(z)): 0.3347 / 0.7776 loss_imitate: 0.7486 loss_diversity: 0.2904
+Attack success rate: 11.70 %
+Accuracy of the network on netD: 72.00 %
+This is the best model
+[20/100][0/1000] D: 0.4047 D_prob: 0.0297 G: 0.7043 D(G(z)): 0.4047 / 0.7043 loss_imitate: 0.6870 loss_diversity: 0.1732
+[20/100][40/1000] D: 0.5960 D_prob: 0.0285 G: 0.5846 D(G(z)): 0.5960 / 0.5846 loss_imitate: 0.5547 loss_diversity: 0.2987
+[20/100][80/1000] D: 0.7541 D_prob: 0.0269 G: 0.5533 D(G(z)): 0.7541 / 0.5533 loss_imitate: 0.4969 loss_diversity: 0.5648
+[20/100][120/1000] D: 0.4817 D_prob: 0.0291 G: 0.6828 D(G(z)): 0.4817 / 0.6828 loss_imitate: 0.6399 loss_diversity: 0.4292
+[20/100][160/1000] D: 0.9427 D_prob: 0.0343 G: 0.4706 D(G(z)): 0.9427 / 0.4706 loss_imitate: 0.4300 loss_diversity: 0.4068
+[20/100][200/1000] D: 0.5392 D_prob: 0.0285 G: 0.6329 D(G(z)): 0.5392 / 0.6329 loss_imitate: 0.5962 loss_diversity: 0.3672
+[20/100][240/1000] D: 0.7366 D_prob: 0.0325 G: 0.5481 D(G(z)): 0.7366 / 0.5481 loss_imitate: 0.5070 loss_diversity: 0.4113
+[20/100][280/1000] D: 0.8415 D_prob: 0.0282 G: 0.5465 D(G(z)): 0.8415 / 0.5465 loss_imitate: 0.4589 loss_diversity: 0.8766
+[20/100][320/1000] D: 0.8098 D_prob: 0.0236 G: 0.5222 D(G(z)): 0.8098 / 0.5222 loss_imitate: 0.4538 loss_diversity: 0.6850
+[20/100][360/1000] D: 0.9919 D_prob: 0.0258 G: 0.4467 D(G(z)): 0.9919 / 0.4467 loss_imitate: 0.3853 loss_diversity: 0.6137
+[20/100][400/1000] D: 0.8498 D_prob: 0.0263 G: 0.4984 D(G(z)): 0.8498 / 0.4984 loss_imitate: 0.4482 loss_diversity: 0.5025
+[20/100][440/1000] D: 0.7716 D_prob: 0.0236 G: 0.5420 D(G(z)): 0.7716 / 0.5420 loss_imitate: 0.4874 loss_diversity: 0.5473
+[20/100][480/1000] D: 0.8329 D_prob: 0.0233 G: 0.5066 D(G(z)): 0.8329 / 0.5066 loss_imitate: 0.4580 loss_diversity: 0.4870
+[20/100][520/1000] D: 0.6855 D_prob: 0.0225 G: 0.5724 D(G(z)): 0.6855 / 0.5724 loss_imitate: 0.5090 loss_diversity: 0.6347
+[20/100][560/1000] D: 0.7732 D_prob: 0.0278 G: 0.5294 D(G(z)): 0.7732 / 0.5294 loss_imitate: 0.4864 loss_diversity: 0.4299
+[20/100][600/1000] D: 0.6071 D_prob: 0.0266 G: 0.5903 D(G(z)): 0.6071 / 0.5903 loss_imitate: 0.5477 loss_diversity: 0.4261
+[20/100][640/1000] D: 0.6482 D_prob: 0.0298 G: 0.5703 D(G(z)): 0.6482 / 0.5703 loss_imitate: 0.5307 loss_diversity: 0.3963
+[20/100][680/1000] D: 0.5343 D_prob: 0.0307 G: 0.6306 D(G(z)): 0.5343 / 0.6306 loss_imitate: 0.5960 loss_diversity: 0.3469
+[20/100][720/1000] D: 0.4848 D_prob: 0.0281 G: 0.6591 D(G(z)): 0.4848 / 0.6591 loss_imitate: 0.6307 loss_diversity: 0.2841
+[20/100][760/1000] D: 0.6398 D_prob: 0.0277 G: 0.5910 D(G(z)): 0.6398 / 0.5910 loss_imitate: 0.5382 loss_diversity: 0.5281
+[20/100][800/1000] D: 0.5765 D_prob: 0.0338 G: 0.6091 D(G(z)): 0.5765 / 0.6091 loss_imitate: 0.5721 loss_diversity: 0.3710
+[20/100][840/1000] D: 0.4345 D_prob: 0.0295 G: 0.7041 D(G(z)): 0.4345 / 0.7041 loss_imitate: 0.6633 loss_diversity: 0.4091
+[20/100][880/1000] D: 0.6138 D_prob: 0.0292 G: 0.6100 D(G(z)): 0.6138 / 0.6100 loss_imitate: 0.5645 loss_diversity: 0.4553
+[20/100][920/1000] D: 0.7725 D_prob: 0.0294 G: 0.5256 D(G(z)): 0.7725 / 0.5256 loss_imitate: 0.4710 loss_diversity: 0.5461
+[20/100][960/1000] D: 0.7513 D_prob: 0.0320 G: 0.5230 D(G(z)): 0.7513 / 0.5230 loss_imitate: 0.4857 loss_diversity: 0.3732
+Attack success rate: 12.85 %
+Accuracy of the network on netD: 77.05 %
+This is the best model
+[21/100][0/1000] D: 0.3744 D_prob: 0.0343 G: 0.7172 D(G(z)): 0.3744 / 0.7172 loss_imitate: 0.6971 loss_diversity: 0.2012
+[21/100][40/1000] D: 0.5441 D_prob: 0.0345 G: 0.6368 D(G(z)): 0.5441 / 0.6368 loss_imitate: 0.5943 loss_diversity: 0.4251
+[21/100][80/1000] D: 0.7246 D_prob: 0.0303 G: 0.5681 D(G(z)): 0.7246 / 0.5681 loss_imitate: 0.5109 loss_diversity: 0.5723
+[21/100][120/1000] D: 0.7635 D_prob: 0.0276 G: 0.5290 D(G(z)): 0.7635 / 0.5290 loss_imitate: 0.4759 loss_diversity: 0.5313
+[21/100][160/1000] D: 0.6886 D_prob: 0.0316 G: 0.5653 D(G(z)): 0.6886 / 0.5653 loss_imitate: 0.5169 loss_diversity: 0.4849
+[21/100][200/1000] D: 0.6630 D_prob: 0.0341 G: 0.5728 D(G(z)): 0.6630 / 0.5728 loss_imitate: 0.5318 loss_diversity: 0.4100
+[21/100][240/1000] D: 0.5674 D_prob: 0.0316 G: 0.6144 D(G(z)): 0.5674 / 0.6144 loss_imitate: 0.5757 loss_diversity: 0.3878
+[21/100][280/1000] D: 0.2958 D_prob: 0.0356 G: 0.7815 D(G(z)): 0.2958 / 0.7815 loss_imitate: 0.7546 loss_diversity: 0.2692
+[21/100][320/1000] D: 0.4404 D_prob: 0.0412 G: 0.6747 D(G(z)): 0.4404 / 0.6747 loss_imitate: 0.6546 loss_diversity: 0.2006
+[21/100][360/1000] D: 0.5014 D_prob: 0.0360 G: 0.6538 D(G(z)): 0.5014 / 0.6538 loss_imitate: 0.6200 loss_diversity: 0.3387
+[21/100][400/1000] D: 0.4430 D_prob: 0.0353 G: 0.6878 D(G(z)): 0.4430 / 0.6878 loss_imitate: 0.6487 loss_diversity: 0.3906
+[21/100][440/1000] D: 0.4132 D_prob: 0.0324 G: 0.7039 D(G(z)): 0.4132 / 0.7039 loss_imitate: 0.6720 loss_diversity: 0.3186
+[21/100][480/1000] D: 0.4009 D_prob: 0.0384 G: 0.7110 D(G(z)): 0.4009 / 0.7110 loss_imitate: 0.6817 loss_diversity: 0.2932
+[21/100][520/1000] D: 0.6628 D_prob: 0.0389 G: 0.5647 D(G(z)): 0.6628 / 0.5647 loss_imitate: 0.5392 loss_diversity: 0.2555
+[21/100][560/1000] D: 0.5338 D_prob: 0.0388 G: 0.6345 D(G(z)): 0.5338 / 0.6345 loss_imitate: 0.6110 loss_diversity: 0.2351
+[21/100][600/1000] D: 0.8731 D_prob: 0.0326 G: 0.4795 D(G(z)): 0.8731 / 0.4795 loss_imitate: 0.4524 loss_diversity: 0.2715
+[21/100][640/1000] D: 0.5145 D_prob: 0.0385 G: 0.6415 D(G(z)): 0.5145 / 0.6415 loss_imitate: 0.6136 loss_diversity: 0.2794
+[21/100][680/1000] D: 0.3584 D_prob: 0.0361 G: 0.7239 D(G(z)): 0.3584 / 0.7239 loss_imitate: 0.7049 loss_diversity: 0.1903
+[21/100][720/1000] D: 0.3886 D_prob: 0.0362 G: 0.7198 D(G(z)): 0.3886 / 0.7198 loss_imitate: 0.7020 loss_diversity: 0.1785
+[21/100][760/1000] D: 0.4159 D_prob: 0.0387 G: 0.6924 D(G(z)): 0.4159 / 0.6924 loss_imitate: 0.6704 loss_diversity: 0.2203
+[21/100][800/1000] D: 0.5536 D_prob: 0.0341 G: 0.6117 D(G(z)): 0.5536 / 0.6117 loss_imitate: 0.5832 loss_diversity: 0.2856
+[21/100][840/1000] D: 0.5940 D_prob: 0.0364 G: 0.6189 D(G(z)): 0.5940 / 0.6189 loss_imitate: 0.5813 loss_diversity: 0.3763
+[21/100][880/1000] D: 0.8129 D_prob: 0.0361 G: 0.5067 D(G(z)): 0.8129 / 0.5067 loss_imitate: 0.4806 loss_diversity: 0.2616
+[21/100][920/1000] D: 0.4377 D_prob: 0.0317 G: 0.6881 D(G(z)): 0.4377 / 0.6881 loss_imitate: 0.6561 loss_diversity: 0.3207
+[21/100][960/1000] D: 0.5417 D_prob: 0.0306 G: 0.6277 D(G(z)): 0.5417 / 0.6277 loss_imitate: 0.5912 loss_diversity: 0.3654
+Attack success rate: 11.85 %
+Accuracy of the network on netD: 74.20 %
+[22/100][0/1000] D: 0.5066 D_prob: 0.0337 G: 0.6462 D(G(z)): 0.5066 / 0.6462 loss_imitate: 0.6160 loss_diversity: 0.3024
+[22/100][40/1000] D: 0.4668 D_prob: 0.0340 G: 0.6624 D(G(z)): 0.4668 / 0.6624 loss_imitate: 0.6375 loss_diversity: 0.2500
+[22/100][80/1000] D: 0.5942 D_prob: 0.0363 G: 0.6045 D(G(z)): 0.5942 / 0.6045 loss_imitate: 0.5826 loss_diversity: 0.2192
+[22/100][120/1000] D: 0.4657 D_prob: 0.0351 G: 0.6753 D(G(z)): 0.4657 / 0.6753 loss_imitate: 0.6491 loss_diversity: 0.2615
+[22/100][160/1000] D: 0.6977 D_prob: 0.0351 G: 0.5788 D(G(z)): 0.6977 / 0.5788 loss_imitate: 0.5254 loss_diversity: 0.5351
+[22/100][200/1000] D: 0.3937 D_prob: 0.0367 G: 0.7036 D(G(z)): 0.3937 / 0.7036 loss_imitate: 0.6800 loss_diversity: 0.2360
+[22/100][240/1000] D: 0.4967 D_prob: 0.0380 G: 0.6494 D(G(z)): 0.4967 / 0.6494 loss_imitate: 0.6242 loss_diversity: 0.2527
+[22/100][280/1000] D: 0.3684 D_prob: 0.0361 G: 0.7213 D(G(z)): 0.3684 / 0.7213 loss_imitate: 0.6984 loss_diversity: 0.2295
+[22/100][320/1000] D: 0.6535 D_prob: 0.0372 G: 0.5747 D(G(z)): 0.6535 / 0.5747 loss_imitate: 0.5400 loss_diversity: 0.3476
+[22/100][360/1000] D: 0.3308 D_prob: 0.0352 G: 0.7524 D(G(z)): 0.3308 / 0.7524 loss_imitate: 0.7310 loss_diversity: 0.2141
+[22/100][400/1000] D: 0.3249 D_prob: 0.0391 G: 0.7493 D(G(z)): 0.3249 / 0.7493 loss_imitate: 0.7284 loss_diversity: 0.2097
+[22/100][440/1000] D: 0.3952 D_prob: 0.0379 G: 0.7017 D(G(z)): 0.3952 / 0.7017 loss_imitate: 0.6796 loss_diversity: 0.2207
+[22/100][480/1000] D: 0.4502 D_prob: 0.0370 G: 0.6662 D(G(z)): 0.4502 / 0.6662 loss_imitate: 0.6455 loss_diversity: 0.2068
+[22/100][520/1000] D: 0.5081 D_prob: 0.0378 G: 0.6748 D(G(z)): 0.5081 / 0.6748 loss_imitate: 0.6499 loss_diversity: 0.2499
+[22/100][560/1000] D: 0.4524 D_prob: 0.0363 G: 0.6767 D(G(z)): 0.4524 / 0.6767 loss_imitate: 0.6556 loss_diversity: 0.2117
+[22/100][600/1000] D: 0.3586 D_prob: 0.0368 G: 0.7260 D(G(z)): 0.3586 / 0.7260 loss_imitate: 0.7029 loss_diversity: 0.2309
+[22/100][640/1000] D: 0.5752 D_prob: 0.0353 G: 0.6039 D(G(z)): 0.5752 / 0.6039 loss_imitate: 0.5773 loss_diversity: 0.2656
+[22/100][680/1000] D: 0.4071 D_prob: 0.0344 G: 0.7011 D(G(z)): 0.4071 / 0.7011 loss_imitate: 0.6775 loss_diversity: 0.2364
+[22/100][720/1000] D: 0.3219 D_prob: 0.0351 G: 0.7542 D(G(z)): 0.3219 / 0.7542 loss_imitate: 0.7298 loss_diversity: 0.2449
+[22/100][760/1000] D: 0.3836 D_prob: 0.0370 G: 0.7251 D(G(z)): 0.3836 / 0.7251 loss_imitate: 0.7102 loss_diversity: 0.1496
+[22/100][800/1000] D: 0.1929 D_prob: 0.0394 G: 0.8433 D(G(z)): 0.1929 / 0.8433 loss_imitate: 0.8309 loss_diversity: 0.1245
+[22/100][840/1000] D: 0.3473 D_prob: 0.0393 G: 0.7292 D(G(z)): 0.3473 / 0.7292 loss_imitate: 0.7161 loss_diversity: 0.1341
+[22/100][880/1000] D: 0.2561 D_prob: 0.0393 G: 0.8052 D(G(z)): 0.2561 / 0.8052 loss_imitate: 0.7815 loss_diversity: 0.2416
+[22/100][920/1000] D: 0.3094 D_prob: 0.0416 G: 0.7896 D(G(z)): 0.3094 / 0.7896 loss_imitate: 0.7601 loss_diversity: 0.3003
+[22/100][960/1000] D: 0.4192 D_prob: 0.0417 G: 0.7002 D(G(z)): 0.4192 / 0.7002 loss_imitate: 0.6731 loss_diversity: 0.2773
+Attack success rate: 12.10 %
+Accuracy of the network on netD: 71.40 %
+[23/100][0/1000] D: 0.2980 D_prob: 0.0433 G: 0.7635 D(G(z)): 0.2980 / 0.7635 loss_imitate: 0.7470 loss_diversity: 0.1681
+[23/100][40/1000] D: 0.2870 D_prob: 0.0437 G: 0.7759 D(G(z)): 0.2870 / 0.7759 loss_imitate: 0.7618 loss_diversity: 0.1434
+[23/100][80/1000] D: 0.3287 D_prob: 0.0460 G: 0.7437 D(G(z)): 0.3287 / 0.7437 loss_imitate: 0.7330 loss_diversity: 0.1116
+[23/100][120/1000] D: 0.4260 D_prob: 0.0435 G: 0.6883 D(G(z)): 0.4260 / 0.6883 loss_imitate: 0.6763 loss_diversity: 0.1318
+[23/100][160/1000] D: 0.2901 D_prob: 0.0432 G: 0.7709 D(G(z)): 0.2901 / 0.7709 loss_imitate: 0.7590 loss_diversity: 0.1230
+[23/100][200/1000] D: 0.2782 D_prob: 0.0425 G: 0.7834 D(G(z)): 0.2782 / 0.7834 loss_imitate: 0.7670 loss_diversity: 0.1699
+[23/100][240/1000] D: 0.5541 D_prob: 0.0455 G: 0.6123 D(G(z)): 0.5541 / 0.6123 loss_imitate: 0.5981 loss_diversity: 0.1526
+[23/100][280/1000] D: 0.3113 D_prob: 0.0473 G: 0.7472 D(G(z)): 0.3113 / 0.7472 loss_imitate: 0.7354 loss_diversity: 0.1179
+[23/100][320/1000] D: 0.3858 D_prob: 0.0445 G: 0.7118 D(G(z)): 0.3858 / 0.7118 loss_imitate: 0.6844 loss_diversity: 0.2956
+[23/100][360/1000] D: 0.3151 D_prob: 0.0431 G: 0.7536 D(G(z)): 0.3151 / 0.7536 loss_imitate: 0.7369 loss_diversity: 0.1799
+[23/100][400/1000] D: 0.3431 D_prob: 0.0446 G: 0.7288 D(G(z)): 0.3431 / 0.7288 loss_imitate: 0.7122 loss_diversity: 0.1788
+[23/100][440/1000] D: 0.2969 D_prob: 0.0433 G: 0.7745 D(G(z)): 0.2969 / 0.7745 loss_imitate: 0.7543 loss_diversity: 0.2173
+[23/100][480/1000] D: 0.4655 D_prob: 0.0393 G: 0.6727 D(G(z)): 0.4655 / 0.6727 loss_imitate: 0.6585 loss_diversity: 0.1533
+[23/100][520/1000] D: 0.4466 D_prob: 0.0368 G: 0.6810 D(G(z)): 0.4466 / 0.6810 loss_imitate: 0.6555 loss_diversity: 0.2746
+[23/100][560/1000] D: 0.6271 D_prob: 0.0375 G: 0.5724 D(G(z)): 0.6271 / 0.5724 loss_imitate: 0.5447 loss_diversity: 0.2984
+[23/100][600/1000] D: 0.2684 D_prob: 0.0373 G: 0.7843 D(G(z)): 0.2684 / 0.7843 loss_imitate: 0.7695 loss_diversity: 0.1593
+[23/100][640/1000] D: 0.3619 D_prob: 0.0387 G: 0.7278 D(G(z)): 0.3619 / 0.7278 loss_imitate: 0.7146 loss_diversity: 0.1412
+[23/100][680/1000] D: 0.3717 D_prob: 0.0389 G: 0.7180 D(G(z)): 0.3717 / 0.7180 loss_imitate: 0.7049 loss_diversity: 0.1415
+[23/100][720/1000] D: 0.5247 D_prob: 0.0350 G: 0.6408 D(G(z)): 0.5247 / 0.6408 loss_imitate: 0.6141 loss_diversity: 0.2873
+[23/100][760/1000] D: 0.4212 D_prob: 0.0376 G: 0.6949 D(G(z)): 0.4212 / 0.6949 loss_imitate: 0.6684 loss_diversity: 0.2857
+[23/100][800/1000] D: 0.3994 D_prob: 0.0325 G: 0.7039 D(G(z)): 0.3994 / 0.7039 loss_imitate: 0.6841 loss_diversity: 0.2133
+[23/100][840/1000] D: 0.5168 D_prob: 0.0309 G: 0.6434 D(G(z)): 0.5168 / 0.6434 loss_imitate: 0.6054 loss_diversity: 0.4103
+[23/100][880/1000] D: 0.4395 D_prob: 0.0378 G: 0.6821 D(G(z)): 0.4395 / 0.6821 loss_imitate: 0.6577 loss_diversity: 0.2628
+[23/100][920/1000] D: 0.6067 D_prob: 0.0339 G: 0.5986 D(G(z)): 0.6067 / 0.5986 loss_imitate: 0.5612 loss_diversity: 0.4028
+[23/100][960/1000] D: 0.6699 D_prob: 0.0388 G: 0.5579 D(G(z)): 0.6699 / 0.5579 loss_imitate: 0.5272 loss_diversity: 0.3304
+Attack success rate: 14.20 %
+This is the best model
+Accuracy of the network on netD: 74.25 %
+[24/100][0/1000] D: 0.7138 D_prob: 0.0388 G: 0.5458 D(G(z)): 0.7138 / 0.5458 loss_imitate: 0.5067 loss_diversity: 0.4207
+[24/100][40/1000] D: 0.8062 D_prob: 0.0358 G: 0.5313 D(G(z)): 0.8062 / 0.5313 loss_imitate: 0.4847 loss_diversity: 0.5018
+[24/100][80/1000] D: 0.6789 D_prob: 0.0365 G: 0.5559 D(G(z)): 0.6789 / 0.5559 loss_imitate: 0.5274 loss_diversity: 0.3074
+[24/100][120/1000] D: 0.5711 D_prob: 0.0365 G: 0.6201 D(G(z)): 0.5711 / 0.6201 loss_imitate: 0.5835 loss_diversity: 0.3941
+[24/100][160/1000] D: 0.5727 D_prob: 0.0372 G: 0.5956 D(G(z)): 0.5727 / 0.5956 loss_imitate: 0.5748 loss_diversity: 0.2246
+[24/100][200/1000] D: 0.6468 D_prob: 0.0416 G: 0.5645 D(G(z)): 0.6468 / 0.5645 loss_imitate: 0.5376 loss_diversity: 0.2899
+[24/100][240/1000] D: 1.0186 D_prob: 0.0336 G: 0.4332 D(G(z)): 1.0186 / 0.4332 loss_imitate: 0.3816 loss_diversity: 0.5555
+[24/100][280/1000] D: 1.0469 D_prob: 0.0345 G: 0.4297 D(G(z)): 1.0469 / 0.4297 loss_imitate: 0.3825 loss_diversity: 0.5085
+[24/100][320/1000] D: 0.6040 D_prob: 0.0406 G: 0.5854 D(G(z)): 0.6040 / 0.5854 loss_imitate: 0.5534 loss_diversity: 0.3447
+[24/100][360/1000] D: 0.6485 D_prob: 0.0392 G: 0.5675 D(G(z)): 0.6485 / 0.5675 loss_imitate: 0.5301 loss_diversity: 0.4029
+[24/100][400/1000] D: 0.8522 D_prob: 0.0423 G: 0.4869 D(G(z)): 0.8522 / 0.4869 loss_imitate: 0.4576 loss_diversity: 0.3156
+[24/100][440/1000] D: 0.5344 D_prob: 0.0407 G: 0.6265 D(G(z)): 0.5344 / 0.6265 loss_imitate: 0.6042 loss_diversity: 0.2401
+[24/100][480/1000] D: 0.6414 D_prob: 0.0420 G: 0.5811 D(G(z)): 0.6414 / 0.5811 loss_imitate: 0.5427 loss_diversity: 0.4128
+[24/100][520/1000] D: 0.6096 D_prob: 0.0413 G: 0.5812 D(G(z)): 0.6096 / 0.5812 loss_imitate: 0.5497 loss_diversity: 0.3391
+[24/100][560/1000] D: 0.5517 D_prob: 0.0417 G: 0.6154 D(G(z)): 0.5517 / 0.6154 loss_imitate: 0.5889 loss_diversity: 0.2850
+[24/100][600/1000] D: 0.4254 D_prob: 0.0424 G: 0.6833 D(G(z)): 0.4254 / 0.6833 loss_imitate: 0.6589 loss_diversity: 0.2629
+[24/100][640/1000] D: 0.3946 D_prob: 0.0437 G: 0.7045 D(G(z)): 0.3946 / 0.7045 loss_imitate: 0.6864 loss_diversity: 0.1953
+[24/100][680/1000] D: 0.4475 D_prob: 0.0444 G: 0.6791 D(G(z)): 0.4475 / 0.6791 loss_imitate: 0.6552 loss_diversity: 0.2574
+[24/100][720/1000] D: 0.3268 D_prob: 0.0436 G: 0.7436 D(G(z)): 0.3268 / 0.7436 loss_imitate: 0.7266 loss_diversity: 0.1823
+[24/100][760/1000] D: 0.4188 D_prob: 0.0434 G: 0.6838 D(G(z)): 0.4188 / 0.6838 loss_imitate: 0.6661 loss_diversity: 0.1906
+[24/100][800/1000] D: 0.2806 D_prob: 0.0440 G: 0.7729 D(G(z)): 0.2806 / 0.7729 loss_imitate: 0.7607 loss_diversity: 0.1311
+[24/100][840/1000] D: 0.2956 D_prob: 0.0450 G: 0.7641 D(G(z)): 0.2956 / 0.7641 loss_imitate: 0.7504 loss_diversity: 0.1468
+[24/100][880/1000] D: 0.4524 D_prob: 0.0472 G: 0.6575 D(G(z)): 0.4524 / 0.6575 loss_imitate: 0.6427 loss_diversity: 0.1496
+[24/100][920/1000] D: 0.3810 D_prob: 0.0478 G: 0.7043 D(G(z)): 0.3810 / 0.7043 loss_imitate: 0.6918 loss_diversity: 0.1329
+[24/100][960/1000] D: 0.2575 D_prob: 0.0506 G: 0.7845 D(G(z)): 0.2575 / 0.7845 loss_imitate: 0.7772 loss_diversity: 0.0857
+Attack success rate: 10.85 %
+Accuracy of the network on netD: 70.70 %
+[25/100][0/1000] D: 0.4009 D_prob: 0.0442 G: 0.7062 D(G(z)): 0.4009 / 0.7062 loss_imitate: 0.6893 loss_diversity: 0.1761
+[25/100][40/1000] D: 0.7006 D_prob: 0.0431 G: 0.5279 D(G(z)): 0.7006 / 0.5279 loss_imitate: 0.5111 loss_diversity: 0.1754
+[25/100][80/1000] D: 0.3501 D_prob: 0.0418 G: 0.7343 D(G(z)): 0.3501 / 0.7343 loss_imitate: 0.7151 loss_diversity: 0.2000
+[25/100][120/1000] D: 0.3489 D_prob: 0.0418 G: 0.7350 D(G(z)): 0.3489 / 0.7350 loss_imitate: 0.7176 loss_diversity: 0.1819
+[25/100][160/1000] D: 0.3910 D_prob: 0.0406 G: 0.6985 D(G(z)): 0.3910 / 0.6985 loss_imitate: 0.6829 loss_diversity: 0.1632
+[25/100][200/1000] D: 0.5676 D_prob: 0.0426 G: 0.6023 D(G(z)): 0.5676 / 0.6023 loss_imitate: 0.5809 loss_diversity: 0.2237
+[25/100][240/1000] D: 0.4539 D_prob: 0.0428 G: 0.6700 D(G(z)): 0.4539 / 0.6700 loss_imitate: 0.6437 loss_diversity: 0.2742
+[25/100][280/1000] D: 0.3792 D_prob: 0.0438 G: 0.7166 D(G(z)): 0.3792 / 0.7166 loss_imitate: 0.6965 loss_diversity: 0.2097
+[25/100][320/1000] D: 0.7681 D_prob: 0.0383 G: 0.5088 D(G(z)): 0.7681 / 0.5088 loss_imitate: 0.4825 loss_diversity: 0.2747
+[25/100][360/1000] D: 0.2642 D_prob: 0.0417 G: 0.7846 D(G(z)): 0.2642 / 0.7846 loss_imitate: 0.7708 loss_diversity: 0.1443
+[25/100][400/1000] D: 0.2284 D_prob: 0.0410 G: 0.8163 D(G(z)): 0.2284 / 0.8163 loss_imitate: 0.8021 loss_diversity: 0.1535
+[25/100][440/1000] D: 0.3384 D_prob: 0.0412 G: 0.7522 D(G(z)): 0.3384 / 0.7522 loss_imitate: 0.7344 loss_diversity: 0.1930
+[25/100][480/1000] D: 0.5108 D_prob: 0.0346 G: 0.6436 D(G(z)): 0.5108 / 0.6436 loss_imitate: 0.6139 loss_diversity: 0.3215
+[25/100][520/1000] D: 0.3079 D_prob: 0.0383 G: 0.7631 D(G(z)): 0.3079 / 0.7631 loss_imitate: 0.7452 loss_diversity: 0.1932
+[25/100][560/1000] D: 0.5213 D_prob: 0.0423 G: 0.6288 D(G(z)): 0.5213 / 0.6288 loss_imitate: 0.6130 loss_diversity: 0.1709
+[25/100][600/1000] D: 0.5914 D_prob: 0.0413 G: 0.5896 D(G(z)): 0.5914 / 0.5896 loss_imitate: 0.5687 loss_diversity: 0.2264
+[25/100][640/1000] D: 0.4534 D_prob: 0.0396 G: 0.6843 D(G(z)): 0.4534 / 0.6843 loss_imitate: 0.6491 loss_diversity: 0.3816
+[25/100][680/1000] D: 0.4695 D_prob: 0.0387 G: 0.6714 D(G(z)): 0.4695 / 0.6714 loss_imitate: 0.6419 loss_diversity: 0.3203
+[25/100][720/1000] D: 0.3798 D_prob: 0.0318 G: 0.7208 D(G(z)): 0.3798 / 0.7208 loss_imitate: 0.6887 loss_diversity: 0.3478
+[25/100][760/1000] D: 0.5580 D_prob: 0.0272 G: 0.6145 D(G(z)): 0.5580 / 0.6145 loss_imitate: 0.5849 loss_diversity: 0.3213
+[25/100][800/1000] D: 0.5735 D_prob: 0.0269 G: 0.6329 D(G(z)): 0.5735 / 0.6329 loss_imitate: 0.5929 loss_diversity: 0.4331
+[25/100][840/1000] D: 0.6664 D_prob: 0.0273 G: 0.5959 D(G(z)): 0.6664 / 0.5959 loss_imitate: 0.5602 loss_diversity: 0.3869
+[25/100][880/1000] D: 0.3649 D_prob: 0.0325 G: 0.7296 D(G(z)): 0.3649 / 0.7296 loss_imitate: 0.7064 loss_diversity: 0.2517
+[25/100][920/1000] D: 0.6503 D_prob: 0.0285 G: 0.5592 D(G(z)): 0.6503 / 0.5592 loss_imitate: 0.5294 loss_diversity: 0.3228
+[25/100][960/1000] D: 0.7953 D_prob: 0.0242 G: 0.5291 D(G(z)): 0.7953 / 0.5291 loss_imitate: 0.4669 loss_diversity: 0.6740
+Attack success rate: 14.00 %
+Accuracy of the network on netD: 74.60 %
+[26/100][0/1000] D: 0.9357 D_prob: 0.0225 G: 0.4851 D(G(z)): 0.9357 / 0.4851 loss_imitate: 0.4258 loss_diversity: 0.6427
+[26/100][40/1000] D: 0.6624 D_prob: 0.0268 G: 0.5704 D(G(z)): 0.6624 / 0.5704 loss_imitate: 0.5301 loss_diversity: 0.4370
+[26/100][80/1000] D: 0.7739 D_prob: 0.0286 G: 0.5134 D(G(z)): 0.7739 / 0.5134 loss_imitate: 0.4814 loss_diversity: 0.3469
+[26/100][120/1000] D: 0.8427 D_prob: 0.0305 G: 0.4863 D(G(z)): 0.8427 / 0.4863 loss_imitate: 0.4404 loss_diversity: 0.4975
+[26/100][160/1000] D: 0.6689 D_prob: 0.0332 G: 0.5553 D(G(z)): 0.6689 / 0.5553 loss_imitate: 0.5285 loss_diversity: 0.2912
+[26/100][200/1000] D: 0.5800 D_prob: 0.0372 G: 0.5939 D(G(z)): 0.5800 / 0.5939 loss_imitate: 0.5760 loss_diversity: 0.1933
+[26/100][240/1000] D: 0.4213 D_prob: 0.0292 G: 0.7050 D(G(z)): 0.4213 / 0.7050 loss_imitate: 0.6808 loss_diversity: 0.2628
+[26/100][280/1000] D: 0.4962 D_prob: 0.0326 G: 0.6472 D(G(z)): 0.4962 / 0.6472 loss_imitate: 0.6213 loss_diversity: 0.2808
+[26/100][320/1000] D: 0.5882 D_prob: 0.0311 G: 0.5989 D(G(z)): 0.5882 / 0.5989 loss_imitate: 0.5659 loss_diversity: 0.3574
+[26/100][360/1000] D: 0.5444 D_prob: 0.0345 G: 0.6386 D(G(z)): 0.5444 / 0.6386 loss_imitate: 0.6055 loss_diversity: 0.3586
+[26/100][400/1000] D: 0.4498 D_prob: 0.0357 G: 0.6754 D(G(z)): 0.4498 / 0.6754 loss_imitate: 0.6446 loss_diversity: 0.3341
+[26/100][440/1000] D: 0.6886 D_prob: 0.0379 G: 0.5481 D(G(z)): 0.6886 / 0.5481 loss_imitate: 0.5201 loss_diversity: 0.3036
+[26/100][480/1000] D: 0.3580 D_prob: 0.0397 G: 0.7232 D(G(z)): 0.3580 / 0.7232 loss_imitate: 0.7074 loss_diversity: 0.1709
+[26/100][520/1000] D: 0.2681 D_prob: 0.0395 G: 0.7911 D(G(z)): 0.2681 / 0.7911 loss_imitate: 0.7752 loss_diversity: 0.1723
+[26/100][560/1000] D: 0.3789 D_prob: 0.0421 G: 0.7100 D(G(z)): 0.3789 / 0.7100 loss_imitate: 0.6927 loss_diversity: 0.1876
+[26/100][600/1000] D: 0.3431 D_prob: 0.0394 G: 0.7399 D(G(z)): 0.3431 / 0.7399 loss_imitate: 0.7222 loss_diversity: 0.1916
+[26/100][640/1000] D: 0.5591 D_prob: 0.0387 G: 0.6264 D(G(z)): 0.5591 / 0.6264 loss_imitate: 0.5913 loss_diversity: 0.3810
+[26/100][680/1000] D: 0.6796 D_prob: 0.0373 G: 0.5699 D(G(z)): 0.6796 / 0.5699 loss_imitate: 0.5409 loss_diversity: 0.3140
+[26/100][720/1000] D: 0.6455 D_prob: 0.0363 G: 0.5749 D(G(z)): 0.6455 / 0.5749 loss_imitate: 0.5418 loss_diversity: 0.3584
+[26/100][760/1000] D: 0.6029 D_prob: 0.0347 G: 0.5894 D(G(z)): 0.6029 / 0.5894 loss_imitate: 0.5638 loss_diversity: 0.2780
+[26/100][800/1000] D: 0.4374 D_prob: 0.0347 G: 0.6852 D(G(z)): 0.4374 / 0.6852 loss_imitate: 0.6626 loss_diversity: 0.2444
+[26/100][840/1000] D: 0.5125 D_prob: 0.0351 G: 0.6456 D(G(z)): 0.5125 / 0.6456 loss_imitate: 0.6161 loss_diversity: 0.3203
+[26/100][880/1000] D: 0.2356 D_prob: 0.0356 G: 0.8087 D(G(z)): 0.2356 / 0.8087 loss_imitate: 0.7941 loss_diversity: 0.1579
+[26/100][920/1000] D: 0.3790 D_prob: 0.0348 G: 0.7190 D(G(z)): 0.3790 / 0.7190 loss_imitate: 0.6996 loss_diversity: 0.2100
+[26/100][960/1000] D: 0.3049 D_prob: 0.0372 G: 0.7598 D(G(z)): 0.3049 / 0.7598 loss_imitate: 0.7404 loss_diversity: 0.2101
+Attack success rate: 15.30 %
+This is the best model
+Accuracy of the network on netD: 78.10 %
+This is the best model
+[27/100][0/1000] D: 0.2555 D_prob: 0.0393 G: 0.7995 D(G(z)): 0.2555 / 0.7995 loss_imitate: 0.7882 loss_diversity: 0.1226
+[27/100][40/1000] D: 0.2218 D_prob: 0.0399 G: 0.8173 D(G(z)): 0.2218 / 0.8173 loss_imitate: 0.8050 loss_diversity: 0.1340
+[27/100][80/1000] D: 0.4502 D_prob: 0.0373 G: 0.6742 D(G(z)): 0.4502 / 0.6742 loss_imitate: 0.6509 loss_diversity: 0.2520
+[27/100][120/1000] D: 0.4421 D_prob: 0.0426 G: 0.6717 D(G(z)): 0.4421 / 0.6717 loss_imitate: 0.6541 loss_diversity: 0.1908
+[27/100][160/1000] D: 0.3167 D_prob: 0.0445 G: 0.7476 D(G(z)): 0.3167 / 0.7476 loss_imitate: 0.7366 loss_diversity: 0.1200
+[27/100][200/1000] D: 0.2816 D_prob: 0.0430 G: 0.7817 D(G(z)): 0.2816 / 0.7817 loss_imitate: 0.7715 loss_diversity: 0.1106
+[27/100][240/1000] D: 0.2994 D_prob: 0.0437 G: 0.7623 D(G(z)): 0.2994 / 0.7623 loss_imitate: 0.7468 loss_diversity: 0.1695
+[27/100][280/1000] D: 0.4315 D_prob: 0.0380 G: 0.6874 D(G(z)): 0.4315 / 0.6874 loss_imitate: 0.6645 loss_diversity: 0.2488
+[27/100][320/1000] D: 0.2627 D_prob: 0.0403 G: 0.7885 D(G(z)): 0.2627 / 0.7885 loss_imitate: 0.7750 loss_diversity: 0.1473
+[27/100][360/1000] D: 0.3545 D_prob: 0.0399 G: 0.7215 D(G(z)): 0.3545 / 0.7215 loss_imitate: 0.7092 loss_diversity: 0.1307
+[27/100][400/1000] D: 0.3573 D_prob: 0.0380 G: 0.7257 D(G(z)): 0.3573 / 0.7257 loss_imitate: 0.7072 loss_diversity: 0.1953
+[27/100][440/1000] D: 0.4611 D_prob: 0.0399 G: 0.6946 D(G(z)): 0.4611 / 0.6946 loss_imitate: 0.6716 loss_diversity: 0.2438
+[27/100][480/1000] D: 0.2960 D_prob: 0.0451 G: 0.7993 D(G(z)): 0.2960 / 0.7993 loss_imitate: 0.7892 loss_diversity: 0.1067
+[27/100][520/1000] D: 0.2906 D_prob: 0.0471 G: 0.7641 D(G(z)): 0.2906 / 0.7641 loss_imitate: 0.7532 loss_diversity: 0.1162
+[27/100][560/1000] D: 0.2276 D_prob: 0.0426 G: 0.8209 D(G(z)): 0.2276 / 0.8209 loss_imitate: 0.8032 loss_diversity: 0.1780
+[27/100][600/1000] D: 0.3299 D_prob: 0.0429 G: 0.7488 D(G(z)): 0.3299 / 0.7488 loss_imitate: 0.7278 loss_diversity: 0.2096
+[27/100][640/1000] D: 0.4492 D_prob: 0.0455 G: 0.6769 D(G(z)): 0.4492 / 0.6769 loss_imitate: 0.6579 loss_diversity: 0.1897
+[27/100][680/1000] D: 0.2512 D_prob: 0.0465 G: 0.8034 D(G(z)): 0.2512 / 0.8034 loss_imitate: 0.7853 loss_diversity: 0.1812
+[27/100][720/1000] D: 0.4117 D_prob: 0.0468 G: 0.6893 D(G(z)): 0.4117 / 0.6893 loss_imitate: 0.6760 loss_diversity: 0.1339
+[27/100][760/1000] D: 0.3567 D_prob: 0.0458 G: 0.7256 D(G(z)): 0.3567 / 0.7256 loss_imitate: 0.7110 loss_diversity: 0.1471
+[27/100][800/1000] D: 0.2749 D_prob: 0.0488 G: 0.8030 D(G(z)): 0.2749 / 0.8030 loss_imitate: 0.7945 loss_diversity: 0.0934
+[27/100][840/1000] D: 0.1889 D_prob: 0.0477 G: 0.8566 D(G(z)): 0.1889 / 0.8566 loss_imitate: 0.8424 loss_diversity: 0.1469
+[27/100][880/1000] D: 0.3500 D_prob: 0.0478 G: 0.7273 D(G(z)): 0.3500 / 0.7273 loss_imitate: 0.7106 loss_diversity: 0.1727
+[27/100][920/1000] D: 0.2139 D_prob: 0.0475 G: 0.8304 D(G(z)): 0.2139 / 0.8304 loss_imitate: 0.8180 loss_diversity: 0.1317
+[27/100][960/1000] D: 0.2457 D_prob: 0.0443 G: 0.8003 D(G(z)): 0.2457 / 0.8003 loss_imitate: 0.7864 loss_diversity: 0.1565
+Attack success rate: 12.85 %
+Accuracy of the network on netD: 73.20 %
+[28/100][0/1000] D: 0.5799 D_prob: 0.0456 G: 0.6015 D(G(z)): 0.5799 / 0.6015 loss_imitate: 0.5896 loss_diversity: 0.1553
+[28/100][40/1000] D: 0.3370 D_prob: 0.0438 G: 0.7491 D(G(z)): 0.3370 / 0.7491 loss_imitate: 0.7343 loss_diversity: 0.1929
+[28/100][80/1000] D: 0.2628 D_prob: 0.0479 G: 0.7834 D(G(z)): 0.2628 / 0.7834 loss_imitate: 0.7747 loss_diversity: 0.1131
+[28/100][120/1000] D: 0.5230 D_prob: 0.0469 G: 0.6493 D(G(z)): 0.5230 / 0.6493 loss_imitate: 0.6358 loss_diversity: 0.1767
+[28/100][160/1000] D: 0.3990 D_prob: 0.0450 G: 0.7031 D(G(z)): 0.3990 / 0.7031 loss_imitate: 0.6896 loss_diversity: 0.1755
+[28/100][200/1000] D: 0.5297 D_prob: 0.0440 G: 0.6412 D(G(z)): 0.5297 / 0.6412 loss_imitate: 0.6027 loss_diversity: 0.5006
+[28/100][240/1000] D: 0.4440 D_prob: 0.0449 G: 0.6888 D(G(z)): 0.4440 / 0.6888 loss_imitate: 0.6636 loss_diversity: 0.3280
+[28/100][280/1000] D: 0.3833 D_prob: 0.0443 G: 0.7165 D(G(z)): 0.3833 / 0.7165 loss_imitate: 0.7009 loss_diversity: 0.2028
+[28/100][320/1000] D: 0.1823 D_prob: 0.0469 G: 0.8475 D(G(z)): 0.1823 / 0.8475 loss_imitate: 0.8389 loss_diversity: 0.1123
+[28/100][360/1000] D: 0.4192 D_prob: 0.0475 G: 0.7095 D(G(z)): 0.4192 / 0.7095 loss_imitate: 0.6947 loss_diversity: 0.1915
+[28/100][400/1000] D: 0.3602 D_prob: 0.0438 G: 0.7191 D(G(z)): 0.3602 / 0.7191 loss_imitate: 0.7048 loss_diversity: 0.1856
+[28/100][440/1000] D: 0.5416 D_prob: 0.0476 G: 0.6061 D(G(z)): 0.5416 / 0.6061 loss_imitate: 0.5955 loss_diversity: 0.1380
+[28/100][480/1000] D: 0.3306 D_prob: 0.0459 G: 0.7450 D(G(z)): 0.3306 / 0.7450 loss_imitate: 0.7336 loss_diversity: 0.1485
+[28/100][520/1000] D: 0.2695 D_prob: 0.0455 G: 0.7904 D(G(z)): 0.2695 / 0.7904 loss_imitate: 0.7803 loss_diversity: 0.1307
+[28/100][560/1000] D: 0.1966 D_prob: 0.0458 G: 0.8388 D(G(z)): 0.1966 / 0.8388 loss_imitate: 0.8282 loss_diversity: 0.1106
+[28/100][600/1000] D: 0.1920 D_prob: 0.0469 G: 0.8496 D(G(z)): 0.1920 / 0.8496 loss_imitate: 0.8335 loss_diversity: 0.1678
+[28/100][640/1000] D: 0.3781 D_prob: 0.0466 G: 0.7165 D(G(z)): 0.3781 / 0.7165 loss_imitate: 0.6986 loss_diversity: 0.1859
+[28/100][680/1000] D: 0.2621 D_prob: 0.0465 G: 0.7948 D(G(z)): 0.2621 / 0.7948 loss_imitate: 0.7814 loss_diversity: 0.1394
+[28/100][720/1000] D: 0.3155 D_prob: 0.0468 G: 0.7585 D(G(z)): 0.3155 / 0.7585 loss_imitate: 0.7401 loss_diversity: 0.1925
+[28/100][760/1000] D: 0.4021 D_prob: 0.0414 G: 0.7101 D(G(z)): 0.4021 / 0.7101 loss_imitate: 0.6803 loss_diversity: 0.3110
+[28/100][800/1000] D: 0.4277 D_prob: 0.0416 G: 0.6969 D(G(z)): 0.4277 / 0.6969 loss_imitate: 0.6743 loss_diversity: 0.2358
+[28/100][840/1000] D: 0.3764 D_prob: 0.0423 G: 0.7192 D(G(z)): 0.3764 / 0.7192 loss_imitate: 0.6993 loss_diversity: 0.2077
+[28/100][880/1000] D: 0.5647 D_prob: 0.0447 G: 0.6117 D(G(z)): 0.5647 / 0.6117 loss_imitate: 0.5852 loss_diversity: 0.2772
+[28/100][920/1000] D: 0.4555 D_prob: 0.0397 G: 0.6666 D(G(z)): 0.4555 / 0.6666 loss_imitate: 0.6441 loss_diversity: 0.2345
+[28/100][960/1000] D: 0.2671 D_prob: 0.0451 G: 0.7933 D(G(z)): 0.2671 / 0.7933 loss_imitate: 0.7786 loss_diversity: 0.1542
+Attack success rate: 15.10 %
+Accuracy of the network on netD: 79.30 %
+This is the best model
+[29/100][0/1000] D: 0.3354 D_prob: 0.0430 G: 0.7530 D(G(z)): 0.3354 / 0.7530 loss_imitate: 0.7206 loss_diversity: 0.3380
+[29/100][40/1000] D: 0.3914 D_prob: 0.0439 G: 0.7083 D(G(z)): 0.3914 / 0.7083 loss_imitate: 0.6837 loss_diversity: 0.2569
+[29/100][80/1000] D: 0.4879 D_prob: 0.0450 G: 0.6435 D(G(z)): 0.4879 / 0.6435 loss_imitate: 0.6285 loss_diversity: 0.1567
+[29/100][120/1000] D: 0.6323 D_prob: 0.0385 G: 0.5792 D(G(z)): 0.6323 / 0.5792 loss_imitate: 0.5485 loss_diversity: 0.3204
+[29/100][160/1000] D: 0.4536 D_prob: 0.0397 G: 0.7028 D(G(z)): 0.4536 / 0.7028 loss_imitate: 0.6578 loss_diversity: 0.4695
+[29/100][200/1000] D: 0.6912 D_prob: 0.0386 G: 0.5611 D(G(z)): 0.6912 / 0.5611 loss_imitate: 0.5190 loss_diversity: 0.4387
+[29/100][240/1000] D: 0.6185 D_prob: 0.0382 G: 0.5976 D(G(z)): 0.6185 / 0.5976 loss_imitate: 0.5712 loss_diversity: 0.2750
+[29/100][280/1000] D: 0.4907 D_prob: 0.0405 G: 0.6518 D(G(z)): 0.4907 / 0.6518 loss_imitate: 0.6290 loss_diversity: 0.2383
+[29/100][320/1000] D: 0.4926 D_prob: 0.0441 G: 0.6432 D(G(z)): 0.4926 / 0.6432 loss_imitate: 0.6283 loss_diversity: 0.1558
+[29/100][360/1000] D: 0.6238 D_prob: 0.0448 G: 0.5808 D(G(z)): 0.6238 / 0.5808 loss_imitate: 0.5636 loss_diversity: 0.1796
+[29/100][400/1000] D: 0.5509 D_prob: 0.0381 G: 0.6260 D(G(z)): 0.5509 / 0.6260 loss_imitate: 0.5903 loss_diversity: 0.3734
+[29/100][440/1000] D: 0.4530 D_prob: 0.0416 G: 0.6793 D(G(z)): 0.4530 / 0.6793 loss_imitate: 0.6524 loss_diversity: 0.2806
+[29/100][480/1000] D: 0.3750 D_prob: 0.0459 G: 0.7171 D(G(z)): 0.3750 / 0.7171 loss_imitate: 0.6953 loss_diversity: 0.2277
+[29/100][520/1000] D: 0.3704 D_prob: 0.0466 G: 0.7157 D(G(z)): 0.3704 / 0.7157 loss_imitate: 0.6948 loss_diversity: 0.2178
+[29/100][560/1000] D: 0.5266 D_prob: 0.0455 G: 0.6206 D(G(z)): 0.5266 / 0.6206 loss_imitate: 0.6040 loss_diversity: 0.1734
+[29/100][600/1000] D: 0.4498 D_prob: 0.0482 G: 0.6795 D(G(z)): 0.4498 / 0.6795 loss_imitate: 0.6657 loss_diversity: 0.1441
+[29/100][640/1000] D: 0.3959 D_prob: 0.0449 G: 0.7175 D(G(z)): 0.3959 / 0.7175 loss_imitate: 0.6902 loss_diversity: 0.2849
+[29/100][680/1000] D: 0.3124 D_prob: 0.0467 G: 0.7771 D(G(z)): 0.3124 / 0.7771 loss_imitate: 0.7471 loss_diversity: 0.3134
+[29/100][720/1000] D: 0.5584 D_prob: 0.0444 G: 0.6391 D(G(z)): 0.5584 / 0.6391 loss_imitate: 0.6162 loss_diversity: 0.2390
+[29/100][760/1000] D: 0.3518 D_prob: 0.0429 G: 0.7540 D(G(z)): 0.3518 / 0.7540 loss_imitate: 0.7289 loss_diversity: 0.2618
+[29/100][800/1000] D: 0.5322 D_prob: 0.0435 G: 0.6444 D(G(z)): 0.5322 / 0.6444 loss_imitate: 0.6221 loss_diversity: 0.2329
+[29/100][840/1000] D: 0.4735 D_prob: 0.0430 G: 0.6673 D(G(z)): 0.4735 / 0.6673 loss_imitate: 0.6437 loss_diversity: 0.2468
+[29/100][880/1000] D: 0.3289 D_prob: 0.0460 G: 0.7577 D(G(z)): 0.3289 / 0.7577 loss_imitate: 0.7380 loss_diversity: 0.2057
+[29/100][920/1000] D: 0.2587 D_prob: 0.0517 G: 0.7890 D(G(z)): 0.2587 / 0.7890 loss_imitate: 0.7790 loss_diversity: 0.1031
+[29/100][960/1000] D: 0.2447 D_prob: 0.0473 G: 0.8092 D(G(z)): 0.2447 / 0.8092 loss_imitate: 0.7911 loss_diversity: 0.1880
+Attack success rate: 16.65 %
+This is the best model
+Accuracy of the network on netD: 80.00 %
+This is the best model
+[30/100][0/1000] D: 0.3644 D_prob: 0.0451 G: 0.7359 D(G(z)): 0.3644 / 0.7359 loss_imitate: 0.7162 loss_diversity: 0.2049
+[30/100][40/1000] D: 0.2692 D_prob: 0.0494 G: 0.7953 D(G(z)): 0.2692 / 0.7953 loss_imitate: 0.7750 loss_diversity: 0.2112
+[30/100][80/1000] D: 0.5877 D_prob: 0.0436 G: 0.6081 D(G(z)): 0.5877 / 0.6081 loss_imitate: 0.5684 loss_diversity: 0.4119
+[30/100][120/1000] D: 0.4855 D_prob: 0.0468 G: 0.6544 D(G(z)): 0.4855 / 0.6544 loss_imitate: 0.6231 loss_diversity: 0.3251
+[30/100][160/1000] D: 0.2997 D_prob: 0.0507 G: 0.7644 D(G(z)): 0.2997 / 0.7644 loss_imitate: 0.7479 loss_diversity: 0.1718
+[30/100][200/1000] D: 0.2460 D_prob: 0.0484 G: 0.8155 D(G(z)): 0.2460 / 0.8155 loss_imitate: 0.7867 loss_diversity: 0.2986
+[30/100][240/1000] D: 0.2436 D_prob: 0.0470 G: 0.8078 D(G(z)): 0.2436 / 0.8078 loss_imitate: 0.7954 loss_diversity: 0.1323
+[30/100][280/1000] D: 0.1626 D_prob: 0.0473 G: 0.8602 D(G(z)): 0.1626 / 0.8602 loss_imitate: 0.8546 loss_diversity: 0.0796
+[30/100][320/1000] D: 0.2920 D_prob: 0.0489 G: 0.7635 D(G(z)): 0.2920 / 0.7635 loss_imitate: 0.7528 loss_diversity: 0.1145
+[30/100][360/1000] D: 0.1327 D_prob: 0.0502 G: 0.8856 D(G(z)): 0.1327 / 0.8856 loss_imitate: 0.8784 loss_diversity: 0.0840
+[30/100][400/1000] D: 0.1813 D_prob: 0.0501 G: 0.8438 D(G(z)): 0.1813 / 0.8438 loss_imitate: 0.8378 loss_diversity: 0.0688
+[30/100][440/1000] D: 0.2208 D_prob: 0.0502 G: 0.8136 D(G(z)): 0.2208 / 0.8136 loss_imitate: 0.8069 loss_diversity: 0.0782
+[30/100][480/1000] D: 0.1430 D_prob: 0.0504 G: 0.8792 D(G(z)): 0.1430 / 0.8792 loss_imitate: 0.8729 loss_diversity: 0.0731
+[30/100][520/1000] D: 0.2789 D_prob: 0.0504 G: 0.7780 D(G(z)): 0.2789 / 0.7780 loss_imitate: 0.7685 loss_diversity: 0.1149
+[30/100][560/1000] D: 0.3566 D_prob: 0.0445 G: 0.7325 D(G(z)): 0.3566 / 0.7325 loss_imitate: 0.7182 loss_diversity: 0.1579
+[30/100][600/1000] D: 0.2810 D_prob: 0.0458 G: 0.7938 D(G(z)): 0.2810 / 0.7938 loss_imitate: 0.7760 loss_diversity: 0.1819
+[30/100][640/1000] D: 0.2571 D_prob: 0.0499 G: 0.7954 D(G(z)): 0.2571 / 0.7954 loss_imitate: 0.7887 loss_diversity: 0.0870
+[30/100][680/1000] D: 0.2883 D_prob: 0.0461 G: 0.7635 D(G(z)): 0.2883 / 0.7635 loss_imitate: 0.7535 loss_diversity: 0.1169
+[30/100][720/1000] D: 0.1643 D_prob: 0.0466 G: 0.8627 D(G(z)): 0.1643 / 0.8627 loss_imitate: 0.8524 loss_diversity: 0.1202
+[30/100][760/1000] D: 0.2201 D_prob: 0.0486 G: 0.8138 D(G(z)): 0.2201 / 0.8138 loss_imitate: 0.8072 loss_diversity: 0.0823
+[30/100][800/1000] D: 0.2657 D_prob: 0.0499 G: 0.7892 D(G(z)): 0.2657 / 0.7892 loss_imitate: 0.7796 loss_diversity: 0.1037
+[30/100][840/1000] D: 0.2763 D_prob: 0.0500 G: 0.7936 D(G(z)): 0.2763 / 0.7936 loss_imitate: 0.7777 loss_diversity: 0.1751
+[30/100][880/1000] D: 0.2779 D_prob: 0.0475 G: 0.7892 D(G(z)): 0.2779 / 0.7892 loss_imitate: 0.7657 loss_diversity: 0.2401
+[30/100][920/1000] D: 0.1575 D_prob: 0.0502 G: 0.8682 D(G(z)): 0.1575 / 0.8682 loss_imitate: 0.8591 loss_diversity: 0.1130
+[30/100][960/1000] D: 0.1567 D_prob: 0.0516 G: 0.8674 D(G(z)): 0.1567 / 0.8674 loss_imitate: 0.8637 loss_diversity: 0.0591
+Attack success rate: 15.40 %
+Accuracy of the network on netD: 74.00 %
+[31/100][0/1000] D: 0.1966 D_prob: 0.0514 G: 0.8321 D(G(z)): 0.1966 / 0.8321 loss_imitate: 0.8277 loss_diversity: 0.0666
+[31/100][40/1000] D: 0.1456 D_prob: 0.0490 G: 0.8791 D(G(z)): 0.1456 / 0.8791 loss_imitate: 0.8726 loss_diversity: 0.0837
+[31/100][80/1000] D: 0.3204 D_prob: 0.0483 G: 0.7471 D(G(z)): 0.3204 / 0.7471 loss_imitate: 0.7362 loss_diversity: 0.1166
+[31/100][120/1000] D: 0.2024 D_prob: 0.0512 G: 0.8255 D(G(z)): 0.2024 / 0.8255 loss_imitate: 0.8210 loss_diversity: 0.0693
+[31/100][160/1000] D: 0.2543 D_prob: 0.0455 G: 0.8104 D(G(z)): 0.2543 / 0.8104 loss_imitate: 0.7882 loss_diversity: 0.2520
+[31/100][200/1000] D: 0.2507 D_prob: 0.0460 G: 0.8053 D(G(z)): 0.2507 / 0.8053 loss_imitate: 0.7966 loss_diversity: 0.0988
+[31/100][240/1000] D: 0.4525 D_prob: 0.0471 G: 0.6675 D(G(z)): 0.4525 / 0.6675 loss_imitate: 0.6584 loss_diversity: 0.1024
+[31/100][280/1000] D: 0.1332 D_prob: 0.0481 G: 0.8857 D(G(z)): 0.1332 / 0.8857 loss_imitate: 0.8782 loss_diversity: 0.0828
+[31/100][320/1000] D: 0.2700 D_prob: 0.0495 G: 0.7802 D(G(z)): 0.2700 / 0.7802 loss_imitate: 0.7755 loss_diversity: 0.0634
+[31/100][360/1000] D: 0.2220 D_prob: 0.0480 G: 0.8101 D(G(z)): 0.2220 / 0.8101 loss_imitate: 0.8053 loss_diversity: 0.0648
+[31/100][400/1000] D: 0.1951 D_prob: 0.0480 G: 0.8356 D(G(z)): 0.1951 / 0.8356 loss_imitate: 0.8289 loss_diversity: 0.0808
+[31/100][440/1000] D: 0.1304 D_prob: 0.0506 G: 0.8895 D(G(z)): 0.1304 / 0.8895 loss_imitate: 0.8812 loss_diversity: 0.0970
+[31/100][480/1000] D: 0.2829 D_prob: 0.0510 G: 0.7771 D(G(z)): 0.2829 / 0.7771 loss_imitate: 0.7687 loss_diversity: 0.0877
+[31/100][520/1000] D: 0.3299 D_prob: 0.0510 G: 0.7496 D(G(z)): 0.3299 / 0.7496 loss_imitate: 0.7456 loss_diversity: 0.0601
+[31/100][560/1000] D: 0.2119 D_prob: 0.0458 G: 0.8257 D(G(z)): 0.2119 / 0.8257 loss_imitate: 0.8127 loss_diversity: 0.1416
+[31/100][600/1000] D: 0.2184 D_prob: 0.0455 G: 0.8333 D(G(z)): 0.2184 / 0.8333 loss_imitate: 0.8200 loss_diversity: 0.1450
+[31/100][640/1000] D: 0.3211 D_prob: 0.0465 G: 0.7551 D(G(z)): 0.3211 / 0.7551 loss_imitate: 0.7413 loss_diversity: 0.1408
+[31/100][680/1000] D: 0.3050 D_prob: 0.0438 G: 0.7669 D(G(z)): 0.3050 / 0.7669 loss_imitate: 0.7526 loss_diversity: 0.1472
+[31/100][720/1000] D: 0.1334 D_prob: 0.0472 G: 0.8821 D(G(z)): 0.1334 / 0.8821 loss_imitate: 0.8758 loss_diversity: 0.0774
+[31/100][760/1000] D: 0.2854 D_prob: 0.0436 G: 0.7746 D(G(z)): 0.2854 / 0.7746 loss_imitate: 0.7629 loss_diversity: 0.1348
+[31/100][800/1000] D: 0.3286 D_prob: 0.0436 G: 0.7580 D(G(z)): 0.3286 / 0.7580 loss_imitate: 0.7446 loss_diversity: 0.1364
+[31/100][840/1000] D: 0.3016 D_prob: 0.0433 G: 0.7656 D(G(z)): 0.3016 / 0.7656 loss_imitate: 0.7513 loss_diversity: 0.1471
+[31/100][880/1000] D: 0.3717 D_prob: 0.0456 G: 0.7190 D(G(z)): 0.3717 / 0.7190 loss_imitate: 0.7042 loss_diversity: 0.1518
+[31/100][920/1000] D: 0.3243 D_prob: 0.0447 G: 0.7542 D(G(z)): 0.3243 / 0.7542 loss_imitate: 0.7421 loss_diversity: 0.1239
+[31/100][960/1000] D: 0.1840 D_prob: 0.0462 G: 0.8447 D(G(z)): 0.1840 / 0.8447 loss_imitate: 0.8372 loss_diversity: 0.0775
+Attack success rate: 15.10 %
+Accuracy of the network on netD: 70.45 %
+[32/100][0/1000] D: 0.2482 D_prob: 0.0454 G: 0.7958 D(G(z)): 0.2482 / 0.7958 loss_imitate: 0.7858 loss_diversity: 0.1103
+[32/100][40/1000] D: 0.3183 D_prob: 0.0462 G: 0.7475 D(G(z)): 0.3183 / 0.7475 loss_imitate: 0.7337 loss_diversity: 0.1435
+[32/100][80/1000] D: 0.3116 D_prob: 0.0427 G: 0.7592 D(G(z)): 0.3116 / 0.7592 loss_imitate: 0.7438 loss_diversity: 0.1544
+[32/100][120/1000] D: 0.2911 D_prob: 0.0453 G: 0.7671 D(G(z)): 0.2911 / 0.7671 loss_imitate: 0.7546 loss_diversity: 0.1453
+[32/100][160/1000] D: 0.3866 D_prob: 0.0402 G: 0.7073 D(G(z)): 0.3866 / 0.7073 loss_imitate: 0.6869 loss_diversity: 0.2361
+[32/100][200/1000] D: 0.2974 D_prob: 0.0418 G: 0.7665 D(G(z)): 0.2974 / 0.7665 loss_imitate: 0.7514 loss_diversity: 0.1753
+[32/100][240/1000] D: 0.4664 D_prob: 0.0444 G: 0.6587 D(G(z)): 0.4664 / 0.6587 loss_imitate: 0.6357 loss_diversity: 0.2679
+[32/100][280/1000] D: 0.4388 D_prob: 0.0410 G: 0.6973 D(G(z)): 0.4388 / 0.6973 loss_imitate: 0.6724 loss_diversity: 0.2893
+[32/100][320/1000] D: 0.3747 D_prob: 0.0392 G: 0.7158 D(G(z)): 0.3747 / 0.7158 loss_imitate: 0.6947 loss_diversity: 0.2454
+[32/100][360/1000] D: 0.3671 D_prob: 0.0378 G: 0.7226 D(G(z)): 0.3671 / 0.7226 loss_imitate: 0.7055 loss_diversity: 0.1994
+[32/100][400/1000] D: 0.3552 D_prob: 0.0440 G: 0.7389 D(G(z)): 0.3552 / 0.7389 loss_imitate: 0.7195 loss_diversity: 0.2245
+[32/100][440/1000] D: 0.3486 D_prob: 0.0414 G: 0.7342 D(G(z)): 0.3486 / 0.7342 loss_imitate: 0.7176 loss_diversity: 0.1924
+[32/100][480/1000] D: 0.3194 D_prob: 0.0394 G: 0.7564 D(G(z)): 0.3194 / 0.7564 loss_imitate: 0.7361 loss_diversity: 0.2365
+[32/100][520/1000] D: 0.3531 D_prob: 0.0428 G: 0.7280 D(G(z)): 0.3531 / 0.7280 loss_imitate: 0.7094 loss_diversity: 0.2165
+[32/100][560/1000] D: 0.3567 D_prob: 0.0442 G: 0.7275 D(G(z)): 0.3567 / 0.7275 loss_imitate: 0.7054 loss_diversity: 0.2573
+[32/100][600/1000] D: 0.4375 D_prob: 0.0408 G: 0.6871 D(G(z)): 0.4375 / 0.6871 loss_imitate: 0.6680 loss_diversity: 0.2220
+[32/100][640/1000] D: 0.2832 D_prob: 0.0454 G: 0.7795 D(G(z)): 0.2832 / 0.7795 loss_imitate: 0.7670 loss_diversity: 0.1448
+[32/100][680/1000] D: 0.3230 D_prob: 0.0452 G: 0.7586 D(G(z)): 0.3230 / 0.7586 loss_imitate: 0.7454 loss_diversity: 0.1543
+[32/100][720/1000] D: 0.3091 D_prob: 0.0454 G: 0.7559 D(G(z)): 0.3091 / 0.7559 loss_imitate: 0.7398 loss_diversity: 0.1863
+[32/100][760/1000] D: 0.2761 D_prob: 0.0451 G: 0.7857 D(G(z)): 0.2761 / 0.7857 loss_imitate: 0.7726 loss_diversity: 0.1517
+[32/100][800/1000] D: 0.2641 D_prob: 0.0447 G: 0.7899 D(G(z)): 0.2641 / 0.7899 loss_imitate: 0.7756 loss_diversity: 0.1656
+[32/100][840/1000] D: 0.3213 D_prob: 0.0429 G: 0.7757 D(G(z)): 0.3213 / 0.7757 loss_imitate: 0.7509 loss_diversity: 0.2880
+[32/100][880/1000] D: 0.2721 D_prob: 0.0457 G: 0.7823 D(G(z)): 0.2721 / 0.7823 loss_imitate: 0.7693 loss_diversity: 0.1506
+[32/100][920/1000] D: 0.3719 D_prob: 0.0440 G: 0.7466 D(G(z)): 0.3719 / 0.7466 loss_imitate: 0.7256 loss_diversity: 0.2433
+[32/100][960/1000] D: 0.3045 D_prob: 0.0412 G: 0.7659 D(G(z)): 0.3045 / 0.7659 loss_imitate: 0.7490 loss_diversity: 0.1962
+Attack success rate: 15.25 %
+Accuracy of the network on netD: 76.10 %
+[33/100][0/1000] D: 0.4458 D_prob: 0.0435 G: 0.6844 D(G(z)): 0.4458 / 0.6844 loss_imitate: 0.6616 loss_diversity: 0.2652
+[33/100][40/1000] D: 0.4112 D_prob: 0.0454 G: 0.6859 D(G(z)): 0.4112 / 0.6859 loss_imitate: 0.6720 loss_diversity: 0.1617
+[33/100][80/1000] D: 0.3915 D_prob: 0.0409 G: 0.7104 D(G(z)): 0.3915 / 0.7104 loss_imitate: 0.6871 loss_diversity: 0.2704
+[33/100][120/1000] D: 0.3675 D_prob: 0.0427 G: 0.7369 D(G(z)): 0.3675 / 0.7369 loss_imitate: 0.7149 loss_diversity: 0.2562
+[33/100][160/1000] D: 0.2741 D_prob: 0.0425 G: 0.7816 D(G(z)): 0.2741 / 0.7816 loss_imitate: 0.7675 loss_diversity: 0.1633
+[33/100][200/1000] D: 0.3465 D_prob: 0.0424 G: 0.7266 D(G(z)): 0.3465 / 0.7266 loss_imitate: 0.7142 loss_diversity: 0.1441
+[33/100][240/1000] D: 0.4358 D_prob: 0.0435 G: 0.6781 D(G(z)): 0.4358 / 0.6781 loss_imitate: 0.6613 loss_diversity: 0.1952
+[33/100][280/1000] D: 0.3950 D_prob: 0.0426 G: 0.7001 D(G(z)): 0.3950 / 0.7001 loss_imitate: 0.6848 loss_diversity: 0.1786
+[33/100][320/1000] D: 0.5072 D_prob: 0.0349 G: 0.6464 D(G(z)): 0.5072 / 0.6464 loss_imitate: 0.6093 loss_diversity: 0.4317
+[33/100][360/1000] D: 0.4754 D_prob: 0.0334 G: 0.6603 D(G(z)): 0.4754 / 0.6603 loss_imitate: 0.6286 loss_diversity: 0.3677
+[33/100][400/1000] D: 0.4945 D_prob: 0.0321 G: 0.6477 D(G(z)): 0.4945 / 0.6477 loss_imitate: 0.6159 loss_diversity: 0.3695
+[33/100][440/1000] D: 0.5025 D_prob: 0.0335 G: 0.6415 D(G(z)): 0.5025 / 0.6415 loss_imitate: 0.6168 loss_diversity: 0.2874
+[33/100][480/1000] D: 0.3812 D_prob: 0.0367 G: 0.7190 D(G(z)): 0.3812 / 0.7190 loss_imitate: 0.6950 loss_diversity: 0.2799
+[33/100][520/1000] D: 0.3992 D_prob: 0.0373 G: 0.7045 D(G(z)): 0.3992 / 0.7045 loss_imitate: 0.6912 loss_diversity: 0.1548
+[33/100][560/1000] D: 0.3139 D_prob: 0.0377 G: 0.7546 D(G(z)): 0.3139 / 0.7546 loss_imitate: 0.7366 loss_diversity: 0.2099
+[33/100][600/1000] D: 0.5973 D_prob: 0.0432 G: 0.5983 D(G(z)): 0.5973 / 0.5983 loss_imitate: 0.5782 loss_diversity: 0.2335
+[33/100][640/1000] D: 0.3036 D_prob: 0.0426 G: 0.7621 D(G(z)): 0.3036 / 0.7621 loss_imitate: 0.7474 loss_diversity: 0.1707
+[33/100][680/1000] D: 0.3273 D_prob: 0.0433 G: 0.7470 D(G(z)): 0.3273 / 0.7470 loss_imitate: 0.7334 loss_diversity: 0.1583
+[33/100][720/1000] D: 0.2795 D_prob: 0.0458 G: 0.7850 D(G(z)): 0.2795 / 0.7850 loss_imitate: 0.7758 loss_diversity: 0.1062
+[33/100][760/1000] D: 0.2843 D_prob: 0.0444 G: 0.7950 D(G(z)): 0.2843 / 0.7950 loss_imitate: 0.7605 loss_diversity: 0.3637
+[33/100][800/1000] D: 0.4403 D_prob: 0.0350 G: 0.6935 D(G(z)): 0.4403 / 0.6935 loss_imitate: 0.6591 loss_diversity: 0.3617
+[33/100][840/1000] D: 0.4931 D_prob: 0.0367 G: 0.6724 D(G(z)): 0.4931 / 0.6724 loss_imitate: 0.6421 loss_diversity: 0.3189
+[33/100][880/1000] D: 0.3738 D_prob: 0.0424 G: 0.7220 D(G(z)): 0.3738 / 0.7220 loss_imitate: 0.7049 loss_diversity: 0.1810
+[33/100][920/1000] D: 0.4977 D_prob: 0.0421 G: 0.6535 D(G(z)): 0.4977 / 0.6535 loss_imitate: 0.6293 loss_diversity: 0.2547
+[33/100][960/1000] D: 0.5821 D_prob: 0.0360 G: 0.6270 D(G(z)): 0.5821 / 0.6270 loss_imitate: 0.5859 loss_diversity: 0.4331
+Attack success rate: 15.55 %
+Accuracy of the network on netD: 76.05 %
+[34/100][0/1000] D: 0.5210 D_prob: 0.0375 G: 0.6231 D(G(z)): 0.5210 / 0.6231 loss_imitate: 0.6013 loss_diversity: 0.2305
+[34/100][40/1000] D: 0.3949 D_prob: 0.0420 G: 0.7093 D(G(z)): 0.3949 / 0.7093 loss_imitate: 0.6884 loss_diversity: 0.2195
+[34/100][80/1000] D: 0.2502 D_prob: 0.0451 G: 0.8020 D(G(z)): 0.2502 / 0.8020 loss_imitate: 0.7863 loss_diversity: 0.1664
+[34/100][120/1000] D: 0.4269 D_prob: 0.0452 G: 0.6762 D(G(z)): 0.4269 / 0.6762 loss_imitate: 0.6577 loss_diversity: 0.1953
+[34/100][160/1000] D: 0.3852 D_prob: 0.0440 G: 0.7081 D(G(z)): 0.3852 / 0.7081 loss_imitate: 0.6893 loss_diversity: 0.1988
+[34/100][200/1000] D: 0.3841 D_prob: 0.0441 G: 0.7120 D(G(z)): 0.3841 / 0.7120 loss_imitate: 0.6955 loss_diversity: 0.1744
+[34/100][240/1000] D: 0.3491 D_prob: 0.0438 G: 0.7410 D(G(z)): 0.3491 / 0.7410 loss_imitate: 0.7205 loss_diversity: 0.2163
+[34/100][280/1000] D: 0.3554 D_prob: 0.0455 G: 0.7424 D(G(z)): 0.3554 / 0.7424 loss_imitate: 0.7095 loss_diversity: 0.3466
+[34/100][320/1000] D: 0.4796 D_prob: 0.0421 G: 0.6791 D(G(z)): 0.4796 / 0.6791 loss_imitate: 0.6519 loss_diversity: 0.2861
+[34/100][360/1000] D: 0.2651 D_prob: 0.0432 G: 0.7955 D(G(z)): 0.2651 / 0.7955 loss_imitate: 0.7716 loss_diversity: 0.2520
+[34/100][400/1000] D: 0.2250 D_prob: 0.0466 G: 0.8268 D(G(z)): 0.2250 / 0.8268 loss_imitate: 0.8110 loss_diversity: 0.1668
+[34/100][440/1000] D: 0.2531 D_prob: 0.0448 G: 0.8032 D(G(z)): 0.2531 / 0.8032 loss_imitate: 0.7893 loss_diversity: 0.1458
+[34/100][480/1000] D: 0.4648 D_prob: 0.0425 G: 0.6563 D(G(z)): 0.4648 / 0.6563 loss_imitate: 0.6359 loss_diversity: 0.2156
+[34/100][520/1000] D: 0.3621 D_prob: 0.0407 G: 0.7272 D(G(z)): 0.3621 / 0.7272 loss_imitate: 0.7084 loss_diversity: 0.1981
+[34/100][560/1000] D: 0.3413 D_prob: 0.0404 G: 0.7575 D(G(z)): 0.3413 / 0.7575 loss_imitate: 0.7206 loss_diversity: 0.3886
+[34/100][600/1000] D: 0.3842 D_prob: 0.0436 G: 0.7107 D(G(z)): 0.3842 / 0.7107 loss_imitate: 0.6939 loss_diversity: 0.1776
+[34/100][640/1000] D: 0.3664 D_prob: 0.0453 G: 0.7171 D(G(z)): 0.3664 / 0.7171 loss_imitate: 0.7060 loss_diversity: 0.1176
+[34/100][680/1000] D: 0.3149 D_prob: 0.0481 G: 0.7605 D(G(z)): 0.3149 / 0.7605 loss_imitate: 0.7486 loss_diversity: 0.1199
+[34/100][720/1000] D: 0.1902 D_prob: 0.0474 G: 0.8464 D(G(z)): 0.1902 / 0.8464 loss_imitate: 0.8326 loss_diversity: 0.1444
+[34/100][760/1000] D: 0.3325 D_prob: 0.0469 G: 0.7487 D(G(z)): 0.3325 / 0.7487 loss_imitate: 0.7326 loss_diversity: 0.1681
+[34/100][800/1000] D: 0.3459 D_prob: 0.0485 G: 0.7352 D(G(z)): 0.3459 / 0.7352 loss_imitate: 0.7327 loss_diversity: 0.0505
+[34/100][840/1000] D: 0.1337 D_prob: 0.0492 G: 0.8842 D(G(z)): 0.1337 / 0.8842 loss_imitate: 0.8809 loss_diversity: 0.0532
+[34/100][880/1000] D: 0.2457 D_prob: 0.0498 G: 0.7984 D(G(z)): 0.2457 / 0.7984 loss_imitate: 0.7914 loss_diversity: 0.0956
+[34/100][920/1000] D: 0.2940 D_prob: 0.0494 G: 0.7595 D(G(z)): 0.2940 / 0.7595 loss_imitate: 0.7507 loss_diversity: 0.0887
+[34/100][960/1000] D: 0.4409 D_prob: 0.0503 G: 0.6687 D(G(z)): 0.4409 / 0.6687 loss_imitate: 0.6536 loss_diversity: 0.1574
+Attack success rate: 13.50 %
+Accuracy of the network on netD: 73.00 %
+[35/100][0/1000] D: 0.2710 D_prob: 0.0486 G: 0.7823 D(G(z)): 0.2710 / 0.7823 loss_imitate: 0.7737 loss_diversity: 0.1018
+[35/100][40/1000] D: 0.2731 D_prob: 0.0468 G: 0.7820 D(G(z)): 0.2731 / 0.7820 loss_imitate: 0.7719 loss_diversity: 0.1016
+[35/100][80/1000] D: 0.3663 D_prob: 0.0430 G: 0.7465 D(G(z)): 0.3663 / 0.7465 loss_imitate: 0.7323 loss_diversity: 0.1732
+[35/100][120/1000] D: 0.3938 D_prob: 0.0491 G: 0.7092 D(G(z)): 0.3938 / 0.7092 loss_imitate: 0.6976 loss_diversity: 0.1417
+[35/100][160/1000] D: 0.4097 D_prob: 0.0492 G: 0.6863 D(G(z)): 0.4097 / 0.6863 loss_imitate: 0.6747 loss_diversity: 0.1420
+[35/100][200/1000] D: 0.2094 D_prob: 0.0499 G: 0.8256 D(G(z)): 0.2094 / 0.8256 loss_imitate: 0.8164 loss_diversity: 0.1128
+[35/100][240/1000] D: 0.2514 D_prob: 0.0495 G: 0.7905 D(G(z)): 0.2514 / 0.7905 loss_imitate: 0.7816 loss_diversity: 0.1082
+[35/100][280/1000] D: 0.5439 D_prob: 0.0496 G: 0.6092 D(G(z)): 0.5439 / 0.6092 loss_imitate: 0.5986 loss_diversity: 0.1102
+[35/100][320/1000] D: 0.3096 D_prob: 0.0529 G: 0.7483 D(G(z)): 0.3096 / 0.7483 loss_imitate: 0.7403 loss_diversity: 0.0845
+[35/100][360/1000] D: 0.3322 D_prob: 0.0506 G: 0.7321 D(G(z)): 0.3322 / 0.7321 loss_imitate: 0.7238 loss_diversity: 0.0908
+[35/100][400/1000] D: 0.1562 D_prob: 0.0504 G: 0.8623 D(G(z)): 0.1562 / 0.8623 loss_imitate: 0.8579 loss_diversity: 0.0647
+[35/100][440/1000] D: 0.3094 D_prob: 0.0459 G: 0.7528 D(G(z)): 0.3094 / 0.7528 loss_imitate: 0.7429 loss_diversity: 0.1127
+[35/100][480/1000] D: 0.2993 D_prob: 0.0473 G: 0.7710 D(G(z)): 0.2993 / 0.7710 loss_imitate: 0.7604 loss_diversity: 0.1101
+[35/100][520/1000] D: 0.3052 D_prob: 0.0483 G: 0.7569 D(G(z)): 0.3052 / 0.7569 loss_imitate: 0.7474 loss_diversity: 0.1109
+[35/100][560/1000] D: 0.2338 D_prob: 0.0468 G: 0.8102 D(G(z)): 0.2338 / 0.8102 loss_imitate: 0.8019 loss_diversity: 0.1013
+[35/100][600/1000] D: 0.1504 D_prob: 0.0483 G: 0.8703 D(G(z)): 0.1504 / 0.8703 loss_imitate: 0.8651 loss_diversity: 0.0746
+[35/100][640/1000] D: 0.1581 D_prob: 0.0520 G: 0.8611 D(G(z)): 0.1581 / 0.8611 loss_imitate: 0.8576 loss_diversity: 0.0549
+[35/100][680/1000] D: 0.1792 D_prob: 0.0526 G: 0.8448 D(G(z)): 0.1792 / 0.8448 loss_imitate: 0.8421 loss_diversity: 0.0531
+[35/100][720/1000] D: 0.2104 D_prob: 0.0463 G: 0.8304 D(G(z)): 0.2104 / 0.8304 loss_imitate: 0.8200 loss_diversity: 0.1100
+[35/100][760/1000] D: 0.1291 D_prob: 0.0481 G: 0.8911 D(G(z)): 0.1291 / 0.8911 loss_imitate: 0.8866 loss_diversity: 0.0587
+[35/100][800/1000] D: 0.2333 D_prob: 0.0481 G: 0.8079 D(G(z)): 0.2333 / 0.8079 loss_imitate: 0.7995 loss_diversity: 0.0985
+[35/100][840/1000] D: 0.1783 D_prob: 0.0489 G: 0.8502 D(G(z)): 0.1783 / 0.8502 loss_imitate: 0.8384 loss_diversity: 0.1204
+[35/100][880/1000] D: 0.4295 D_prob: 0.0455 G: 0.6985 D(G(z)): 0.4295 / 0.6985 loss_imitate: 0.6807 loss_diversity: 0.1808
+[35/100][920/1000] D: 0.2116 D_prob: 0.0490 G: 0.8195 D(G(z)): 0.2116 / 0.8195 loss_imitate: 0.8165 loss_diversity: 0.0552
+[35/100][960/1000] D: 0.2386 D_prob: 0.0482 G: 0.8025 D(G(z)): 0.2386 / 0.8025 loss_imitate: 0.7981 loss_diversity: 0.0656
+Attack success rate: 14.55 %
+Accuracy of the network on netD: 76.20 %
+[36/100][0/1000] D: 0.2332 D_prob: 0.0468 G: 0.8047 D(G(z)): 0.2332 / 0.8047 loss_imitate: 0.7988 loss_diversity: 0.0712
+[36/100][40/1000] D: 0.2465 D_prob: 0.0412 G: 0.8094 D(G(z)): 0.2465 / 0.8094 loss_imitate: 0.7857 loss_diversity: 0.2390
+[36/100][80/1000] D: 0.1757 D_prob: 0.0431 G: 0.8508 D(G(z)): 0.1757 / 0.8508 loss_imitate: 0.8430 loss_diversity: 0.1006
+[36/100][120/1000] D: 0.1614 D_prob: 0.0437 G: 0.8627 D(G(z)): 0.1614 / 0.8627 loss_imitate: 0.8542 loss_diversity: 0.0965
+[36/100][160/1000] D: 0.2432 D_prob: 0.0472 G: 0.8010 D(G(z)): 0.2432 / 0.8010 loss_imitate: 0.7938 loss_diversity: 0.0971
+[36/100][200/1000] D: 0.1043 D_prob: 0.0470 G: 0.9114 D(G(z)): 0.1043 / 0.9114 loss_imitate: 0.9087 loss_diversity: 0.0444
+[36/100][240/1000] D: 0.1049 D_prob: 0.0451 G: 0.9151 D(G(z)): 0.1049 / 0.9151 loss_imitate: 0.9041 loss_diversity: 0.1249
+[36/100][280/1000] D: 0.1278 D_prob: 0.0464 G: 0.8914 D(G(z)): 0.1278 / 0.8914 loss_imitate: 0.8879 loss_diversity: 0.0617
+[36/100][320/1000] D: 0.1728 D_prob: 0.0442 G: 0.8539 D(G(z)): 0.1728 / 0.8539 loss_imitate: 0.8494 loss_diversity: 0.0714
+[36/100][360/1000] D: 0.1512 D_prob: 0.0453 G: 0.8682 D(G(z)): 0.1512 / 0.8682 loss_imitate: 0.8635 loss_diversity: 0.0632
+[36/100][400/1000] D: 0.4536 D_prob: 0.0462 G: 0.6812 D(G(z)): 0.4536 / 0.6812 loss_imitate: 0.6659 loss_diversity: 0.1798
+[36/100][440/1000] D: 0.3070 D_prob: 0.0470 G: 0.7467 D(G(z)): 0.3070 / 0.7467 loss_imitate: 0.7399 loss_diversity: 0.0772
+[36/100][480/1000] D: 0.1861 D_prob: 0.0467 G: 0.8417 D(G(z)): 0.1861 / 0.8417 loss_imitate: 0.8352 loss_diversity: 0.0725
+[36/100][520/1000] D: 0.3222 D_prob: 0.0436 G: 0.7611 D(G(z)): 0.3222 / 0.7611 loss_imitate: 0.7499 loss_diversity: 0.1491
+[36/100][560/1000] D: 0.1955 D_prob: 0.0496 G: 0.8375 D(G(z)): 0.1955 / 0.8375 loss_imitate: 0.8341 loss_diversity: 0.0601
+[36/100][600/1000] D: 0.1830 D_prob: 0.0508 G: 0.8421 D(G(z)): 0.1830 / 0.8421 loss_imitate: 0.8370 loss_diversity: 0.0689
+[36/100][640/1000] D: 0.3697 D_prob: 0.0519 G: 0.7211 D(G(z)): 0.3697 / 0.7211 loss_imitate: 0.7177 loss_diversity: 0.0633
+[36/100][680/1000] D: 0.2446 D_prob: 0.0487 G: 0.7944 D(G(z)): 0.2446 / 0.7944 loss_imitate: 0.7892 loss_diversity: 0.0769
+[36/100][720/1000] D: 0.2406 D_prob: 0.0468 G: 0.8045 D(G(z)): 0.2406 / 0.8045 loss_imitate: 0.7947 loss_diversity: 0.1012
+[36/100][760/1000] D: 0.3492 D_prob: 0.0395 G: 0.7264 D(G(z)): 0.3492 / 0.7264 loss_imitate: 0.7116 loss_diversity: 0.1802
+[36/100][800/1000] D: 0.4288 D_prob: 0.0429 G: 0.6779 D(G(z)): 0.4288 / 0.6779 loss_imitate: 0.6677 loss_diversity: 0.1250
+[36/100][840/1000] D: 0.4106 D_prob: 0.0443 G: 0.6852 D(G(z)): 0.4106 / 0.6852 loss_imitate: 0.6733 loss_diversity: 0.1208
+[36/100][880/1000] D: 0.2757 D_prob: 0.0436 G: 0.7814 D(G(z)): 0.2757 / 0.7814 loss_imitate: 0.7703 loss_diversity: 0.1144
+[36/100][920/1000] D: 0.2702 D_prob: 0.0446 G: 0.7894 D(G(z)): 0.2702 / 0.7894 loss_imitate: 0.7783 loss_diversity: 0.1151
+[36/100][960/1000] D: 0.4001 D_prob: 0.0373 G: 0.7108 D(G(z)): 0.4001 / 0.7108 loss_imitate: 0.6836 loss_diversity: 0.2744
+Attack success rate: 14.00 %
+Accuracy of the network on netD: 74.45 %
+[37/100][0/1000] D: 0.2399 D_prob: 0.0380 G: 0.8119 D(G(z)): 0.2399 / 0.8119 loss_imitate: 0.7943 loss_diversity: 0.1769
+[37/100][40/1000] D: 0.3071 D_prob: 0.0391 G: 0.7677 D(G(z)): 0.3071 / 0.7677 loss_imitate: 0.7522 loss_diversity: 0.1571
+[37/100][80/1000] D: 0.4057 D_prob: 0.0390 G: 0.7060 D(G(z)): 0.4057 / 0.7060 loss_imitate: 0.6844 loss_diversity: 0.2179
+[37/100][120/1000] D: 0.4951 D_prob: 0.0407 G: 0.6579 D(G(z)): 0.4951 / 0.6579 loss_imitate: 0.6342 loss_diversity: 0.2395
+[37/100][160/1000] D: 0.4679 D_prob: 0.0423 G: 0.6663 D(G(z)): 0.4679 / 0.6663 loss_imitate: 0.6420 loss_diversity: 0.2451
+[37/100][200/1000] D: 0.3627 D_prob: 0.0458 G: 0.7269 D(G(z)): 0.3627 / 0.7269 loss_imitate: 0.7081 loss_diversity: 0.1900
+[37/100][240/1000] D: 0.3253 D_prob: 0.0482 G: 0.7769 D(G(z)): 0.3253 / 0.7769 loss_imitate: 0.7588 loss_diversity: 0.1826
+[37/100][280/1000] D: 0.4292 D_prob: 0.0495 G: 0.6768 D(G(z)): 0.4292 / 0.6768 loss_imitate: 0.6606 loss_diversity: 0.1641
+[37/100][320/1000] D: 0.2386 D_prob: 0.0467 G: 0.8158 D(G(z)): 0.2386 / 0.8158 loss_imitate: 0.8001 loss_diversity: 0.1584
+[37/100][360/1000] D: 0.3570 D_prob: 0.0487 G: 0.7367 D(G(z)): 0.3570 / 0.7367 loss_imitate: 0.7155 loss_diversity: 0.2221
+[37/100][400/1000] D: 0.4043 D_prob: 0.0446 G: 0.6967 D(G(z)): 0.4043 / 0.6967 loss_imitate: 0.6829 loss_diversity: 0.1451
+[37/100][440/1000] D: 0.3054 D_prob: 0.0407 G: 0.7772 D(G(z)): 0.3054 / 0.7772 loss_imitate: 0.7600 loss_diversity: 0.1810
+[37/100][480/1000] D: 0.4532 D_prob: 0.0469 G: 0.6620 D(G(z)): 0.4532 / 0.6620 loss_imitate: 0.6426 loss_diversity: 0.2031
+[37/100][520/1000] D: 0.3499 D_prob: 0.0469 G: 0.7321 D(G(z)): 0.3499 / 0.7321 loss_imitate: 0.7168 loss_diversity: 0.1604
+[37/100][560/1000] D: 0.4497 D_prob: 0.0443 G: 0.6658 D(G(z)): 0.4497 / 0.6658 loss_imitate: 0.6475 loss_diversity: 0.1913
+[37/100][600/1000] D: 0.3794 D_prob: 0.0454 G: 0.7073 D(G(z)): 0.3794 / 0.7073 loss_imitate: 0.6927 loss_diversity: 0.1538
+[37/100][640/1000] D: 0.4390 D_prob: 0.0432 G: 0.6711 D(G(z)): 0.4390 / 0.6711 loss_imitate: 0.6553 loss_diversity: 0.1663
+[37/100][680/1000] D: 0.3874 D_prob: 0.0451 G: 0.7055 D(G(z)): 0.3874 / 0.7055 loss_imitate: 0.6865 loss_diversity: 0.2002
+[37/100][720/1000] D: 0.2278 D_prob: 0.0473 G: 0.8122 D(G(z)): 0.2278 / 0.8122 loss_imitate: 0.8008 loss_diversity: 0.1194
+[37/100][760/1000] D: 0.6802 D_prob: 0.0409 G: 0.5528 D(G(z)): 0.6802 / 0.5528 loss_imitate: 0.5252 loss_diversity: 0.3044
+[37/100][800/1000] D: 0.2795 D_prob: 0.0447 G: 0.7714 D(G(z)): 0.2795 / 0.7714 loss_imitate: 0.7616 loss_diversity: 0.1078
+[37/100][840/1000] D: 0.3913 D_prob: 0.0443 G: 0.6994 D(G(z)): 0.3913 / 0.6994 loss_imitate: 0.6881 loss_diversity: 0.1154
+[37/100][880/1000] D: 0.3645 D_prob: 0.0456 G: 0.7180 D(G(z)): 0.3645 / 0.7180 loss_imitate: 0.7105 loss_diversity: 0.0903
+[37/100][920/1000] D: 0.2229 D_prob: 0.0483 G: 0.8151 D(G(z)): 0.2229 / 0.8151 loss_imitate: 0.8084 loss_diversity: 0.0724
+[37/100][960/1000] D: 0.2672 D_prob: 0.0446 G: 0.7844 D(G(z)): 0.2672 / 0.7844 loss_imitate: 0.7708 loss_diversity: 0.1387
+Attack success rate: 13.55 %
+Accuracy of the network on netD: 72.25 %
+[38/100][0/1000] D: 0.4028 D_prob: 0.0421 G: 0.6881 D(G(z)): 0.4028 / 0.6881 loss_imitate: 0.6816 loss_diversity: 0.0767
+[38/100][40/1000] D: 0.2019 D_prob: 0.0443 G: 0.8301 D(G(z)): 0.2019 / 0.8301 loss_imitate: 0.8223 loss_diversity: 0.0995
+[38/100][80/1000] D: 0.3114 D_prob: 0.0403 G: 0.7679 D(G(z)): 0.3114 / 0.7679 loss_imitate: 0.7554 loss_diversity: 0.1472
+[38/100][120/1000] D: 0.1505 D_prob: 0.0459 G: 0.8677 D(G(z)): 0.1505 / 0.8677 loss_imitate: 0.8611 loss_diversity: 0.0941
+[38/100][160/1000] D: 0.0893 D_prob: 0.0451 G: 0.9200 D(G(z)): 0.0893 / 0.9200 loss_imitate: 0.9168 loss_diversity: 0.0546
+[38/100][200/1000] D: 0.1996 D_prob: 0.0474 G: 0.8273 D(G(z)): 0.1996 / 0.8273 loss_imitate: 0.8244 loss_diversity: 0.0545
+[38/100][240/1000] D: 0.2436 D_prob: 0.0472 G: 0.8005 D(G(z)): 0.2436 / 0.8005 loss_imitate: 0.7950 loss_diversity: 0.0755
+[38/100][280/1000] D: 0.1951 D_prob: 0.0461 G: 0.8354 D(G(z)): 0.1951 / 0.8354 loss_imitate: 0.8278 loss_diversity: 0.0839
+[38/100][320/1000] D: 0.2392 D_prob: 0.0448 G: 0.8064 D(G(z)): 0.2392 / 0.8064 loss_imitate: 0.7953 loss_diversity: 0.1346
+[38/100][360/1000] D: 0.4103 D_prob: 0.0441 G: 0.6962 D(G(z)): 0.4103 / 0.6962 loss_imitate: 0.6836 loss_diversity: 0.1267
+[38/100][400/1000] D: 0.2427 D_prob: 0.0417 G: 0.8003 D(G(z)): 0.2427 / 0.8003 loss_imitate: 0.7906 loss_diversity: 0.1194
+[38/100][440/1000] D: 0.3080 D_prob: 0.0434 G: 0.7548 D(G(z)): 0.3080 / 0.7548 loss_imitate: 0.7429 loss_diversity: 0.1212
+[38/100][480/1000] D: 0.2251 D_prob: 0.0413 G: 0.8187 D(G(z)): 0.2251 / 0.8187 loss_imitate: 0.8077 loss_diversity: 0.1125
+[38/100][520/1000] D: 0.3508 D_prob: 0.0407 G: 0.7253 D(G(z)): 0.3508 / 0.7253 loss_imitate: 0.7135 loss_diversity: 0.1202
+[38/100][560/1000] D: 0.2778 D_prob: 0.0406 G: 0.7793 D(G(z)): 0.2778 / 0.7793 loss_imitate: 0.7649 loss_diversity: 0.1475
+[38/100][600/1000] D: 0.2805 D_prob: 0.0448 G: 0.7750 D(G(z)): 0.2805 / 0.7750 loss_imitate: 0.7702 loss_diversity: 0.0739
+[38/100][640/1000] D: 0.4153 D_prob: 0.0390 G: 0.7194 D(G(z)): 0.4153 / 0.7194 loss_imitate: 0.7005 loss_diversity: 0.2148
+[38/100][680/1000] D: 0.3295 D_prob: 0.0390 G: 0.7574 D(G(z)): 0.3295 / 0.7574 loss_imitate: 0.7332 loss_diversity: 0.2761
+[38/100][720/1000] D: 0.4044 D_prob: 0.0409 G: 0.6993 D(G(z)): 0.4044 / 0.6993 loss_imitate: 0.6817 loss_diversity: 0.2007
+[38/100][760/1000] D: 0.5037 D_prob: 0.0393 G: 0.6501 D(G(z)): 0.5037 / 0.6501 loss_imitate: 0.6250 loss_diversity: 0.2868
+[38/100][800/1000] D: 0.2688 D_prob: 0.0387 G: 0.7874 D(G(z)): 0.2688 / 0.7874 loss_imitate: 0.7726 loss_diversity: 0.1692
+[38/100][840/1000] D: 0.4498 D_prob: 0.0411 G: 0.6676 D(G(z)): 0.4498 / 0.6676 loss_imitate: 0.6520 loss_diversity: 0.1785
+[38/100][880/1000] D: 0.3525 D_prob: 0.0430 G: 0.7321 D(G(z)): 0.3525 / 0.7321 loss_imitate: 0.7183 loss_diversity: 0.1576
+[38/100][920/1000] D: 0.4280 D_prob: 0.0427 G: 0.7173 D(G(z)): 0.4280 / 0.7173 loss_imitate: 0.7033 loss_diversity: 0.1595
+[38/100][960/1000] D: 0.4057 D_prob: 0.0431 G: 0.6999 D(G(z)): 0.4057 / 0.6999 loss_imitate: 0.6852 loss_diversity: 0.1677
+Attack success rate: 14.00 %
+Accuracy of the network on netD: 78.65 %
+[39/100][0/1000] D: 0.4218 D_prob: 0.0460 G: 0.6843 D(G(z)): 0.4218 / 0.6843 loss_imitate: 0.6695 loss_diversity: 0.1524
+[39/100][40/1000] D: 0.3117 D_prob: 0.0454 G: 0.7520 D(G(z)): 0.3117 / 0.7520 loss_imitate: 0.7381 loss_diversity: 0.1433
+[39/100][80/1000] D: 0.2730 D_prob: 0.0439 G: 0.7799 D(G(z)): 0.2730 / 0.7799 loss_imitate: 0.7639 loss_diversity: 0.1805
+[39/100][120/1000] D: 0.2321 D_prob: 0.0463 G: 0.8136 D(G(z)): 0.2321 / 0.8136 loss_imitate: 0.8015 loss_diversity: 0.1366
+[39/100][160/1000] D: 0.2049 D_prob: 0.0490 G: 0.8329 D(G(z)): 0.2049 / 0.8329 loss_imitate: 0.8238 loss_diversity: 0.1082
+[39/100][200/1000] D: 0.1864 D_prob: 0.0454 G: 0.8521 D(G(z)): 0.1864 / 0.8521 loss_imitate: 0.8430 loss_diversity: 0.0974
+[39/100][240/1000] D: 0.2379 D_prob: 0.0498 G: 0.7999 D(G(z)): 0.2379 / 0.7999 loss_imitate: 0.7945 loss_diversity: 0.0756
+[39/100][280/1000] D: 0.0782 D_prob: 0.0507 G: 0.9312 D(G(z)): 0.0782 / 0.9312 loss_imitate: 0.9281 loss_diversity: 0.0522
+[39/100][320/1000] D: 0.1699 D_prob: 0.0540 G: 0.8500 D(G(z)): 0.1699 / 0.8500 loss_imitate: 0.8465 loss_diversity: 0.0532
+[39/100][360/1000] D: 0.2003 D_prob: 0.0506 G: 0.8279 D(G(z)): 0.2003 / 0.8279 loss_imitate: 0.8217 loss_diversity: 0.0825
+[39/100][400/1000] D: 0.1658 D_prob: 0.0513 G: 0.8570 D(G(z)): 0.1658 / 0.8570 loss_imitate: 0.8518 loss_diversity: 0.0694
+[39/100][440/1000] D: 0.1183 D_prob: 0.0542 G: 0.8911 D(G(z)): 0.1183 / 0.8911 loss_imitate: 0.8883 loss_diversity: 0.0491
+[39/100][480/1000] D: 0.2285 D_prob: 0.0537 G: 0.8113 D(G(z)): 0.2285 / 0.8113 loss_imitate: 0.8072 loss_diversity: 0.0654
+[39/100][520/1000] D: 0.2324 D_prob: 0.0535 G: 0.7993 D(G(z)): 0.2324 / 0.7993 loss_imitate: 0.7968 loss_diversity: 0.0538
+[39/100][560/1000] D: 0.1897 D_prob: 0.0517 G: 0.8339 D(G(z)): 0.1897 / 0.8339 loss_imitate: 0.8305 loss_diversity: 0.0573
+[39/100][600/1000] D: 0.0868 D_prob: 0.0540 G: 0.9236 D(G(z)): 0.0868 / 0.9236 loss_imitate: 0.9205 loss_diversity: 0.0535
+[39/100][640/1000] D: 0.2246 D_prob: 0.0518 G: 0.8163 D(G(z)): 0.2246 / 0.8163 loss_imitate: 0.8133 loss_diversity: 0.0564
+[39/100][680/1000] D: 0.3753 D_prob: 0.0498 G: 0.7221 D(G(z)): 0.3753 / 0.7221 loss_imitate: 0.7125 loss_diversity: 0.1042
+[39/100][720/1000] D: 0.3140 D_prob: 0.0502 G: 0.7576 D(G(z)): 0.3140 / 0.7576 loss_imitate: 0.7517 loss_diversity: 0.0731
+[39/100][760/1000] D: 0.2557 D_prob: 0.0460 G: 0.7895 D(G(z)): 0.2557 / 0.7895 loss_imitate: 0.7784 loss_diversity: 0.1116
+[39/100][800/1000] D: 0.2137 D_prob: 0.0457 G: 0.8267 D(G(z)): 0.2137 / 0.8267 loss_imitate: 0.8183 loss_diversity: 0.0998
+[39/100][840/1000] D: 0.2325 D_prob: 0.0445 G: 0.8120 D(G(z)): 0.2325 / 0.8120 loss_imitate: 0.8017 loss_diversity: 0.1126
+[39/100][880/1000] D: 0.2765 D_prob: 0.0451 G: 0.7860 D(G(z)): 0.2765 / 0.7860 loss_imitate: 0.7737 loss_diversity: 0.1256
+[39/100][920/1000] D: 0.2504 D_prob: 0.0468 G: 0.8028 D(G(z)): 0.2504 / 0.8028 loss_imitate: 0.7930 loss_diversity: 0.1152
+[39/100][960/1000] D: 0.1748 D_prob: 0.0454 G: 0.8577 D(G(z)): 0.1748 / 0.8577 loss_imitate: 0.8485 loss_diversity: 0.1071
+Attack success rate: 14.95 %
+Accuracy of the network on netD: 77.20 %
+[40/100][0/1000] D: 0.2656 D_prob: 0.0428 G: 0.7911 D(G(z)): 0.2656 / 0.7911 loss_imitate: 0.7724 loss_diversity: 0.2198
+[40/100][40/1000] D: 0.2047 D_prob: 0.0465 G: 0.8268 D(G(z)): 0.2047 / 0.8268 loss_imitate: 0.8184 loss_diversity: 0.0980
+[40/100][80/1000] D: 0.4201 D_prob: 0.0472 G: 0.6892 D(G(z)): 0.4201 / 0.6892 loss_imitate: 0.6761 loss_diversity: 0.1639
+[40/100][120/1000] D: 0.3776 D_prob: 0.0480 G: 0.7035 D(G(z)): 0.3776 / 0.7035 loss_imitate: 0.6933 loss_diversity: 0.1048
+[40/100][160/1000] D: 0.2133 D_prob: 0.0450 G: 0.8289 D(G(z)): 0.2133 / 0.8289 loss_imitate: 0.8178 loss_diversity: 0.1153
+[40/100][200/1000] D: 0.3371 D_prob: 0.0478 G: 0.7432 D(G(z)): 0.3371 / 0.7432 loss_imitate: 0.7279 loss_diversity: 0.1862
+[40/100][240/1000] D: 0.2274 D_prob: 0.0490 G: 0.8099 D(G(z)): 0.2274 / 0.8099 loss_imitate: 0.8002 loss_diversity: 0.1031
+[40/100][280/1000] D: 0.3178 D_prob: 0.0474 G: 0.7512 D(G(z)): 0.3178 / 0.7512 loss_imitate: 0.7376 loss_diversity: 0.1364
+[40/100][320/1000] D: 0.1882 D_prob: 0.0517 G: 0.8383 D(G(z)): 0.1882 / 0.8383 loss_imitate: 0.8322 loss_diversity: 0.0738
+[40/100][360/1000] D: 0.1851 D_prob: 0.0512 G: 0.8416 D(G(z)): 0.1851 / 0.8416 loss_imitate: 0.8342 loss_diversity: 0.0760
+[40/100][400/1000] D: 0.2348 D_prob: 0.0513 G: 0.8076 D(G(z)): 0.2348 / 0.8076 loss_imitate: 0.8020 loss_diversity: 0.0726
+[40/100][440/1000] D: 0.2524 D_prob: 0.0494 G: 0.8001 D(G(z)): 0.2524 / 0.8001 loss_imitate: 0.7867 loss_diversity: 0.1365
+[40/100][480/1000] D: 0.2712 D_prob: 0.0450 G: 0.7923 D(G(z)): 0.2712 / 0.7923 loss_imitate: 0.7804 loss_diversity: 0.1211
+[40/100][520/1000] D: 0.1913 D_prob: 0.0445 G: 0.8388 D(G(z)): 0.1913 / 0.8388 loss_imitate: 0.8292 loss_diversity: 0.1065
+[40/100][560/1000] D: 0.2241 D_prob: 0.0480 G: 0.8148 D(G(z)): 0.2241 / 0.8148 loss_imitate: 0.8056 loss_diversity: 0.1011
+[40/100][600/1000] D: 0.3114 D_prob: 0.0467 G: 0.7571 D(G(z)): 0.3114 / 0.7571 loss_imitate: 0.7469 loss_diversity: 0.1120
+[40/100][640/1000] D: 0.3536 D_prob: 0.0470 G: 0.7309 D(G(z)): 0.3536 / 0.7309 loss_imitate: 0.7133 loss_diversity: 0.1831
+[40/100][680/1000] D: 0.3424 D_prob: 0.0459 G: 0.7441 D(G(z)): 0.3424 / 0.7441 loss_imitate: 0.7290 loss_diversity: 0.1572
+[40/100][720/1000] D: 0.2448 D_prob: 0.0455 G: 0.8003 D(G(z)): 0.2448 / 0.8003 loss_imitate: 0.7895 loss_diversity: 0.1116
+[40/100][760/1000] D: 0.2255 D_prob: 0.0472 G: 0.8249 D(G(z)): 0.2255 / 0.8249 loss_imitate: 0.8039 loss_diversity: 0.2344
+[40/100][800/1000] D: 0.2691 D_prob: 0.0483 G: 0.7815 D(G(z)): 0.2691 / 0.7815 loss_imitate: 0.7708 loss_diversity: 0.1193
+[40/100][840/1000] D: 0.2792 D_prob: 0.0479 G: 0.7705 D(G(z)): 0.2792 / 0.7705 loss_imitate: 0.7608 loss_diversity: 0.1010
+[40/100][880/1000] D: 0.2062 D_prob: 0.0479 G: 0.8303 D(G(z)): 0.2062 / 0.8303 loss_imitate: 0.8223 loss_diversity: 0.0995
+[40/100][920/1000] D: 0.1519 D_prob: 0.0499 G: 0.8746 D(G(z)): 0.1519 / 0.8746 loss_imitate: 0.8625 loss_diversity: 0.1301
+[40/100][960/1000] D: 0.2978 D_prob: 0.0473 G: 0.7747 D(G(z)): 0.2978 / 0.7747 loss_imitate: 0.7578 loss_diversity: 0.1711
+Attack success rate: 16.55 %
+Accuracy of the network on netD: 77.85 %
+[41/100][0/1000] D: 0.2715 D_prob: 0.0508 G: 0.7787 D(G(z)): 0.2715 / 0.7787 loss_imitate: 0.7729 loss_diversity: 0.0733

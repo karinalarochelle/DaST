@@ -1,0 +1,37 @@
+1. JOB STARTED
+2. IN DIRECTORY: /home/klarochelle_uri_edu/DaST
+3. PYTHON PATH:
+/home/klarochelle_uri_edu/DaST/dast-env/bin/python
+4. CHECKING GPU
+Thu Apr 23 12:30:31 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A16                     On  |   00000000:C8:00.0 Off |                    0 |
+|  0%   32C    P8             15W /   62W |       0MiB /  15356MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+5. STARTING PYTHON
+Namespace(workers=1, batchSize=500, dataset='mnist', niter=100, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Accuracy of the network on netD: 99.75 %
+Attack success rate: 0.50 %
+[0/100][0/1000] D: 2.3304 D_prob: 0.0006 G: 0.5584 D(G(z)): 2.3304 / 0.5584 loss_imitate: 0.0978 loss_diversity: 2.3031
+[0/100][40/1000] D: 0.9205 D_prob: 0.0359 G: 1.0971 D(G(z)): 0.9205 / 1.0971 loss_imitate: 0.4056 loss_diversity: 3.4573
+[0/100][80/1000] D: 0.5983 D_prob: 0.0380 G: 1.6678 D(G(z)): 0.5983 / 1.6678 loss_imitate: 0.5628 loss_diversity: 5.5250
+[0/100][120/1000] D: 0.5337 D_prob: 0.0502 G: 2.0739 D(G(z)): 0.5337 / 2.0739 loss_imitate: 0.5865 loss_diversity: 7.4368
+[0/100][160/1000] D: 0.5343 D_prob: 0.0502 G: 2.0178 D(G(z)): 0.5343 / 2.0178 loss_imitate: 0.5864 loss_diversity: 7.1571
+[0/100][200/1000] D: 0.7225 D_prob: 0.0486 G: 1.4706 D(G(z)): 0.7225 / 1.4706 loss_imitate: 0.4874 loss_diversity: 4.9157
+[0/100][240/1000] D: 0.5937 D_prob: 0.0478 G: 1.5414 D(G(z)): 0.5937 / 1.5414 loss_imitate: 0.5568 loss_diversity: 4.9230
+[0/100][280/1000] D: 0.5837 D_prob: 0.0492 G: 1.4932 D(G(z)): 0.5837 / 1.4932 loss_imitate: 0.5589 loss_diversity: 4.6715

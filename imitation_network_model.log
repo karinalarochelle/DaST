@@ -1,0 +1,568 @@
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Accuracy of the network on netD: 99.75 %
+Attack success rate: 0.70 %
+[0/2000][0/1000] D: 2.2684 D_prob: 0.0004 G: 0.5646 D(G(z)): 2.2684 / 0.5646 loss_imitate: 0.1039 loss_diversity: 2.3033
+[0/2000][40/1000] D: 1.3421 D_prob: 0.0034 G: 0.7758 D(G(z)): 1.3421 / 0.7758 loss_imitate: 0.2870 loss_diversity: 2.4437
+[0/2000][80/1000] D: 0.3743 D_prob: 0.0638 G: 1.7310 D(G(z)): 0.3743 / 1.7310 loss_imitate: 0.6884 loss_diversity: 5.2131
+[0/2000][120/1000] D: 0.3635 D_prob: 0.0644 G: 1.9566 D(G(z)): 0.3635 / 1.9566 loss_imitate: 0.6953 loss_diversity: 6.3066
+[0/2000][160/1000] D: 0.3630 D_prob: 0.0644 G: 2.0822 D(G(z)): 0.3630 / 2.0822 loss_imitate: 0.6956 loss_diversity: 6.9326
+[0/2000][200/1000] D: 0.3630 D_prob: 0.0646 G: 2.1600 D(G(z)): 0.3630 / 2.1600 loss_imitate: 0.6957 loss_diversity: 7.3217
+[0/2000][240/1000] D: 0.3609 D_prob: 0.0645 G: 2.2128 D(G(z)): 0.3609 / 2.2128 loss_imitate: 0.6972 loss_diversity: 7.5781
+[0/2000][280/1000] D: 1.2222 D_prob: 0.0639 G: 1.7328 D(G(z)): 1.2222 / 1.7328 loss_imitate: 0.3271 loss_diversity: 7.0287
+[0/2000][320/1000] D: 1.0834 D_prob: 0.0496 G: 1.4368 D(G(z)): 1.0834 / 1.4368 loss_imitate: 0.3549 loss_diversity: 5.4092
+[0/2000][360/1000] D: 1.9240 D_prob: 0.0034 G: 0.6568 D(G(z)): 1.9240 / 0.6568 loss_imitate: 0.1543 loss_diversity: 2.5123
+Namespace(workers=2, batchSize=500, dataset='mnist', niter=2000, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Accuracy of the network on netD: 99.75 %
+Attack success rate: 0.45 %
+[0/2000][0/1000] D: 2.3118 D_prob: 0.0004 G: 0.5602 D(G(z)): 2.3118 / 0.5602 loss_imitate: 0.0996 loss_diversity: 2.3030
+[0/2000][40/1000] D: 0.8070 D_prob: 0.0120 G: 1.0581 D(G(z)): 0.8070 / 1.0581 loss_imitate: 0.5131 loss_diversity: 2.7253
+[0/2000][80/1000] D: 0.0157 D_prob: 0.0835 G: 2.3001 D(G(z)): 0.0157 / 2.3001 loss_imitate: 0.9847 loss_diversity: 6.5768
+[0/2000][120/1000] D: 0.0103 D_prob: 0.0839 G: 2.5453 D(G(z)): 0.0103 / 2.5453 loss_imitate: 0.9898 loss_diversity: 7.7775
+[0/2000][160/1000] D: 0.6392 D_prob: 0.0806 G: 1.5450 D(G(z)): 0.6392 / 1.5450 loss_imitate: 0.5666 loss_diversity: 4.8920
+[0/2000][200/1000] D: 0.8082 D_prob: 0.0393 G: 1.2829 D(G(z)): 0.8082 / 1.2829 loss_imitate: 0.4472 loss_diversity: 4.1781
+[0/2000][240/1000] D: 0.0994 D_prob: 0.0643 G: 2.2934 D(G(z)): 0.0994 / 2.2934 loss_imitate: 0.9198 loss_diversity: 6.8680
+[0/2000][280/1000] D: 0.3864 D_prob: 0.0592 G: 1.8446 D(G(z)): 0.3864 / 1.8446 loss_imitate: 0.6800 loss_diversity: 5.8230
+[0/2000][320/1000] D: 0.3719 D_prob: 0.0579 G: 1.9970 D(G(z)): 0.3719 / 1.9970 loss_imitate: 0.6896 loss_diversity: 6.5370
+[0/2000][360/1000] D: 0.4053 D_prob: 0.0562 G: 1.7277 D(G(z)): 0.4053 / 1.7277 loss_imitate: 0.6675 loss_diversity: 5.3009
+Namespace(workers=1, batchSize=500, dataset='mnist', niter=100, lr=0.0001, beta1=0.5, cuda=True, manualSeed=None, alpha=0.2, beta=0.1, G_type=1, save_folder='saved_model')
+Accuracy of the network on netD: 99.75 %
+Attack success rate: 0.50 %
+[0/100][0/100] D: 2.2669 D_prob: 0.0004 G: 0.5649 D(G(z)): 2.2669 / 0.5649 loss_imitate: 0.1042 loss_diversity: 2.3033
+[0/100][40/100] D: 1.1545 D_prob: 0.0128 G: 0.9017 D(G(z)): 1.1545 / 0.9017 loss_imitate: 0.3354 loss_diversity: 2.8312
+[0/100][80/100] D: 0.5584 D_prob: 0.0497 G: 1.6242 D(G(z)): 0.5584 / 1.6242 loss_imitate: 0.5718 loss_diversity: 5.2621
+Attack success rate: 0.40 %
+This is the best model
+Accuracy of the network on netD: 10.45 %
+This is the best model
+[1/100][0/100] D: 0.7356 D_prob: 0.0560 G: 1.6141 D(G(z)): 0.7356 / 1.6141 loss_imitate: 0.4858 loss_diversity: 5.6417
+[1/100][40/100] D: 0.8374 D_prob: 0.0582 G: 1.3804 D(G(z)): 0.8374 / 1.3804 loss_imitate: 0.4371 loss_diversity: 4.7164
+[1/100][80/100] D: 0.3671 D_prob: 0.0646 G: 2.0230 D(G(z)): 0.3671 / 2.0230 loss_imitate: 0.6929 loss_diversity: 6.6505
+Attack success rate: 0.30 %
+Accuracy of the network on netD: 10.45 %
+[2/100][0/100] D: 0.3658 D_prob: 0.0647 G: 2.1167 D(G(z)): 0.3658 / 2.1167 loss_imitate: 0.6938 loss_diversity: 7.1147
+[2/100][40/100] D: 0.3651 D_prob: 0.0646 G: 2.2421 D(G(z)): 0.3651 / 2.2421 loss_imitate: 0.6942 loss_diversity: 7.7397
+[2/100][80/100] D: 0.3630 D_prob: 0.0643 G: 2.3314 D(G(z)): 0.3630 / 2.3314 loss_imitate: 0.6957 loss_diversity: 8.1786
+Attack success rate: 0.40 %
+Accuracy of the network on netD: 10.45 %
+[3/100][0/100] D: 0.5444 D_prob: 0.0505 G: 1.6661 D(G(z)): 0.5444 / 1.6661 loss_imitate: 0.5795 loss_diversity: 5.4328
+[3/100][40/100] D: 0.7224 D_prob: 0.0491 G: 1.3988 D(G(z)): 0.7224 / 1.3988 loss_imitate: 0.4880 loss_diversity: 4.5540
+[3/100][80/100] D: 0.7068 D_prob: 0.0404 G: 1.4532 D(G(z)): 0.7068 / 1.4532 loss_imitate: 0.4981 loss_diversity: 4.7757
+Attack success rate: 0.40 %
+Accuracy of the network on netD: 10.45 %
+[4/100][0/100] D: 0.6672 D_prob: 0.0407 G: 1.4561 D(G(z)): 0.6672 / 1.4561 loss_imitate: 0.5307 loss_diversity: 4.6270
+[4/100][40/100] D: 1.2185 D_prob: 0.0418 G: 1.4233 D(G(z)): 1.2185 / 1.4233 loss_imitate: 0.3126 loss_diversity: 5.5539
+[4/100][80/100] D: 0.8427 D_prob: 0.0301 G: 1.4957 D(G(z)): 0.8427 / 1.4957 loss_imitate: 0.4338 loss_diversity: 5.3093
+Attack success rate: 0.65 %
+This is the best model
+Accuracy of the network on netD: 10.45 %
+[5/100][0/100] D: 1.5705 D_prob: 0.0284 G: 1.0508 D(G(z)): 1.5705 / 1.0508 loss_imitate: 0.2239 loss_diversity: 4.1345
+[5/100][40/100] D: 1.3988 D_prob: 0.0131 G: 0.9618 D(G(z)): 1.3988 / 0.9618 loss_imitate: 0.2522 loss_diversity: 3.5476
+[5/100][80/100] D: 1.3671 D_prob: 0.0183 G: 1.0638 D(G(z)): 1.3671 / 1.0638 loss_imitate: 0.2609 loss_diversity: 4.0147
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.00 %
+[6/100][0/100] D: 1.3601 D_prob: 0.0172 G: 1.0109 D(G(z)): 1.3601 / 1.0109 loss_imitate: 0.2578 loss_diversity: 3.7658
+[6/100][40/100] D: 1.9781 D_prob: 0.0170 G: 0.8569 D(G(z)): 1.9781 / 0.8569 loss_imitate: 0.1492 loss_diversity: 3.5384
+[6/100][80/100] D: 1.7178 D_prob: 0.0090 G: 0.8299 D(G(z)): 1.7178 / 0.8299 loss_imitate: 0.1823 loss_diversity: 3.2380
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.10 %
+[7/100][0/100] D: 1.5369 D_prob: 0.0088 G: 0.8977 D(G(z)): 1.5369 / 0.8977 loss_imitate: 0.2162 loss_diversity: 3.4072
+[7/100][40/100] D: 1.7428 D_prob: 0.0087 G: 0.8945 D(G(z)): 1.7428 / 0.8945 loss_imitate: 0.1767 loss_diversity: 3.5892
+[7/100][80/100] D: 1.2556 D_prob: 0.0135 G: 1.0640 D(G(z)): 1.2556 / 1.0640 loss_imitate: 0.2928 loss_diversity: 3.8562
+Attack success rate: 0.70 %
+This is the best model
+Accuracy of the network on netD: 10.00 %
+[8/100][0/100] D: 1.6902 D_prob: 0.0166 G: 0.9714 D(G(z)): 1.6902 / 0.9714 loss_imitate: 0.1904 loss_diversity: 3.9048
+[8/100][40/100] D: 1.2203 D_prob: 0.0135 G: 1.0910 D(G(z)): 1.2203 / 1.0910 loss_imitate: 0.2979 loss_diversity: 3.9658
+[8/100][80/100] D: 1.3937 D_prob: 0.0150 G: 1.0192 D(G(z)): 1.3937 / 1.0192 loss_imitate: 0.2485 loss_diversity: 3.8536
+Attack success rate: 0.55 %
+Accuracy of the network on netD: 10.00 %
+[9/100][0/100] D: 1.0001 D_prob: 0.0261 G: 1.2859 D(G(z)): 1.0001 / 1.2859 loss_imitate: 0.3714 loss_diversity: 4.5727
+[9/100][40/100] D: 1.3056 D_prob: 0.0193 G: 1.1223 D(G(z)): 1.3056 / 1.1223 loss_imitate: 0.2750 loss_diversity: 4.2367
+[9/100][80/100] D: 1.2353 D_prob: 0.0152 G: 1.1824 D(G(z)): 1.2353 / 1.1824 loss_imitate: 0.2956 loss_diversity: 4.4339
+Attack success rate: 0.55 %
+Accuracy of the network on netD: 10.00 %
+[10/100][0/100] D: 1.0991 D_prob: 0.0171 G: 1.2729 D(G(z)): 1.0991 / 1.2729 loss_imitate: 0.3363 loss_diversity: 4.6831
+[10/100][40/100] D: 1.1398 D_prob: 0.0324 G: 1.3102 D(G(z)): 1.1398 / 1.3102 loss_imitate: 0.3228 loss_diversity: 4.9374
+[10/100][80/100] D: 1.1643 D_prob: 0.0205 G: 1.2434 D(G(z)): 1.1643 / 1.2434 loss_imitate: 0.3173 loss_diversity: 4.6308
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.00 %
+[11/100][0/100] D: 1.1603 D_prob: 0.0172 G: 1.1642 D(G(z)): 1.1603 / 1.1642 loss_imitate: 0.3201 loss_diversity: 4.2207
+[11/100][40/100] D: 1.1928 D_prob: 0.0298 G: 1.3130 D(G(z)): 1.1928 / 1.3130 loss_imitate: 0.3064 loss_diversity: 5.0327
+[11/100][80/100] D: 1.0462 D_prob: 0.0233 G: 1.2953 D(G(z)): 1.0462 / 1.2953 loss_imitate: 0.3564 loss_diversity: 4.6943
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.00 %
+[12/100][0/100] D: 0.6819 D_prob: 0.0284 G: 1.5279 D(G(z)): 0.6819 / 1.5279 loss_imitate: 0.5198 loss_diversity: 5.0402
+[12/100][40/100] D: 1.2771 D_prob: 0.0215 G: 1.1217 D(G(z)): 1.2771 / 1.1217 loss_imitate: 0.2847 loss_diversity: 4.1851
+[12/100][80/100] D: 0.9024 D_prob: 0.0268 G: 1.4035 D(G(z)): 0.9024 / 1.4035 loss_imitate: 0.4085 loss_diversity: 4.9750
+Attack success rate: 0.70 %
+Accuracy of the network on netD: 10.00 %
+[13/100][0/100] D: 0.8641 D_prob: 0.0475 G: 1.6157 D(G(z)): 0.8641 / 1.6157 loss_imitate: 0.4237 loss_diversity: 5.9599
+[13/100][40/100] D: 0.8483 D_prob: 0.0387 G: 1.3972 D(G(z)): 0.8483 / 1.3972 loss_imitate: 0.4311 loss_diversity: 4.8306
+[13/100][80/100] D: 0.7812 D_prob: 0.0423 G: 1.3936 D(G(z)): 0.7812 / 1.3936 loss_imitate: 0.4590 loss_diversity: 4.6729
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.00 %
+[14/100][0/100] D: 0.7174 D_prob: 0.0456 G: 1.5025 D(G(z)): 0.7174 / 1.5025 loss_imitate: 0.4895 loss_diversity: 5.0652
+[14/100][40/100] D: 0.5776 D_prob: 0.0617 G: 1.7815 D(G(z)): 0.5776 / 1.7815 loss_imitate: 0.5661 loss_diversity: 6.0770
+[14/100][80/100] D: 0.6498 D_prob: 0.0470 G: 1.6100 D(G(z)): 0.6498 / 1.6100 loss_imitate: 0.5224 loss_diversity: 5.4378
+Attack success rate: 0.45 %
+Accuracy of the network on netD: 10.00 %
+[15/100][0/100] D: 0.4418 D_prob: 0.0524 G: 1.8951 D(G(z)): 0.4418 / 1.8951 loss_imitate: 0.6431 loss_diversity: 6.2602
+[15/100][40/100] D: 0.4599 D_prob: 0.0566 G: 2.0134 D(G(z)): 0.4599 / 2.0134 loss_imitate: 0.6345 loss_diversity: 6.8944
+[15/100][80/100] D: 0.4841 D_prob: 0.0516 G: 1.9356 D(G(z)): 0.4841 / 1.9356 loss_imitate: 0.6178 loss_diversity: 6.5887
+Attack success rate: 0.50 %
+Accuracy of the network on netD: 10.00 %
+[16/100][0/100] D: 0.6300 D_prob: 0.0543 G: 1.8437 D(G(z)): 0.6300 / 1.8437 loss_imitate: 0.5368 loss_diversity: 6.5342
+[16/100][40/100] D: 0.3912 D_prob: 0.0533 G: 1.9381 D(G(z)): 0.3912 / 1.9381 loss_imitate: 0.6770 loss_diversity: 6.3054
+[16/100][80/100] D: 0.3432 D_prob: 0.0525 G: 1.9943 D(G(z)): 0.3432 / 1.9943 loss_imitate: 0.7110 loss_diversity: 6.4165
+Attack success rate: 0.60 %
+Accuracy of the network on netD: 10.00 %
+[17/100][0/100] D: 0.4981 D_prob: 0.0546 G: 1.9208 D(G(z)): 0.4981 / 1.9208 loss_imitate: 0.6101 loss_diversity: 6.5534
+[17/100][40/100] D: 0.4061 D_prob: 0.0497 G: 1.9998 D(G(z)): 0.4061 / 1.9998 loss_imitate: 0.6662 loss_diversity: 6.6682
+[17/100][80/100] D: 0.6764 D_prob: 0.0458 G: 1.6998 D(G(z)): 0.6764 / 1.6998 loss_imitate: 0.5114 loss_diversity: 5.9418
+Attack success rate: 0.55 %
+Accuracy of the network on netD: 10.00 %
+[18/100][0/100] D: 0.4687 D_prob: 0.0537 G: 1.8552 D(G(z)): 0.4687 / 1.8552 loss_imitate: 0.6272 loss_diversity: 6.1397
+[18/100][40/100] D: 0.6534 D_prob: 0.0375 G: 1.5455 D(G(z)): 0.6534 / 1.5455 loss_imitate: 0.5229 loss_diversity: 5.1132
+[18/100][80/100] D: 1.1423 D_prob: 0.0280 G: 1.2510 D(G(z)): 1.1423 / 1.2510 loss_imitate: 0.3209 loss_diversity: 4.6505
+Attack success rate: 0.45 %
+Accuracy of the network on netD: 10.00 %
+[19/100][0/100] D: 1.2475 D_prob: 0.0193 G: 1.1665 D(G(z)): 1.2475 / 1.1665 loss_imitate: 0.2918 loss_diversity: 4.3738
+[19/100][40/100] D: 1.1920 D_prob: 0.0228 G: 1.2955 D(G(z)): 1.1920 / 1.2955 loss_imitate: 0.3044 loss_diversity: 4.9554
+[19/100][80/100] D: 0.9999 D_prob: 0.0352 G: 1.4793 D(G(z)): 0.9999 / 1.4793 loss_imitate: 0.3775 loss_diversity: 5.5090
+Attack success rate: 0.45 %
+Accuracy of the network on netD: 11.60 %
+This is the best model
+[20/100][0/100] D: 1.2500 D_prob: 0.0215 G: 1.0994 D(G(z)): 1.2500 / 1.0994 loss_imitate: 0.2896 loss_diversity: 4.0492
+[20/100][40/100] D: 1.6402 D_prob: 0.0102 G: 0.7742 D(G(z)): 1.6402 / 0.7742 loss_imitate: 0.1960 loss_diversity: 2.8911
+[20/100][80/100] D: 1.6407 D_prob: 0.0046 G: 0.7537 D(G(z)): 1.6407 / 0.7537 loss_imitate: 0.1997 loss_diversity: 2.7697
+Attack success rate: 0.65 %
+Accuracy of the network on netD: 9.45 %
+[21/100][0/100] D: 1.6481 D_prob: 0.0064 G: 0.8024 D(G(z)): 1.6481 / 0.8024 loss_imitate: 0.1943 loss_diversity: 3.0403
+[21/100][40/100] D: 1.4930 D_prob: 0.0084 G: 0.8909 D(G(z)): 1.4930 / 0.8909 loss_imitate: 0.2293 loss_diversity: 3.3081
+[21/100][80/100] D: 1.7165 D_prob: 0.0094 G: 0.7957 D(G(z)): 1.7165 / 0.7957 loss_imitate: 0.1885 loss_diversity: 3.0362
+Attack success rate: 0.80 %
+This is the best model
+Accuracy of the network on netD: 9.80 %
+[22/100][0/100] D: 1.5384 D_prob: 0.0139 G: 0.8417 D(G(z)): 1.5384 / 0.8417 loss_imitate: 0.2202 loss_diversity: 3.1075
+[22/100][40/100] D: 1.4989 D_prob: 0.0100 G: 0.8520 D(G(z)): 1.4989 / 0.8520 loss_imitate: 0.2286 loss_diversity: 3.1171
+[22/100][80/100] D: 1.5089 D_prob: 0.0104 G: 0.9273 D(G(z)): 1.5089 / 0.9273 loss_imitate: 0.2317 loss_diversity: 3.4777
+Attack success rate: 0.70 %
+Accuracy of the network on netD: 11.15 %
+[23/100][0/100] D: 1.4136 D_prob: 0.0102 G: 0.9747 D(G(z)): 1.4136 / 0.9747 loss_imitate: 0.2445 loss_diversity: 3.6507
+[23/100][40/100] D: 1.4113 D_prob: 0.0105 G: 0.9300 D(G(z)): 1.4113 / 0.9300 loss_imitate: 0.2492 loss_diversity: 3.4041
+[23/100][80/100] D: 1.3982 D_prob: 0.0109 G: 0.9407 D(G(z)): 1.3982 / 0.9407 loss_imitate: 0.2580 loss_diversity: 3.4135
+Attack success rate: 0.95 %
+This is the best model
+Accuracy of the network on netD: 14.30 %
+This is the best model
+[24/100][0/100] D: 1.4486 D_prob: 0.0122 G: 0.9159 D(G(z)): 1.4486 / 0.9159 loss_imitate: 0.2392 loss_diversity: 3.3836
+[24/100][40/100] D: 1.4618 D_prob: 0.0113 G: 0.8448 D(G(z)): 1.4618 / 0.8448 loss_imitate: 0.2391 loss_diversity: 3.0288
+[24/100][80/100] D: 1.5232 D_prob: 0.0153 G: 0.8841 D(G(z)): 1.5232 / 0.8841 loss_imitate: 0.2346 loss_diversity: 3.2473
+Attack success rate: 1.10 %
+This is the best model
+Accuracy of the network on netD: 18.30 %
+This is the best model
+[25/100][0/100] D: 1.6760 D_prob: 0.0120 G: 0.7960 D(G(z)): 1.6760 / 0.7960 loss_imitate: 0.2067 loss_diversity: 2.9464
+[25/100][40/100] D: 1.3672 D_prob: 0.0119 G: 0.8747 D(G(z)): 1.3672 / 0.8747 loss_imitate: 0.2559 loss_diversity: 3.0939
+[25/100][80/100] D: 1.5964 D_prob: 0.0144 G: 0.7584 D(G(z)): 1.5964 / 0.7584 loss_imitate: 0.2185 loss_diversity: 2.6998
+Attack success rate: 1.10 %
+Accuracy of the network on netD: 11.25 %
+[26/100][0/100] D: 1.3623 D_prob: 0.0146 G: 0.8119 D(G(z)): 1.3623 / 0.8119 loss_imitate: 0.2595 loss_diversity: 2.7619
+[26/100][40/100] D: 1.5008 D_prob: 0.0108 G: 0.7468 D(G(z)): 1.5008 / 0.7468 loss_imitate: 0.2318 loss_diversity: 2.5751
+[26/100][80/100] D: 1.3319 D_prob: 0.0149 G: 0.8921 D(G(z)): 1.3319 / 0.8921 loss_imitate: 0.2761 loss_diversity: 3.0799
+Attack success rate: 1.60 %
+This is the best model
+Accuracy of the network on netD: 13.35 %
+[27/100][0/100] D: 1.4244 D_prob: 0.0136 G: 0.8057 D(G(z)): 1.4244 / 0.8057 loss_imitate: 0.2463 loss_diversity: 2.7973
+[27/100][40/100] D: 1.2672 D_prob: 0.0163 G: 0.9070 D(G(z)): 1.2672 / 0.9070 loss_imitate: 0.2878 loss_diversity: 3.0961
+[27/100][80/100] D: 1.1819 D_prob: 0.0203 G: 0.8918 D(G(z)): 1.1819 / 0.8918 loss_imitate: 0.3148 loss_diversity: 2.8849
+Attack success rate: 1.10 %
+Accuracy of the network on netD: 13.05 %
+[28/100][0/100] D: 1.0790 D_prob: 0.0216 G: 0.9051 D(G(z)): 1.0790 / 0.9051 loss_imitate: 0.3498 loss_diversity: 2.7768
+[28/100][40/100] D: 1.2062 D_prob: 0.0178 G: 0.7910 D(G(z)): 1.2062 / 0.7910 loss_imitate: 0.3013 loss_diversity: 2.4482
+[28/100][80/100] D: 1.2048 D_prob: 0.0207 G: 0.7820 D(G(z)): 1.2048 / 0.7820 loss_imitate: 0.3081 loss_diversity: 2.3697
+Attack success rate: 1.65 %
+This is the best model
+Accuracy of the network on netD: 20.45 %
+This is the best model
+[29/100][0/100] D: 1.2807 D_prob: 0.0177 G: 0.7580 D(G(z)): 1.2807 / 0.7580 loss_imitate: 0.2819 loss_diversity: 2.3803
+[29/100][40/100] D: 1.2419 D_prob: 0.0233 G: 0.8350 D(G(z)): 1.2419 / 0.8350 loss_imitate: 0.2922 loss_diversity: 2.7136
+[29/100][80/100] D: 1.0295 D_prob: 0.0220 G: 0.8325 D(G(z)): 1.0295 / 0.8325 loss_imitate: 0.3578 loss_diversity: 2.3732
+Attack success rate: 1.50 %
+Accuracy of the network on netD: 21.75 %
+This is the best model
+[30/100][0/100] D: 1.5290 D_prob: 0.0209 G: 0.6943 D(G(z)): 1.5290 / 0.6943 loss_imitate: 0.2278 loss_diversity: 2.3326
+[30/100][40/100] D: 1.6067 D_prob: 0.0128 G: 0.5095 D(G(z)): 1.6067 / 0.5095 loss_imitate: 0.2148 loss_diversity: 1.4734
+[30/100][80/100] D: 1.4897 D_prob: 0.0210 G: 0.6074 D(G(z)): 1.4897 / 0.6074 loss_imitate: 0.2360 loss_diversity: 1.8571
+Attack success rate: 1.30 %
+Accuracy of the network on netD: 18.25 %
+[31/100][0/100] D: 1.3150 D_prob: 0.0145 G: 0.6407 D(G(z)): 1.3150 / 0.6407 loss_imitate: 0.2749 loss_diversity: 1.8290
+[31/100][40/100] D: 1.4398 D_prob: 0.0179 G: 0.6672 D(G(z)): 1.4398 / 0.6672 loss_imitate: 0.2527 loss_diversity: 2.0727
+[31/100][80/100] D: 1.0058 D_prob: 0.0182 G: 0.7606 D(G(z)): 1.0058 / 0.7606 loss_imitate: 0.3726 loss_diversity: 1.9399
+Attack success rate: 1.25 %
+Accuracy of the network on netD: 21.70 %
+[32/100][0/100] D: 1.6025 D_prob: 0.0195 G: 0.6308 D(G(z)): 1.6025 / 0.6308 loss_imitate: 0.2096 loss_diversity: 2.1059
+[32/100][40/100] D: 1.3471 D_prob: 0.0120 G: 0.6575 D(G(z)): 1.3471 / 0.6575 loss_imitate: 0.2720 loss_diversity: 1.9273
+[32/100][80/100] D: 1.1675 D_prob: 0.0169 G: 0.6554 D(G(z)): 1.1675 / 0.6554 loss_imitate: 0.3177 loss_diversity: 1.6887
+Attack success rate: 1.85 %
+This is the best model
+Accuracy of the network on netD: 16.15 %
+[33/100][0/100] D: 1.2577 D_prob: 0.0137 G: 0.5990 D(G(z)): 1.2577 / 0.5990 loss_imitate: 0.2918 loss_diversity: 1.5363
+[33/100][40/100] D: 1.4392 D_prob: 0.0152 G: 0.5773 D(G(z)): 1.4392 / 0.5773 loss_imitate: 0.2469 loss_diversity: 1.6522
+[33/100][80/100] D: 1.8644 D_prob: 0.0139 G: 0.4926 D(G(z)): 1.8644 / 0.4926 loss_imitate: 0.1739 loss_diversity: 1.5934
+Attack success rate: 1.75 %
+Accuracy of the network on netD: 21.55 %
+[34/100][0/100] D: 1.5283 D_prob: 0.0179 G: 0.5626 D(G(z)): 1.5283 / 0.5626 loss_imitate: 0.2344 loss_diversity: 1.6409
+[34/100][40/100] D: 1.5018 D_prob: 0.0175 G: 0.5380 D(G(z)): 1.5018 / 0.5380 loss_imitate: 0.2438 loss_diversity: 1.4705
+[34/100][80/100] D: 1.2992 D_prob: 0.0140 G: 0.5815 D(G(z)): 1.2992 / 0.5815 loss_imitate: 0.2942 loss_diversity: 1.4364
+Attack success rate: 1.70 %
+Accuracy of the network on netD: 23.55 %
+This is the best model
+[35/100][0/100] D: 0.9969 D_prob: 0.0187 G: 0.6491 D(G(z)): 0.9969 / 0.6491 loss_imitate: 0.3884 loss_diversity: 1.3033
+[35/100][40/100] D: 1.3695 D_prob: 0.0195 G: 0.5621 D(G(z)): 1.3695 / 0.5621 loss_imitate: 0.2765 loss_diversity: 1.4282
+[35/100][80/100] D: 0.9962 D_prob: 0.0166 G: 0.6106 D(G(z)): 0.9962 / 0.6106 loss_imitate: 0.3832 loss_diversity: 1.1368
+Attack success rate: 1.80 %
+Accuracy of the network on netD: 21.85 %
+[36/100][0/100] D: 1.1453 D_prob: 0.0151 G: 0.5393 D(G(z)): 1.1453 / 0.5393 loss_imitate: 0.3215 loss_diversity: 1.0891
+[36/100][40/100] D: 1.2193 D_prob: 0.0181 G: 0.5483 D(G(z)): 1.2193 / 0.5483 loss_imitate: 0.3092 loss_diversity: 1.1957
+[36/100][80/100] D: 1.0817 D_prob: 0.0196 G: 0.6109 D(G(z)): 1.0817 / 0.6109 loss_imitate: 0.3508 loss_diversity: 1.3003
+Attack success rate: 1.50 %
+Accuracy of the network on netD: 17.65 %
+[37/100][0/100] D: 1.2720 D_prob: 0.0181 G: 0.5117 D(G(z)): 1.2720 / 0.5117 loss_imitate: 0.2839 loss_diversity: 1.1391
+[37/100][40/100] D: 1.4325 D_prob: 0.0236 G: 0.5323 D(G(z)): 1.4325 / 0.5323 loss_imitate: 0.2532 loss_diversity: 1.3956
+[37/100][80/100] D: 1.3693 D_prob: 0.0198 G: 0.5465 D(G(z)): 1.3693 / 0.5465 loss_imitate: 0.2728 loss_diversity: 1.3681
+Attack success rate: 2.05 %
+This is the best model
+Accuracy of the network on netD: 24.35 %
+This is the best model
+[38/100][0/100] D: 1.1766 D_prob: 0.0218 G: 0.5786 D(G(z)): 1.1766 / 0.5786 loss_imitate: 0.3121 loss_diversity: 1.3323
+[38/100][40/100] D: 1.0674 D_prob: 0.0252 G: 0.6437 D(G(z)): 1.0674 / 0.6437 loss_imitate: 0.3460 loss_diversity: 1.4883
+[38/100][80/100] D: 1.2013 D_prob: 0.0245 G: 0.6009 D(G(z)): 1.2013 / 0.6009 loss_imitate: 0.3149 loss_diversity: 1.4300
+Attack success rate: 2.35 %
+This is the best model
+Accuracy of the network on netD: 22.00 %
+[39/100][0/100] D: 1.3343 D_prob: 0.0245 G: 0.5431 D(G(z)): 1.3343 / 0.5431 loss_imitate: 0.2700 loss_diversity: 1.3653
+[39/100][40/100] D: 1.1988 D_prob: 0.0204 G: 0.6065 D(G(z)): 1.1988 / 0.6065 loss_imitate: 0.3157 loss_diversity: 1.4539
+[39/100][80/100] D: 1.0711 D_prob: 0.0243 G: 0.6877 D(G(z)): 1.0711 / 0.6877 loss_imitate: 0.3878 loss_diversity: 1.4993
+Attack success rate: 2.40 %
+This is the best model
+Accuracy of the network on netD: 20.70 %
+[40/100][0/100] D: 0.9972 D_prob: 0.0229 G: 0.6560 D(G(z)): 0.9972 / 0.6560 loss_imitate: 0.3750 loss_diversity: 1.4051
+[40/100][40/100] D: 1.1841 D_prob: 0.0212 G: 0.5908 D(G(z)): 1.1841 / 0.5908 loss_imitate: 0.3252 loss_diversity: 1.3282
+[40/100][80/100] D: 1.1214 D_prob: 0.0244 G: 0.5754 D(G(z)): 1.1214 / 0.5754 loss_imitate: 0.3455 loss_diversity: 1.1496
+Attack success rate: 2.50 %
+This is the best model
+Accuracy of the network on netD: 21.80 %
+[41/100][0/100] D: 1.1985 D_prob: 0.0273 G: 0.5617 D(G(z)): 1.1985 / 0.5617 loss_imitate: 0.3126 loss_diversity: 1.2453
+[41/100][40/100] D: 0.9707 D_prob: 0.0237 G: 0.6617 D(G(z)): 0.9707 / 0.6617 loss_imitate: 0.4044 loss_diversity: 1.2869
+[41/100][80/100] D: 1.2789 D_prob: 0.0261 G: 0.5695 D(G(z)): 1.2789 / 0.5695 loss_imitate: 0.2946 loss_diversity: 1.3742
+Attack success rate: 1.95 %
+Accuracy of the network on netD: 21.70 %
+[42/100][0/100] D: 1.2890 D_prob: 0.0220 G: 0.5677 D(G(z)): 1.2890 / 0.5677 loss_imitate: 0.2826 loss_diversity: 1.4254
+[42/100][40/100] D: 1.3029 D_prob: 0.0211 G: 0.6632 D(G(z)): 1.3029 / 0.6632 loss_imitate: 0.2813 loss_diversity: 1.9097
+[42/100][80/100] D: 1.0493 D_prob: 0.0210 G: 0.5783 D(G(z)): 1.0493 / 0.5783 loss_imitate: 0.3676 loss_diversity: 1.0532
+Attack success rate: 2.05 %
+Accuracy of the network on netD: 25.95 %
+This is the best model
+[43/100][0/100] D: 1.3382 D_prob: 0.0166 G: 0.4873 D(G(z)): 1.3382 / 0.4873 loss_imitate: 0.2736 loss_diversity: 1.0684
+[43/100][40/100] D: 1.2579 D_prob: 0.0242 G: 0.4904 D(G(z)): 1.2579 / 0.4904 loss_imitate: 0.2953 loss_diversity: 0.9753
+[43/100][80/100] D: 1.1681 D_prob: 0.0206 G: 0.5112 D(G(z)): 1.1681 / 0.5112 loss_imitate: 0.3200 loss_diversity: 0.9561
+Attack success rate: 2.35 %
+Accuracy of the network on netD: 23.35 %
+[44/100][0/100] D: 1.0939 D_prob: 0.0197 G: 0.5722 D(G(z)): 1.0939 / 0.5722 loss_imitate: 0.3567 loss_diversity: 1.0771
+[44/100][40/100] D: 1.2454 D_prob: 0.0196 G: 0.5397 D(G(z)): 1.2454 / 0.5397 loss_imitate: 0.3112 loss_diversity: 1.1427
+[44/100][80/100] D: 1.1384 D_prob: 0.0227 G: 0.5342 D(G(z)): 1.1384 / 0.5342 loss_imitate: 0.3360 loss_diversity: 0.9913
+Attack success rate: 1.90 %
+Accuracy of the network on netD: 23.50 %
+[45/100][0/100] D: 1.1038 D_prob: 0.0233 G: 0.5020 D(G(z)): 1.1038 / 0.5020 loss_imitate: 0.3378 loss_diversity: 0.8213
+[45/100][40/100] D: 1.0956 D_prob: 0.0268 G: 0.5055 D(G(z)): 1.0956 / 0.5055 loss_imitate: 0.3422 loss_diversity: 0.8163
+[45/100][80/100] D: 1.2217 D_prob: 0.0240 G: 0.4837 D(G(z)): 1.2217 / 0.4837 loss_imitate: 0.3246 loss_diversity: 0.7959
+Attack success rate: 2.20 %
+Accuracy of the network on netD: 23.05 %
+[46/100][0/100] D: 1.0498 D_prob: 0.0267 G: 0.4960 D(G(z)): 1.0498 / 0.4960 loss_imitate: 0.3565 loss_diversity: 0.6974
+[46/100][40/100] D: 1.2109 D_prob: 0.0287 G: 0.4721 D(G(z)): 1.2109 / 0.4721 loss_imitate: 0.3116 loss_diversity: 0.8021
+[46/100][80/100] D: 0.8544 D_prob: 0.0273 G: 0.6726 D(G(z)): 0.8544 / 0.6726 loss_imitate: 0.4495 loss_diversity: 1.1159
+Attack success rate: 2.20 %
+Accuracy of the network on netD: 23.60 %
+[47/100][0/100] D: 1.0460 D_prob: 0.0280 G: 0.6568 D(G(z)): 1.0460 / 0.6568 loss_imitate: 0.3851 loss_diversity: 1.3586
+[47/100][40/100] D: 1.0390 D_prob: 0.0256 G: 0.5104 D(G(z)): 1.0390 / 0.5104 loss_imitate: 0.3681 loss_diversity: 0.7110
+[47/100][80/100] D: 0.9184 D_prob: 0.0278 G: 0.5326 D(G(z)): 0.9184 / 0.5326 loss_imitate: 0.4042 loss_diversity: 0.6423
+Attack success rate: 2.35 %
+Accuracy of the network on netD: 20.65 %
+[48/100][0/100] D: 1.0426 D_prob: 0.0231 G: 0.5151 D(G(z)): 1.0426 / 0.5151 loss_imitate: 0.3566 loss_diversity: 0.7924
+[48/100][40/100] D: 1.0020 D_prob: 0.0267 G: 0.6250 D(G(z)): 1.0020 / 0.6250 loss_imitate: 0.3966 loss_diversity: 1.1419
+[48/100][80/100] D: 1.0803 D_prob: 0.0252 G: 0.5215 D(G(z)): 1.0803 / 0.5215 loss_imitate: 0.3487 loss_diversity: 0.8638
+Attack success rate: 2.00 %
+Accuracy of the network on netD: 23.30 %
+[49/100][0/100] D: 1.1145 D_prob: 0.0269 G: 0.5310 D(G(z)): 1.1145 / 0.5310 loss_imitate: 0.3357 loss_diversity: 0.9763
+[49/100][40/100] D: 1.1125 D_prob: 0.0246 G: 0.5103 D(G(z)): 1.1125 / 0.5103 loss_imitate: 0.3387 loss_diversity: 0.8579
+[49/100][80/100] D: 1.3130 D_prob: 0.0213 G: 0.4860 D(G(z)): 1.3130 / 0.4860 loss_imitate: 0.2777 loss_diversity: 1.0415
+Attack success rate: 2.10 %
+Accuracy of the network on netD: 27.15 %
+This is the best model
+[50/100][0/100] D: 1.3068 D_prob: 0.0201 G: 0.5114 D(G(z)): 1.3068 / 0.5114 loss_imitate: 0.2995 loss_diversity: 1.0596
+[50/100][40/100] D: 1.1380 D_prob: 0.0216 G: 0.5205 D(G(z)): 1.1380 / 0.5205 loss_imitate: 0.3254 loss_diversity: 0.9753
+[50/100][80/100] D: 0.8842 D_prob: 0.0240 G: 0.5727 D(G(z)): 0.8842 / 0.5727 loss_imitate: 0.4278 loss_diversity: 0.7247
+Attack success rate: 2.05 %
+Accuracy of the network on netD: 21.90 %
+[51/100][0/100] D: 1.0027 D_prob: 0.0240 G: 0.5381 D(G(z)): 1.0027 / 0.5381 loss_imitate: 0.3770 loss_diversity: 0.8053
+[51/100][40/100] D: 1.1033 D_prob: 0.0235 G: 0.5103 D(G(z)): 1.1033 / 0.5103 loss_imitate: 0.3394 loss_diversity: 0.8544
+[51/100][80/100] D: 0.9301 D_prob: 0.0256 G: 0.5641 D(G(z)): 0.9301 / 0.5641 loss_imitate: 0.4086 loss_diversity: 0.7776
+Attack success rate: 2.05 %
+Accuracy of the network on netD: 25.10 %
+[52/100][0/100] D: 1.0051 D_prob: 0.0264 G: 0.5398 D(G(z)): 1.0051 / 0.5398 loss_imitate: 0.3733 loss_diversity: 0.8328
+[52/100][40/100] D: 0.9926 D_prob: 0.0245 G: 0.5528 D(G(z)): 0.9926 / 0.5528 loss_imitate: 0.3826 loss_diversity: 0.8506
+[52/100][80/100] D: 1.0197 D_prob: 0.0240 G: 0.5281 D(G(z)): 1.0197 / 0.5281 loss_imitate: 0.3753 loss_diversity: 0.7640
+Attack success rate: 2.20 %
+Accuracy of the network on netD: 22.80 %
+[53/100][0/100] D: 1.2018 D_prob: 0.0240 G: 0.4817 D(G(z)): 1.2018 / 0.4817 loss_imitate: 0.3207 loss_diversity: 0.8050
+[53/100][40/100] D: 1.0243 D_prob: 0.0209 G: 0.5221 D(G(z)): 1.0243 / 0.5221 loss_imitate: 0.3789 loss_diversity: 0.7163
+[53/100][80/100] D: 0.9774 D_prob: 0.0213 G: 0.5524 D(G(z)): 0.9774 / 0.5524 loss_imitate: 0.3908 loss_diversity: 0.8080
+Attack success rate: 1.95 %
+Accuracy of the network on netD: 17.20 %
+[54/100][0/100] D: 0.9736 D_prob: 0.0211 G: 0.5512 D(G(z)): 0.9736 / 0.5512 loss_imitate: 0.3862 loss_diversity: 0.8250
+[54/100][40/100] D: 0.8053 D_prob: 0.0254 G: 0.6133 D(G(z)): 0.8053 / 0.6133 loss_imitate: 0.4664 loss_diversity: 0.7345
+[54/100][80/100] D: 1.1056 D_prob: 0.0286 G: 0.5000 D(G(z)): 1.1056 / 0.5000 loss_imitate: 0.3366 loss_diversity: 0.8170
+Attack success rate: 1.95 %
+Accuracy of the network on netD: 16.45 %
+[55/100][0/100] D: 1.0163 D_prob: 0.0280 G: 0.5105 D(G(z)): 1.0163 / 0.5105 loss_imitate: 0.3692 loss_diversity: 0.7065
+[55/100][40/100] D: 1.1133 D_prob: 0.0263 G: 0.4990 D(G(z)): 1.1133 / 0.4990 loss_imitate: 0.3522 loss_diversity: 0.7339
+[55/100][80/100] D: 0.9264 D_prob: 0.0211 G: 0.5867 D(G(z)): 0.9264 / 0.5867 loss_imitate: 0.4146 loss_diversity: 0.8607
+Attack success rate: 2.05 %
+Accuracy of the network on netD: 20.60 %
+[56/100][0/100] D: 0.9913 D_prob: 0.0240 G: 0.5283 D(G(z)): 0.9913 / 0.5283 loss_imitate: 0.3864 loss_diversity: 0.7095
+[56/100][40/100] D: 0.9454 D_prob: 0.0285 G: 0.5416 D(G(z)): 0.9454 / 0.5416 loss_imitate: 0.3984 loss_diversity: 0.7159
+[56/100][80/100] D: 1.0665 D_prob: 0.0243 G: 0.5325 D(G(z)): 1.0665 / 0.5325 loss_imitate: 0.3629 loss_diversity: 0.8480
+Attack success rate: 2.05 %
+Accuracy of the network on netD: 23.55 %
+[57/100][0/100] D: 1.0967 D_prob: 0.0233 G: 0.5061 D(G(z)): 1.0967 / 0.5061 loss_imitate: 0.3399 loss_diversity: 0.8309
+[57/100][40/100] D: 1.0336 D_prob: 0.0260 G: 0.5204 D(G(z)): 1.0336 / 0.5204 loss_imitate: 0.3689 loss_diversity: 0.7575
+[57/100][80/100] D: 1.1165 D_prob: 0.0259 G: 0.5280 D(G(z)): 1.1165 / 0.5280 loss_imitate: 0.3497 loss_diversity: 0.8911
+Attack success rate: 2.25 %
+Accuracy of the network on netD: 30.30 %
+This is the best model
+[58/100][0/100] D: 0.9472 D_prob: 0.0260 G: 0.5536 D(G(z)): 0.9472 / 0.5536 loss_imitate: 0.4039 loss_diversity: 0.7488
+[58/100][40/100] D: 0.9153 D_prob: 0.0277 G: 0.5961 D(G(z)): 0.9153 / 0.5961 loss_imitate: 0.4064 loss_diversity: 0.9483
+[58/100][80/100] D: 1.0476 D_prob: 0.0286 G: 0.5248 D(G(z)): 1.0476 / 0.5248 loss_imitate: 0.3774 loss_diversity: 0.7369
+Attack success rate: 2.40 %
+Accuracy of the network on netD: 19.90 %
+[59/100][0/100] D: 0.9914 D_prob: 0.0260 G: 0.5422 D(G(z)): 0.9914 / 0.5422 loss_imitate: 0.3775 loss_diversity: 0.8233
+[59/100][40/100] D: 1.1355 D_prob: 0.0285 G: 0.4922 D(G(z)): 1.1355 / 0.4922 loss_imitate: 0.3340 loss_diversity: 0.7909
+[59/100][80/100] D: 1.0358 D_prob: 0.0263 G: 0.6112 D(G(z)): 1.0358 / 0.6112 loss_imitate: 0.3702 loss_diversity: 1.2046
+Attack success rate: 2.00 %
+Accuracy of the network on netD: 21.80 %
+[60/100][0/100] D: 1.1587 D_prob: 0.0249 G: 0.5179 D(G(z)): 1.1587 / 0.5179 loss_imitate: 0.3263 loss_diversity: 0.9577
+[60/100][40/100] D: 1.2008 D_prob: 0.0242 G: 0.4633 D(G(z)): 1.2008 / 0.4633 loss_imitate: 0.3086 loss_diversity: 0.7734
+[60/100][80/100] D: 1.0609 D_prob: 0.0253 G: 0.4873 D(G(z)): 1.0609 / 0.4873 loss_imitate: 0.3545 loss_diversity: 0.6644
+Attack success rate: 2.20 %
+Accuracy of the network on netD: 17.25 %
+[61/100][0/100] D: 1.1253 D_prob: 0.0251 G: 0.5086 D(G(z)): 1.1253 / 0.5086 loss_imitate: 0.3400 loss_diversity: 0.8426
+[61/100][40/100] D: 1.2386 D_prob: 0.0219 G: 0.4819 D(G(z)): 1.2386 / 0.4819 loss_imitate: 0.3030 loss_diversity: 0.8944
+[61/100][80/100] D: 1.2593 D_prob: 0.0212 G: 0.4945 D(G(z)): 1.2593 / 0.4945 loss_imitate: 0.3029 loss_diversity: 0.9577
+Attack success rate: 2.70 %
+This is the best model
+Accuracy of the network on netD: 22.10 %
+[62/100][0/100] D: 1.2462 D_prob: 0.0211 G: 0.4880 D(G(z)): 1.2462 / 0.4880 loss_imitate: 0.2952 loss_diversity: 0.9645
+[62/100][40/100] D: 1.4111 D_prob: 0.0152 G: 0.4679 D(G(z)): 1.4111 / 0.4679 loss_imitate: 0.2500 loss_diversity: 1.0896
+[62/100][80/100] D: 1.0035 D_prob: 0.0260 G: 0.5215 D(G(z)): 1.0035 / 0.5215 loss_imitate: 0.3820 loss_diversity: 0.6972
+Attack success rate: 3.15 %
+This is the best model
+Accuracy of the network on netD: 27.25 %
+[63/100][0/100] D: 1.1527 D_prob: 0.0241 G: 0.4734 D(G(z)): 1.1527 / 0.4734 loss_imitate: 0.3292 loss_diversity: 0.7213
+[63/100][40/100] D: 0.9387 D_prob: 0.0207 G: 0.5398 D(G(z)): 0.9387 / 0.5398 loss_imitate: 0.3980 loss_diversity: 0.7090
+[63/100][80/100] D: 0.9335 D_prob: 0.0199 G: 0.5799 D(G(z)): 0.9335 / 0.5799 loss_imitate: 0.4046 loss_diversity: 0.8768
+Attack success rate: 2.80 %
+Accuracy of the network on netD: 23.00 %
+[64/100][0/100] D: 1.0146 D_prob: 0.0212 G: 0.5461 D(G(z)): 1.0146 / 0.5461 loss_imitate: 0.3757 loss_diversity: 0.8522
+[64/100][40/100] D: 1.2358 D_prob: 0.0260 G: 0.4471 D(G(z)): 1.2358 / 0.4471 loss_imitate: 0.3102 loss_diversity: 0.6849
+[64/100][80/100] D: 0.8939 D_prob: 0.0232 G: 0.5656 D(G(z)): 0.8939 / 0.5656 loss_imitate: 0.4145 loss_diversity: 0.7559
+Attack success rate: 2.25 %
+Accuracy of the network on netD: 25.35 %
+[65/100][0/100] D: 1.1965 D_prob: 0.0261 G: 0.5017 D(G(z)): 1.1965 / 0.5017 loss_imitate: 0.3123 loss_diversity: 0.9470
+[65/100][40/100] D: 0.8742 D_prob: 0.0207 G: 0.6028 D(G(z)): 0.8742 / 0.6028 loss_imitate: 0.4330 loss_diversity: 0.8491
+[65/100][80/100] D: 1.1302 D_prob: 0.0189 G: 0.5121 D(G(z)): 1.1302 / 0.5121 loss_imitate: 0.3368 loss_diversity: 0.8768
+Attack success rate: 2.85 %
+Accuracy of the network on netD: 22.95 %
+[66/100][0/100] D: 1.1559 D_prob: 0.0215 G: 0.5297 D(G(z)): 1.1559 / 0.5297 loss_imitate: 0.3239 loss_diversity: 1.0286
+[66/100][40/100] D: 1.0881 D_prob: 0.0207 G: 0.5259 D(G(z)): 1.0881 / 0.5259 loss_imitate: 0.3790 loss_diversity: 0.7343
+[66/100][80/100] D: 1.4330 D_prob: 0.0209 G: 0.4462 D(G(z)): 1.4330 / 0.4462 loss_imitate: 0.2558 loss_diversity: 0.9516
+Attack success rate: 2.85 %
+Accuracy of the network on netD: 24.45 %
+[67/100][0/100] D: 1.2333 D_prob: 0.0210 G: 0.4869 D(G(z)): 1.2333 / 0.4869 loss_imitate: 0.3010 loss_diversity: 0.9295
+[67/100][40/100] D: 0.9385 D_prob: 0.0244 G: 0.5937 D(G(z)): 0.9385 / 0.5937 loss_imitate: 0.4152 loss_diversity: 0.8925
+[67/100][80/100] D: 0.7987 D_prob: 0.0270 G: 0.5599 D(G(z)): 0.7987 / 0.5599 loss_imitate: 0.4653 loss_diversity: 0.4731
+Attack success rate: 2.45 %
+Accuracy of the network on netD: 25.15 %
+[68/100][0/100] D: 0.9866 D_prob: 0.0269 G: 0.5034 D(G(z)): 0.9866 / 0.5034 loss_imitate: 0.3841 loss_diversity: 0.5969
+[68/100][40/100] D: 0.9129 D_prob: 0.0200 G: 0.5534 D(G(z)): 0.9129 / 0.5534 loss_imitate: 0.4129 loss_diversity: 0.7025
+[68/100][80/100] D: 0.9133 D_prob: 0.0209 G: 0.5952 D(G(z)): 0.9133 / 0.5952 loss_imitate: 0.4163 loss_diversity: 0.8944
+Attack success rate: 2.65 %
+Accuracy of the network on netD: 27.30 %
+[69/100][0/100] D: 0.9113 D_prob: 0.0217 G: 0.5741 D(G(z)): 0.9113 / 0.5741 loss_imitate: 0.4217 loss_diversity: 0.7621
+[69/100][40/100] D: 1.0607 D_prob: 0.0251 G: 0.5263 D(G(z)): 1.0607 / 0.5263 loss_imitate: 0.3653 loss_diversity: 0.8054
+[69/100][80/100] D: 0.9686 D_prob: 0.0293 G: 0.5155 D(G(z)): 0.9686 / 0.5155 loss_imitate: 0.3850 loss_diversity: 0.6523
+Attack success rate: 2.55 %
+Accuracy of the network on netD: 32.20 %
+This is the best model
+[70/100][0/100] D: 1.2849 D_prob: 0.0285 G: 0.4120 D(G(z)): 1.2849 / 0.4120 loss_imitate: 0.2877 loss_diversity: 0.6215
+[70/100][40/100] D: 1.1904 D_prob: 0.0302 G: 0.4265 D(G(z)): 1.1904 / 0.4265 loss_imitate: 0.3267 loss_diversity: 0.4989
+[70/100][80/100] D: 1.3322 D_prob: 0.0260 G: 0.4429 D(G(z)): 1.3322 / 0.4429 loss_imitate: 0.2820 loss_diversity: 0.8045
+Attack success rate: 2.80 %
+Accuracy of the network on netD: 23.50 %
+[71/100][0/100] D: 1.1187 D_prob: 0.0258 G: 0.4806 D(G(z)): 1.1187 / 0.4806 loss_imitate: 0.3404 loss_diversity: 0.7011
+[71/100][40/100] D: 1.0297 D_prob: 0.0264 G: 0.5695 D(G(z)): 1.0297 / 0.5695 loss_imitate: 0.4006 loss_diversity: 0.8444
+[71/100][80/100] D: 1.1016 D_prob: 0.0309 G: 0.5653 D(G(z)): 1.1016 / 0.5653 loss_imitate: 0.3817 loss_diversity: 0.9180
+Attack success rate: 2.80 %
+Accuracy of the network on netD: 24.80 %
+[72/100][0/100] D: 1.0102 D_prob: 0.0247 G: 0.5301 D(G(z)): 1.0102 / 0.5301 loss_imitate: 0.3728 loss_diversity: 0.7863
+[72/100][40/100] D: 1.0560 D_prob: 0.0233 G: 0.5307 D(G(z)): 1.0560 / 0.5307 loss_imitate: 0.3630 loss_diversity: 0.8384
+[72/100][80/100] D: 0.8372 D_prob: 0.0269 G: 0.5636 D(G(z)): 0.8372 / 0.5636 loss_imitate: 0.4400 loss_diversity: 0.6178
+Attack success rate: 3.30 %
+This is the best model
+Accuracy of the network on netD: 27.00 %
+[73/100][0/100] D: 1.0154 D_prob: 0.0225 G: 0.5466 D(G(z)): 1.0154 / 0.5466 loss_imitate: 0.3821 loss_diversity: 0.8227
+[73/100][40/100] D: 0.8155 D_prob: 0.0267 G: 0.6111 D(G(z)): 0.8155 / 0.6111 loss_imitate: 0.4678 loss_diversity: 0.7165
+[73/100][80/100] D: 1.0603 D_prob: 0.0246 G: 0.5124 D(G(z)): 1.0603 / 0.5124 loss_imitate: 0.3572 loss_diversity: 0.7761
+Attack success rate: 3.50 %
+This is the best model
+Accuracy of the network on netD: 34.75 %
+This is the best model
+[74/100][0/100] D: 0.8704 D_prob: 0.0244 G: 0.5644 D(G(z)): 0.8704 / 0.5644 loss_imitate: 0.4251 loss_diversity: 0.6964
+[74/100][40/100] D: 1.0507 D_prob: 0.0272 G: 0.5186 D(G(z)): 1.0507 / 0.5186 loss_imitate: 0.3590 loss_diversity: 0.7979
+[74/100][80/100] D: 1.0141 D_prob: 0.0272 G: 0.5553 D(G(z)): 1.0141 / 0.5553 loss_imitate: 0.3739 loss_diversity: 0.9072
+Attack success rate: 3.55 %
+This is the best model
+Accuracy of the network on netD: 32.45 %
+[75/100][0/100] D: 1.0714 D_prob: 0.0232 G: 0.4911 D(G(z)): 1.0714 / 0.4911 loss_imitate: 0.3484 loss_diversity: 0.7134
+[75/100][40/100] D: 1.0442 D_prob: 0.0214 G: 0.4975 D(G(z)): 1.0442 / 0.4975 loss_imitate: 0.3676 loss_diversity: 0.6494
+[75/100][80/100] D: 0.7043 D_prob: 0.0279 G: 0.6321 D(G(z)): 0.7043 / 0.6321 loss_imitate: 0.5148 loss_diversity: 0.5867
+Attack success rate: 3.30 %
+Accuracy of the network on netD: 30.15 %
+[76/100][0/100] D: 0.8345 D_prob: 0.0290 G: 0.5515 D(G(z)): 0.8345 / 0.5515 loss_imitate: 0.4435 loss_diversity: 0.5397
+[76/100][40/100] D: 0.9474 D_prob: 0.0219 G: 0.5816 D(G(z)): 0.9474 / 0.5816 loss_imitate: 0.4214 loss_diversity: 0.8009
+[76/100][80/100] D: 0.6812 D_prob: 0.0270 G: 0.6365 D(G(z)): 0.6812 / 0.6365 loss_imitate: 0.5258 loss_diversity: 0.5535
+Attack success rate: 2.90 %
+Accuracy of the network on netD: 26.55 %
+[77/100][0/100] D: 0.9616 D_prob: 0.0322 G: 0.5052 D(G(z)): 0.9616 / 0.5052 loss_imitate: 0.4095 loss_diversity: 0.4785
+[77/100][40/100] D: 0.9135 D_prob: 0.0278 G: 0.5339 D(G(z)): 0.9135 / 0.5339 loss_imitate: 0.4227 loss_diversity: 0.5561
+[77/100][80/100] D: 0.8710 D_prob: 0.0186 G: 0.5778 D(G(z)): 0.8710 / 0.5778 loss_imitate: 0.4289 loss_diversity: 0.7447
+Attack success rate: 3.05 %
+Accuracy of the network on netD: 30.90 %
+[78/100][0/100] D: 1.0730 D_prob: 0.0200 G: 0.5126 D(G(z)): 1.0730 / 0.5126 loss_imitate: 0.3546 loss_diversity: 0.7900
+[78/100][40/100] D: 0.8877 D_prob: 0.0172 G: 0.5783 D(G(z)): 0.8877 / 0.5783 loss_imitate: 0.4230 loss_diversity: 0.7765
+[78/100][80/100] D: 1.1336 D_prob: 0.0253 G: 0.5139 D(G(z)): 1.1336 / 0.5139 loss_imitate: 0.3385 loss_diversity: 0.8768
+Attack success rate: 3.40 %
+Accuracy of the network on netD: 25.75 %
+[79/100][0/100] D: 0.9213 D_prob: 0.0279 G: 0.5475 D(G(z)): 0.9213 / 0.5475 loss_imitate: 0.4048 loss_diversity: 0.7134
+[79/100][40/100] D: 0.7643 D_prob: 0.0281 G: 0.6348 D(G(z)): 0.7643 / 0.6348 loss_imitate: 0.4873 loss_diversity: 0.7372
+[79/100][80/100] D: 0.9200 D_prob: 0.0250 G: 0.5600 D(G(z)): 0.9200 / 0.5600 loss_imitate: 0.4282 loss_diversity: 0.6590
+Attack success rate: 3.60 %
+This is the best model
+Accuracy of the network on netD: 29.70 %
+[80/100][0/100] D: 0.8380 D_prob: 0.0243 G: 0.5733 D(G(z)): 0.8380 / 0.5733 loss_imitate: 0.4529 loss_diversity: 0.6021
+[80/100][40/100] D: 1.0714 D_prob: 0.0213 G: 0.5118 D(G(z)): 1.0714 / 0.5118 loss_imitate: 0.3504 loss_diversity: 0.8071
+[80/100][80/100] D: 0.9537 D_prob: 0.0247 G: 0.5182 D(G(z)): 0.9537 / 0.5182 loss_imitate: 0.4057 loss_diversity: 0.5624
+Attack success rate: 3.45 %
+Accuracy of the network on netD: 31.20 %
+[81/100][0/100] D: 0.9700 D_prob: 0.0282 G: 0.5442 D(G(z)): 0.9700 / 0.5442 loss_imitate: 0.3888 loss_diversity: 0.7773
+[81/100][40/100] D: 0.8526 D_prob: 0.0302 G: 0.6229 D(G(z)): 0.8526 / 0.6229 loss_imitate: 0.4418 loss_diversity: 0.9055
+[81/100][80/100] D: 1.1349 D_prob: 0.0253 G: 0.5477 D(G(z)): 1.1349 / 0.5477 loss_imitate: 0.3363 loss_diversity: 1.0568
+Attack success rate: 3.25 %
+Accuracy of the network on netD: 25.25 %
+[82/100][0/100] D: 1.1394 D_prob: 0.0209 G: 0.5732 D(G(z)): 1.1394 / 0.5732 loss_imitate: 0.3415 loss_diversity: 1.1586
+[82/100][40/100] D: 1.1373 D_prob: 0.0205 G: 0.5172 D(G(z)): 1.1373 / 0.5172 loss_imitate: 0.3329 loss_diversity: 0.9217
+[82/100][80/100] D: 0.8687 D_prob: 0.0264 G: 0.6009 D(G(z)): 0.8687 / 0.6009 loss_imitate: 0.4383 loss_diversity: 0.8130
+Attack success rate: 3.45 %
+Accuracy of the network on netD: 22.15 %
+[83/100][0/100] D: 1.1194 D_prob: 0.0182 G: 0.5287 D(G(z)): 1.1194 / 0.5287 loss_imitate: 0.3646 loss_diversity: 0.8205
+[83/100][40/100] D: 0.9758 D_prob: 0.0206 G: 0.5428 D(G(z)): 0.9758 / 0.5428 loss_imitate: 0.3891 loss_diversity: 0.7684
+[83/100][80/100] D: 0.9234 D_prob: 0.0203 G: 0.5662 D(G(z)): 0.9234 / 0.5662 loss_imitate: 0.4152 loss_diversity: 0.7550
+Attack success rate: 3.15 %
+Accuracy of the network on netD: 23.10 %
+[84/100][0/100] D: 0.8461 D_prob: 0.0249 G: 0.5981 D(G(z)): 0.8461 / 0.5981 loss_imitate: 0.4438 loss_diversity: 0.7718
+[84/100][40/100] D: 0.9661 D_prob: 0.0259 G: 0.5406 D(G(z)): 0.9661 / 0.5406 loss_imitate: 0.3935 loss_diversity: 0.7353
+[84/100][80/100] D: 0.7796 D_prob: 0.0243 G: 0.6031 D(G(z)): 0.7796 / 0.6031 loss_imitate: 0.4806 loss_diversity: 0.6126
+Attack success rate: 3.00 %
+Accuracy of the network on netD: 23.10 %
+[85/100][0/100] D: 0.6842 D_prob: 0.0228 G: 0.6319 D(G(z)): 0.6842 / 0.6319 loss_imitate: 0.5136 loss_diversity: 0.5917
+[85/100][40/100] D: 0.9525 D_prob: 0.0321 G: 0.5373 D(G(z)): 0.9525 / 0.5373 loss_imitate: 0.4173 loss_diversity: 0.5999
+[85/100][80/100] D: 1.0251 D_prob: 0.0305 G: 0.5156 D(G(z)): 1.0251 / 0.5156 loss_imitate: 0.3809 loss_diversity: 0.6731
+Attack success rate: 3.45 %
+Accuracy of the network on netD: 25.70 %
+[86/100][0/100] D: 0.9222 D_prob: 0.0209 G: 0.5633 D(G(z)): 0.9222 / 0.5633 loss_imitate: 0.4349 loss_diversity: 0.6422
+[86/100][40/100] D: 1.0486 D_prob: 0.0202 G: 0.5432 D(G(z)): 1.0486 / 0.5432 loss_imitate: 0.3673 loss_diversity: 0.8797
+[86/100][80/100] D: 1.2165 D_prob: 0.0209 G: 0.4762 D(G(z)): 1.2165 / 0.4762 loss_imitate: 0.3102 loss_diversity: 0.8302
+Attack success rate: 3.30 %
+Accuracy of the network on netD: 24.20 %
+[87/100][0/100] D: 0.9290 D_prob: 0.0208 G: 0.5469 D(G(z)): 0.9290 / 0.5469 loss_imitate: 0.4071 loss_diversity: 0.6991
+[87/100][40/100] D: 1.1125 D_prob: 0.0223 G: 0.4772 D(G(z)): 1.1125 / 0.4772 loss_imitate: 0.3462 loss_diversity: 0.6550
+[87/100][80/100] D: 0.9857 D_prob: 0.0209 G: 0.4969 D(G(z)): 0.9857 / 0.4969 loss_imitate: 0.3894 loss_diversity: 0.5375
+Attack success rate: 3.70 %
+This is the best model
+Accuracy of the network on netD: 27.85 %
+[88/100][0/100] D: 1.0644 D_prob: 0.0264 G: 0.4673 D(G(z)): 1.0644 / 0.4673 loss_imitate: 0.3631 loss_diversity: 0.5210
+[88/100][40/100] D: 0.7807 D_prob: 0.0241 G: 0.5990 D(G(z)): 0.7807 / 0.5990 loss_imitate: 0.4844 loss_diversity: 0.5730
+[88/100][80/100] D: 1.0510 D_prob: 0.0311 G: 0.4776 D(G(z)): 1.0510 / 0.4776 loss_imitate: 0.3882 loss_diversity: 0.4471
+Attack success rate: 3.25 %
+Accuracy of the network on netD: 24.05 %
+[89/100][0/100] D: 0.6566 D_prob: 0.0270 G: 0.6405 D(G(z)): 0.6566 / 0.6405 loss_imitate: 0.5407 loss_diversity: 0.4991
+[89/100][40/100] D: 0.6801 D_prob: 0.0292 G: 0.6127 D(G(z)): 0.6801 / 0.6127 loss_imitate: 0.5332 loss_diversity: 0.3971
+[89/100][80/100] D: 0.9060 D_prob: 0.0276 G: 0.5176 D(G(z)): 0.9060 / 0.5176 loss_imitate: 0.4249 loss_diversity: 0.4635
+Attack success rate: 3.55 %
+Accuracy of the network on netD: 19.55 %
+[90/100][0/100] D: 0.5921 D_prob: 0.0332 G: 0.6410 D(G(z)): 0.5921 / 0.6410 loss_imitate: 0.5723 loss_diversity: 0.3436
+[90/100][40/100] D: 0.7116 D_prob: 0.0346 G: 0.5947 D(G(z)): 0.7116 / 0.5947 loss_imitate: 0.5070 loss_diversity: 0.4386
+[90/100][80/100] D: 0.8303 D_prob: 0.0294 G: 0.5865 D(G(z)): 0.8303 / 0.5865 loss_imitate: 0.4571 loss_diversity: 0.6467
+Attack success rate: 3.55 %
+Accuracy of the network on netD: 31.40 %
+[91/100][0/100] D: 0.8738 D_prob: 0.0345 G: 0.5319 D(G(z)): 0.8738 / 0.5319 loss_imitate: 0.4252 loss_diversity: 0.5337
+[91/100][40/100] D: 0.6390 D_prob: 0.0295 G: 0.6249 D(G(z)): 0.6390 / 0.6249 loss_imitate: 0.5376 loss_diversity: 0.4363
+[91/100][80/100] D: 1.0669 D_prob: 0.0352 G: 0.5105 D(G(z)): 1.0669 / 0.5105 loss_imitate: 0.3720 loss_diversity: 0.6921
+Attack success rate: 3.55 %
+Accuracy of the network on netD: 36.60 %
+This is the best model
+[92/100][0/100] D: 0.8776 D_prob: 0.0287 G: 0.5482 D(G(z)): 0.8776 / 0.5482 loss_imitate: 0.4440 loss_diversity: 0.5212
+[92/100][40/100] D: 0.5915 D_prob: 0.0274 G: 0.6500 D(G(z)): 0.5915 / 0.6500 loss_imitate: 0.5769 loss_diversity: 0.3656
+[92/100][80/100] D: 0.6107 D_prob: 0.0296 G: 0.6356 D(G(z)): 0.6107 / 0.6356 loss_imitate: 0.5550 loss_diversity: 0.4034
+Attack success rate: 3.30 %
+Accuracy of the network on netD: 31.80 %
+[93/100][0/100] D: 0.6485 D_prob: 0.0338 G: 0.6264 D(G(z)): 0.6485 / 0.6264 loss_imitate: 0.5343 loss_diversity: 0.4603
+[93/100][40/100] D: 0.7780 D_prob: 0.0278 G: 0.5712 D(G(z)): 0.7780 / 0.5712 loss_imitate: 0.4774 loss_diversity: 0.4692
+[93/100][80/100] D: 0.7727 D_prob: 0.0274 G: 0.5948 D(G(z)): 0.7727 / 0.5948 loss_imitate: 0.4684 loss_diversity: 0.6323
+Attack success rate: 3.55 %
+Accuracy of the network on netD: 26.85 %
+[94/100][0/100] D: 0.8982 D_prob: 0.0288 G: 0.5450 D(G(z)): 0.8982 / 0.5450 loss_imitate: 0.4181 loss_diversity: 0.6345
+[94/100][40/100] D: 0.6993 D_prob: 0.0268 G: 0.6310 D(G(z)): 0.6993 / 0.6310 loss_imitate: 0.5053 loss_diversity: 0.6286
+[94/100][80/100] D: 1.0035 D_prob: 0.0280 G: 0.4993 D(G(z)): 1.0035 / 0.4993 loss_imitate: 0.3812 loss_diversity: 0.5907
+Attack success rate: 4.10 %
+This is the best model
+Accuracy of the network on netD: 23.45 %
+[95/100][0/100] D: 0.9261 D_prob: 0.0294 G: 0.5418 D(G(z)): 0.9261 / 0.5418 loss_imitate: 0.4034 loss_diversity: 0.6919
+[95/100][40/100] D: 0.7347 D_prob: 0.0304 G: 0.6276 D(G(z)): 0.7347 / 0.6276 loss_imitate: 0.4947 loss_diversity: 0.6650
+[95/100][80/100] D: 1.0459 D_prob: 0.0257 G: 0.4947 D(G(z)): 1.0459 / 0.4947 loss_imitate: 0.3755 loss_diversity: 0.5960
+Attack success rate: 3.15 %
+Accuracy of the network on netD: 18.75 %
+[96/100][0/100] D: 0.8706 D_prob: 0.0263 G: 0.5492 D(G(z)): 0.8706 / 0.5492 loss_imitate: 0.4444 loss_diversity: 0.5243
+[96/100][40/100] D: 0.8269 D_prob: 0.0345 G: 0.5283 D(G(z)): 0.8269 / 0.5283 loss_imitate: 0.4490 loss_diversity: 0.3967
+[96/100][80/100] D: 0.5403 D_prob: 0.0339 G: 0.6817 D(G(z)): 0.5403 / 0.6817 loss_imitate: 0.5889 loss_diversity: 0.4637
+Attack success rate: 3.25 %
+Accuracy of the network on netD: 21.25 %
+[97/100][0/100] D: 0.7343 D_prob: 0.0288 G: 0.6333 D(G(z)): 0.7343 / 0.6333 loss_imitate: 0.4960 loss_diversity: 0.6867
+[97/100][40/100] D: 0.9383 D_prob: 0.0290 G: 0.5083 D(G(z)): 0.9383 / 0.5083 loss_imitate: 0.4074 loss_diversity: 0.5043
+[97/100][80/100] D: 0.7908 D_prob: 0.0329 G: 0.5583 D(G(z)): 0.7908 / 0.5583 loss_imitate: 0.4711 loss_diversity: 0.4363
+Attack success rate: 3.65 %
+Accuracy of the network on netD: 28.95 %
+[98/100][0/100] D: 0.5271 D_prob: 0.0294 G: 0.6868 D(G(z)): 0.5271 / 0.6868 loss_imitate: 0.6092 loss_diversity: 0.3881
+[98/100][40/100] D: 0.8111 D_prob: 0.0232 G: 0.5832 D(G(z)): 0.8111 / 0.5832 loss_imitate: 0.4583 loss_diversity: 0.6244
+[98/100][80/100] D: 0.8257 D_prob: 0.0329 G: 0.5458 D(G(z)): 0.8257 / 0.5458 loss_imitate: 0.4594 loss_diversity: 0.4318
+Attack success rate: 3.35 %
+Accuracy of the network on netD: 22.45 %
+[99/100][0/100] D: 0.7571 D_prob: 0.0332 G: 0.5467 D(G(z)): 0.7571 / 0.5467 loss_imitate: 0.4804 loss_diversity: 0.3317
+[99/100][40/100] D: 1.0205 D_prob: 0.0259 G: 0.5113 D(G(z)): 1.0205 / 0.5113 loss_imitate: 0.3699 loss_diversity: 0.7070
+[99/100][80/100] D: 0.9599 D_prob: 0.0274 G: 0.5200 D(G(z)): 0.9599 / 0.5200 loss_imitate: 0.4035 loss_diversity: 0.5825
+Attack success rate: 3.40 %
+Accuracy of the network on netD: 25.80 %
