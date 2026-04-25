@@ -33,6 +33,12 @@ workbook = xlwt.Workbook(encoding = 'utf-8')
 worksheet = workbook.add_sheet('imitation_network_sig')
 nz = 128
 
+print("CUDA available:", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
+else:
+    print("Running on CPU")
+
 class Logger(object):
     def __init__(self, filename='default.log', stream=sys.stdout):
 	    self.terminal = stream
@@ -51,7 +57,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=2)
 parser.add_argument('--batchSize', type=int, default=500, help='input batch size')
 parser.add_argument('--dataset', type=str, default='azure')
-parser.add_argument('--niter', type=int, default=2000, help='number of epochs to train for')
+parser.add_argument('--niter', type=int, default=100, help='number of epochs to train for')
 parser.add_argument('--lr', type=float, default=0.0001, help='learning rate, default=0.0002')
 parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for adam. default=0.5')
 parser.add_argument('--cuda', default=True, action='store_true', help='enables cuda')
@@ -114,7 +120,7 @@ elif opt.dataset == 'mnist':
 
 data_list = [i for i in range(6000, 8000)] # fast validation
 testloader = torch.utils.data.DataLoader(testset, batch_size=500,
-                                         sampler = sp.SubsetRandomSampler(data_list), num_workers=2)
+                                         sampler = sp.SubsetRandomSampler(data_list), num_workers=opt.workers)
 # nc=1
 
 device = torch.device("cuda:0" if opt.cuda else "cpu")
@@ -371,7 +377,7 @@ del inputs, labels, adv_inputs_ghost
 torch.cuda.empty_cache()
 gc.collect()
 
-batch_num = 1000
+batch_num = 100
 best_accuracy = 0.0
 best_att = 0.0
 for epoch in range(opt.niter):
