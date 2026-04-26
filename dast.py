@@ -129,29 +129,68 @@ if opt.dataset == 'azure':
     nc=1
 
 elif opt.dataset == 'mnist':
-    testset = torchvision.datasets.MNIST(root='dataset/', train=False,
-                                        download=True,
-                                        transform=transforms.Compose([
-                                                # transforms.Pad(2, padding_mode="symmetric"),
-                                                transforms.ToTensor(),
-                                                # transforms.RandomCrop(32, 4),
-                                                # normalize,
-                                        ]))
+    testset = torchvision.datasets.MNIST(
+        root='dataset/', train=False,
+        download=True,
+        transform=transforms.Compose([
+            transforms.ToTensor(),
+        ])
+    )
+
     netD = Net_l().cuda()
     netD = nn.DataParallel(netD)
 
     original_net = Net_m().cuda()
-    state_dict = torch.load(
-        'pretrained/net_m.pth')
+    state_dict = torch.load('pretrained/net_m.pth')
     original_net.load_state_dict(state_dict)
     original_net = nn.DataParallel(original_net)
     original_net.eval()
 
     adversary_ghost = LinfBasicIterativeAttack(
-        netD, loss_fn=nn.CrossEntropyLoss(reduction="sum"), eps=0.25,
-        nb_iter=200, eps_iter=0.02, clip_min=0.0, clip_max=1.0,
-        targeted=False)
-    nc=1
+        netD,
+        loss_fn=nn.CrossEntropyLoss(reduction="sum"),
+        eps=0.25,
+        nb_iter=200,
+        eps_iter=0.02,
+        clip_min=0.0,
+        clip_max=1.0,
+        targeted=False
+    )
+
+    nc = 1
+
+
+elif opt.dataset == 'fashionmnist':
+    testset = torchvision.datasets.FashionMNIST(
+        root='dataset/', train=False,
+        download=True,
+        transform=transforms.Compose([
+            transforms.ToTensor(),
+        ])
+    )
+
+    # EXACT SAME MODEL SETUP
+    netD = Net_l().cuda()
+    netD = nn.DataParallel(netD)
+
+    original_net = Net_m().cuda()
+    state_dict = torch.load('pretrained/net_m.pth')
+    original_net.load_state_dict(state_dict)
+    original_net = nn.DataParallel(original_net)
+    original_net.eval()
+
+    adversary_ghost = LinfBasicIterativeAttack(
+        netD,
+        loss_fn=nn.CrossEntropyLoss(reduction="sum"),
+        eps=0.25,
+        nb_iter=200,
+        eps_iter=0.02,
+        clip_min=0.0,
+        clip_max=1.0,
+        targeted=False
+    )
+
+    nc = 1
 
 data_list = [i for i in range(6000, 8000)] # fast validation
 testloader = torch.utils.data.DataLoader(testset, batch_size=500,
@@ -434,7 +473,7 @@ del inputs, labels, adv_inputs_ghost
 torch.cuda.empty_cache()
 gc.collect()
 
-batch_num = 100  # Number of iterations to train per epoch (CHANGE THIS to adjust training length)
+batch_num = 300  # Number of iterations to train per epoch (CHANGE THIS to adjust training length)
 best_accuracy = 0.0  # Track highest accuracy achieved
 best_att = 0.0  # Track best attack success rate
 

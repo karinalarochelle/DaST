@@ -22,4 +22,4 @@ nvidia-smi
 
 echo "5. STARTING PYTHON"
 
-python -u run_dast.py --dataset=mnist --cuda --workers=1 --niter=100
+python -u run_dast.py --dataset=mnist --cuda --workers=1 --niter=50

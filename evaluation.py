@@ -70,15 +70,15 @@ if torch.cuda.is_available() and not opt.cuda:
     print("WARNING: You have a CUDA device, so you should probably run with \
          --cuda")
 
-testset = torchvision.datasets.MNIST(root='/data/dataset/', train=False,
+testset = torchvision.datasets.MNIST(root='dataset/', train=False,
                                      download=True,
                                      transform=transforms.Compose([
                                         transforms.ToTensor(),
                                      ]))
 
-data_list = [i for i in range(0, 10000)]
+data_list = [i for i in range(0, 10)]
 testloader = torch.utils.data.DataLoader(testset, batch_size=1,
-                                         sampler = sp.SubsetRandomSampler(data_list), num_workers=2)
+                                         sampler = sp.SubsetRandomSampler(data_list), num_workers=1)
 
 
 device = torch.device("cuda:0" if opt.cuda else "cpu")
@@ -215,7 +215,7 @@ elif opt.mode == 'white':
 elif opt.mode == 'dast':
     attack_net = Net_l().to(device)
     state_dict = torch.load(
-        'saved_model_2/netD_epoch_670.pth')
+        'saved_model/netD_epoch_94.pth')
     attack_net = nn.DataParallel(attack_net)
     attack_net.load_state_dict(state_dict)
 
