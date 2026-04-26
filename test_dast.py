@@ -1,3 +1,10 @@
+# ============================================================================
+# TEST SCRIPT: Comprehensive testing of trained models
+# ============================================================================
+# This script tests trained discriminators against multiple adversarial attack types
+# and records results to evaluate robustness
+# ============================================================================
+
 from __future__ import print_function
 import argparse
 import os
@@ -6,6 +13,7 @@ import sys
 import xlwt
 import random
 import numpy as np
+# Import different adversarial attack methods
 from advertorch.attacks import LinfBasicIterativeAttack, CarliniWagnerL2Attack, L2BasicIterativeAttack
 from advertorch.attacks import GradientSignAttack, PGDAttack, L2PGDAttack
 import torch
@@ -22,30 +30,37 @@ import torchvision.utils as vutils
 import torch.utils.data.sampler as sp
 
 from net import Net_s, Net_m, Net_l
+
+# Set random seed for reproducibility
 SEED = 10000
 torch.manual_seed(SEED)
 torch.cuda.manual_seed(SEED)
 np.random.seed(SEED)
 random.seed(10000)
 
+# Command line arguments
 parser = argparse.ArgumentParser()
+# Number of parallel workers for data loading
 parser.add_argument('--workers', type=int, help='number of data loading\
     workers', default=2)
+# Use GPU if available
 parser.add_argument('--cuda', action='store_true', help='enables cuda')
+# Which attack method to test (FGSM, PGD, C&W, etc.)
 parser.add_argument('--adv', type=str, help='attack method')
+# Which model to test (small, medium, or large network)
 parser.add_argument('--mode', type=str, help='use which model to generate\
     examples. "imitation_large": the large imitation network.\
     "imitation_medium": the medium imitation network. "imitation_small" the\
     small imitation network. ')
+# Optional random seed for reproducibility
 parser.add_argument('--manualSeed', type=int, help='manual seed')
 parser.add_argument('--target', action='store_true', help='manual seed')
 
 opt = parser.parse_args()
-# print(opt)
 
+# Set random seed
 if opt.manualSeed is None:
     opt.manualSeed = random.randint(1, 10000)
-# print("Random Seed: ", opt.manualSeed)
 random.seed(opt.manualSeed)
 torch.manual_seed(opt.manualSeed)
 
