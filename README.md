@@ -155,6 +155,13 @@ With this command you can modify:
 - --niter -> number of epochs
 - --workers -> recommended: 1 for HPC
 
+#### Running Evaluation
+```bash
+python evaluation.py --dataset=mnist --cuda
+```
+- This generates adversarial examples using FGSM/BIM/PGD
+- Uses epsilon values up to 0.26 (max pertubation strength)
+
 ---
 
 ## Novel Idea
