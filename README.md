@@ -108,7 +108,8 @@ L_C = CE(D(G(z, n)), n)
 - Python 3.9  
 - PyTorch 1.12.1 + CUDA 11.3  
 - torchvision 0.13.1  
-- advertorch  
+- advertorch 0.2.4
+- joblib 1.1.0
 
 ---
 
@@ -130,7 +131,7 @@ source dast-env/bin/activate
 ### 3. Install dependencies
 ```bash
 pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install advertorch joblib
+pip install advertorch==0.2.4 joblib==1.1.0
 ```
 
 ### Running the Code (HPC - Slurm)
@@ -144,6 +145,59 @@ Monitor the job:
 squeue -u $USER
 tail -f dast_<JOBID>.log
 ```
+
+The run_dast.sh script executes:
+```bash
+python -u run_dast.py --dataset=mnist --cuda --workers=1 --niter=50
+```
+With this command you can modify:
+- --dataset -> mnist or fashionmnist
+- --niter -> number of epochs
+- --workers -> recommended: 1 for HPC
+
+---
+
+## Novel Idea
+### Motivation
+The original DaST paper primarily evaluates the method on datasets such as MNIST and real-world models (e.g., Azure). To explore the generalizability of the approach, I extended the implementation to support the FashionMNIST dataset, which contains more complex and visually diverse images than MNIST.
+
+This experiment aims to evaluate whether DaST can effectively generate adversarial examples in a setting with higher intra-class variability.
+
+### Implementation
+To support FashionMNIST, I modified the dataset loading section in dast.py by adding a new condition:
+```python
+elif opt.dataset == 'fashionmnist':
+    testset = torchvision.datasets.FashionMNIST(
+        root='dataset/', train=False,
+        download=True,
+        transform=transforms.Compose([
+            transforms.ToTensor(),
+        ])
+    )
+```
+The same model architectures used for MNIST were reused:
+- Net_l as the substitute model (netD)
+- Net_m as the target model
+
+Additionally, I configured the adversarial attack using: 
+- Linf Basic Iterative Attack (PGD-style)
+- ε = 0.25
+- 200 iterations
+This ensures consistency with the MNIST setup while allowing direct comparison across datasets.
+
+### Results
+When applying DaST to FashionMNIST, the model achieved:
+- Attack success rate: ~93% – 97%
+- Substitute model accuracy: ~7% – 11%
+
+Compared to MNIST (which showed lower attack success rates under reduced training), FashionMNIST produced significantly stronger attack performance.
+
+### Observations
+- The generator was able to produce highly effective adversarial examples on FashionMNIST
+- The substitute model successfully approximated the target model despite no access to real training data
+- The high attack success rate suggests strong transferability of adversarial examples
+
+Interestingly, FashionMNIST appeared more vulnerable to this attack than MNIST under the same training constraints.
 
 ## Conclusion
 
