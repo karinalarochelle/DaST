@@ -220,5 +220,7 @@ Interestingly, FashionMNIST appeared more vulnerable to this attack than MNIST u
 
 ### Author
 Karina Larochelle
+
 CSC 592 Final Project
+
 If you have any questions, you can contact me at [klarochelle@uri.edu](url).
